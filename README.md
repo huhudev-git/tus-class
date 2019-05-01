@@ -16,14 +16,14 @@
   - [Introduction](#introduction)
   - [Features](#features)
   - [Issues](#issues)
+  - [FAQs](#fAQs)
   - [TODO](#todo)
 
 ## Installation
 
-[0.0.6] Beta: [TestFlight](https://testflight.apple.com/join/km2DnJZf) (**IOS ONLY**)
+[`v0.0.6`] Beta: [TestFlight](https://testflight.apple.com/join/km2DnJZf) (**IOS ONLY**)
 
-> Sorry for Android users, though we have already built Android version, since this is a unofficial APP, to avoid complex problems.  
-> We will release Android version in the future.
+> Sorry for Android users, though we have already built Android version, since this is a unofficial APP, to avoid complex problems. We will release Android version in the future.
 
 ## Introduction
 
@@ -93,7 +93,7 @@ This repo isn't open source now, but will open source in some day(code just not 
 
 ## Issues
 
-Please file any issues, bugs, or feature requests in the [Issues](https://github.com/huhugiter/TUS_CLASS/issues).
+Please file any issues, bugs, or feature requests in the [Issues](https://github.com/huhugiter/TUS_CLASS/issues).  
 
 ### Known bugs / issues
 
