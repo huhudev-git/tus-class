@@ -21,9 +21,11 @@
 
 ## Installation
 
-[`v0.0.6`] Beta: [TestFlight](https://testflight.apple.com/join/km2DnJZf) (**IOS ONLY**)
+※: **Only available in TUS network**
 
-> Sorry for Android users, though we have already built Android version, since this is a unofficial APP, to avoid complex problems. We will release Android version in the future.
+- `v0.0.6` Beta: [TestFlight](http://jwww.ed.tus.ac.jp/4618030/tus_class.html) (**IOS ONLY**)
+
+> Sorry for Android users, though we have already built Android version, since this is an unofficial APP, to avoid complex problems. We will release Android version in the future.
 
 ## Introduction
 
