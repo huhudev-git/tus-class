@@ -33,18 +33,49 @@ Powered by [Flutter](https://flutter.dev/), support for both **iOS** and **Andro
 This is my first mobile application, so it maybe buggy or what else.  
 This repo isn't open source now, but will open source in some day(code just not beautiful currently).
 
-<img src="assets/readme/1.png"  width="103" height="224" />
-<img src="assets/readme/2.png"  width="103" height="224" />
-<img src="assets/readme/3.png"  width="103" height="224" />
-<img src="assets/readme/4.png"  width="103" height="224" />
-<img src="assets/readme/5.png"  width="103" height="224" />
-<img src="assets/readme/6.png"  width="103" height="224" />
-<img src="assets/readme/7.png"  width="103" height="224" />
-<img src="assets/readme/8.png"  width="103" height="224" />
-<img src="assets/readme/9.png"  width="103" height="224" />
-<img src="assets/readme/10.png"  width="103" height="224" />
-<img src="assets/readme/11.png"  width="103" height="224" />
-<img src="assets/readme/12.png"  width="103" height="224" />
+
+<div style="text-align: center"><table><tr>
+  <td style="text-align: center">
+    <img src="assets/readme/1.png"  width="200" />
+  </td>
+  <td style="text-align: center">
+    <img src="assets/readme/2.png"  width="200" />
+  </td>
+  <td style="text-align: center">
+    <img src="assets/readme/3.png"  width="200" />
+  </td>
+  <td style="text-align: center">
+    <img src="assets/readme/4.png"  width="200" />
+  </td>
+</tr></table></div>
+<div style="text-align: center"><table><tr>
+  <td style="text-align: center">
+    <img src="assets/readme/5.png"  width="200" />
+  </td>
+  <td style="text-align: center">
+    <img src="assets/readme/6.png"  width="200" />
+  </td>
+  <td style="text-align: center">
+    <img src="assets/readme/7.png"  width="200" />
+  </td>
+  <td style="text-align: center">
+    <img src="assets/readme/8.png"  width="200" />
+  </td>
+</tr></table></div>
+<div style="text-align: center"><table><tr>
+  <td style="text-align: center">
+    <img src="assets/readme/9.png"  width="200" />
+  </td>
+  <td style="text-align: center">
+    <img src="assets/readme/10.png"  width="200" />
+  </td>
+  <td style="text-align: center">
+    <img src="assets/readme/11.png"  width="200" />
+  </td>
+  <td style="text-align: center">
+    <img src="assets/readme/12.png"  width="200" />
+  </td>
+</tr></table></div>
 
 ## Features
 
@@ -62,16 +93,14 @@ This repo isn't open source now, but will open source in some day(code just not 
 
 ## Issues
 
-Please file any issues, bugs, or feature requests in the [[Issues]](https://github.com/huhugiter/TUS_CLASS/issues).
+Please file any issues, bugs, or feature requests in the [Issues](https://github.com/huhugiter/TUS_CLASS/issues).
 
 ### Known bugs / issues
 
 - search will return no result whatever the exception is
-- Unread messages will only show index page messages if you not load all message(by <i class="material-icons">cloud_download</i>)
+- Unread messages will only show index page messages if you not load all message(by cloud download icon)
 
 ## FAQs
-
-Maybe not "frequently asked", but hopefully these answers will be useful.
 
 ### How to configure schedule
 
