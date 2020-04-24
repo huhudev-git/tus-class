@@ -1,3 +1,5 @@
+**readme not update yet, now in beta test(only for release apk and issues), thing may change frequently，we will update this repo later**
+
 <div align="center"><img src="assets/readme/logo.png" width="300" height="300" alt="logo" /></div>
 
 # <div align="center">TUS CLASS(Unofficial)</div>
