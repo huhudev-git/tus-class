@@ -20,7 +20,9 @@
 
 ## Installation
 
-Download Apk: [Releases](https://github.com/huhugiter/tus-class/releases)
+Android Beta:
+
+<a href='https://play.google.com/apps/testing/com.huhu.tusclass'><img alt='Get it on Google Play' src='assets/readme/google_play_download.png' height=90px/></a>
 
 > Sorry for IOS users, though we have already built ios version, currently only Android beta test available
 
@@ -48,11 +50,9 @@ A front-end APP for [TUS CLASS](https://class.admin.tus.ac.jp/up/faces/login/Com
 
 ## Issues
 
-please test if the app works fine.
-If you meet any bugs or issues, please contact with developer, or file an issue
-please describe what operation caused the bugs. Thx :kissing_heart:
+please test if the app works fine. If you meet any bugs or issues, please contact with developer, or file an issue and describe what operation caused the bugs.
 
-Please file any issues, bugs, or feature requests in the [Issues](https://github.com/huhugiter/TUS_CLASS/issues).  
+Please file any issues, bugs, or feature requests in the [Issues](https://github.com/huhugiter/TUS_CLASS/issues). Thx :kissing_heart:
 
 ### Known bugs / issues
 
@@ -63,11 +63,11 @@ Please file any issues, bugs, or feature requests in the [Issues](https://github
 
 ### How this APP work
 
-Fetch data from CLASS using regular expression, and simulate web page submission.
+Fetching data from CLASS using regular expression, and simulate web page submission.
 
 ### How to configure schedule
 
-By longpress the cell in table.
+By longpressing the cell in table.
 
 ### Can't search
 
