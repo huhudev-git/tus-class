@@ -13,7 +13,7 @@
     <a href="https://dart.dev/">
         <img src="https://img.shields.io/badge/dart-2.7.1-blue.svg" alt="dart" />
     </a>
-    <img src="https://img.shields.io/badge/Version-beta 0.0.6-orange.svg" alt="Version" />
+    <img src="https://img.shields.io/badge/Version-beta 0.0.7+3-orange.svg" alt="Version" />
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="LICENSE" />
 </div>
 <br />
