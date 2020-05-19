@@ -31,7 +31,7 @@ A front-end APP for [TUS CLASS](https://class.admin.tus.ac.jp/up/faces/login/Com
 
 :exclamation: !Important: **Only the Faculty of Engineering is currently tested**. There may be a lot of places without adaptation! We need data to fix, please help us.
 
-![Demo](assets/readme/demo.png)
+![Demo](assets/readme/demo.jpg)
 
 ## Features
 
