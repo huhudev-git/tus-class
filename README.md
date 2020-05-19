@@ -13,18 +13,17 @@
     <a href="https://dart.dev/">
         <img src="https://img.shields.io/badge/dart-2.7.1-blue.svg" alt="dart" />
     </a>
-    <img src="https://img.shields.io/badge/Version-beta 0.0.7+3-orange.svg" alt="Version" />
+    <img src="https://img.shields.io/badge/Version-beta 0.0.8+4-orange.svg" alt="Version" />
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="LICENSE" />
 </div>
 <br />
 
 ## Installation
 
-Android Beta:
+Beta:
 
 <a href='https://play.google.com/apps/testing/com.huhu.tusclass'><img alt='Get it on Google Play' src='assets/readme/google_play_download.png' height=90px/></a>
-
-> Sorry for IOS users, though we have already built ios version, currently only Android beta test available
+<a href='https://testflight.apple.com/join/74yWs1sg'><img alt='Get it on Apple Store' src='assets/readme/apple_store_download.png' height=90px/></a>
 
 ## Introduction
 
