@@ -20,10 +20,8 @@
 
 ## Installation
 
-Beta:
-
-<a href='https://play.google.com/apps/testing/com.huhu.tusclass'><img alt='Get it on Google Play' src='assets/readme/google_play_download.png' height=90px/></a>
-<a href='https://testflight.apple.com/join/74yWs1sg'><img alt='Get it on Apple Store' src='assets/readme/apple_store_download.png' height=90px/></a>
+<a href='https://play.google.com/store/apps/details?id=com.huhu.tusclass'><img alt='Get it on Google Play' src='assets/readme/google_play_download.png' height=90px/></a>
+<a href='https://apps.apple.com/jp/app/tus-class-%E9%9D%9E%E5%85%AC%E5%BC%8F/id1513692491'><img alt='Get it on Apple Store' src='assets/readme/apple_store_download.png' height=90px/></a>
 
 ## Introduction
 
