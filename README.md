@@ -36,7 +36,7 @@
 ![Version](https://img.shields.io/badge/Version-0.1.2+11-orange.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://choosealicense.com/licenses/mit/)
 
-A ront-end APP for [TUS CLASS](https://class.admin.tus.ac.jp/up/faces/login/Com00501A.jsp). This project is only for Tokyo University of Science students. Powered by [Flutter](https://flutter.dev/)
+A Front-end APP for [TUS CLASS](https://class.admin.tus.ac.jp/up/faces/login/Com00501A.jsp). This project is only for Tokyo University of Science students. Powered by [Flutter](https://flutter.dev/)
 
 **Available for both iOS and Android.**
 
@@ -52,7 +52,7 @@ A ront-end APP for [TUS CLASS](https://class.admin.tus.ac.jp/up/faces/login/Com0
   - 📚Other files (if your have APP supports)
   - 🎈Entry
 - 📅Timetable
-  - Attendance Rate
+  - 💯Attendance Rate
 - 🏆Grades
 - 🔎Grade Search
 - 📝Syllabus
