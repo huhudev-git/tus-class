@@ -1,0 +1,9 @@
+targets:
+  $default:
+    builders:
+      json_serializable:
+        options:
+          # https://github.com/rrousselGit/freezed/issues/86
+          explicit_to_json: true
+          # https://github.com/flutter/flutter/issues/17417
+          any_map: true

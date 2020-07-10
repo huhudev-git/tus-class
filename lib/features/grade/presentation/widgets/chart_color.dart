@@ -1,0 +1,158 @@
+import 'package:charts_flutter/flutter.dart' as charts;
+import 'package:flutter/material.dart';
+
+final List<List<charts.Color>> chartColor = [
+  [
+    charts.Color.fromHex(code: '#60ACFC'),
+  ],
+  [
+    charts.Color.fromHex(code: '#60ACFC'),
+    charts.Color.fromHex(code: '#ff7c7c'),
+  ],
+  [
+    charts.Color.fromHex(code: '#60ACFC'),
+    charts.Color.fromHex(code: '#5bc49f'),
+    charts.Color.fromHex(code: '#ff7c7c'),
+  ],
+  [
+    charts.Color.fromHex(code: '#60ACFC'),
+    charts.Color.fromHex(code: '#5bc49f'),
+    charts.Color.fromHex(code: '#feb64d'),
+    charts.Color.fromHex(code: '#ff7c7c'),
+  ],
+  [
+    charts.Color.fromHex(code: '#60ACFC'),
+    charts.Color.fromHex(code: '#5bc49f'),
+    charts.Color.fromHex(code: '#feb64d'),
+    charts.Color.fromHex(code: '#ff7c7c'),
+    charts.Color.fromHex(code: '#9287e7'),
+  ],
+  [
+    charts.Color.fromHex(code: '#60ACFC'),
+    charts.Color.fromHex(code: '#32d3eb'),
+    charts.Color.fromHex(code: '#5bc49f'),
+    charts.Color.fromHex(code: '#feb64d'),
+    charts.Color.fromHex(code: '#ff7c7c'),
+    charts.Color.fromHex(code: '#9287e7'),
+  ],
+  [
+    charts.Color.fromHex(code: '#60ACFC'),
+    charts.Color.fromHex(code: '#32d3eb'),
+    charts.Color.fromHex(code: '#5bc49f'),
+    charts.Color.fromHex(code: '#feb64d'),
+    charts.Color.fromHex(code: '#ff7c7c'),
+    charts.Color.fromHex(code: '#9287e7'),
+    charts.Color.fromHex(code: '#60ACFC'),
+  ],
+  [
+    charts.Color.fromHex(code: '#60ACFC'),
+    charts.Color.fromHex(code: '#32d3eb'),
+    charts.Color.fromHex(code: '#5bc49f'),
+    charts.Color.fromHex(code: '#feb64d'),
+    charts.Color.fromHex(code: '#ff7c7c'),
+    charts.Color.fromHex(code: '#9287e7'),
+    charts.Color.fromHex(code: '#60ACFC'),
+    charts.Color.fromHex(code: '#32d3eb'),
+  ],
+  [
+    charts.Color.fromHex(code: '#60ACFC'),
+    charts.Color.fromHex(code: '#32d3eb'),
+    charts.Color.fromHex(code: '#5bc49f'),
+    charts.Color.fromHex(code: '#feb64d'),
+    charts.Color.fromHex(code: '#ff7c7c'),
+    charts.Color.fromHex(code: '#9287e7'),
+    charts.Color.fromHex(code: '#60ACFC'),
+    charts.Color.fromHex(code: '#32d3eb'),
+    charts.Color.fromHex(code: '#5bc49f'),
+  ],
+  [
+    charts.Color.fromHex(code: '#60ACFC'),
+    charts.Color.fromHex(code: '#32d3eb'),
+    charts.Color.fromHex(code: '#5bc49f'),
+    charts.Color.fromHex(code: '#feb64d'),
+    charts.Color.fromHex(code: '#ff7c7c'),
+    charts.Color.fromHex(code: '#9287e7'),
+    charts.Color.fromHex(code: '#60ACFC'),
+    charts.Color.fromHex(code: '#32d3eb'),
+    charts.Color.fromHex(code: '#5bc49f'),
+    charts.Color.fromHex(code: '#feb64d'),
+  ]
+];
+
+final List<List<Color>> labelcolor = [
+  [
+    Color(0xFF60ACFC),
+  ],
+  [
+    Color(0xFF60ACFC),
+    Color(0xFFff7c7c),
+  ],
+  [
+    Color(0xFF60ACFC),
+    Color(0xFF5bc49f),
+    Color(0xFFff7c7c),
+  ],
+  [
+    Color(0xFF60ACFC),
+    Color(0xFF5bc49f),
+    Color(0xFFfeb64d),
+    Color(0xFFff7c7c),
+  ],
+  [
+    Color(0xFF60ACFC),
+    Color(0xFF5bc49f),
+    Color(0xFFfeb64d),
+    Color(0xFFff7c7c),
+    Color(0xFF9287e7),
+  ],
+  [
+    Color(0xFF60ACFC),
+    Color(0xFF32d3eb),
+    Color(0xFF5bc49f),
+    Color(0xFFfeb64d),
+    Color(0xFFff7c7c),
+    Color(0xFF9287e7),
+  ],
+  [
+    Color(0xFF60ACFC),
+    Color(0xFF32d3eb),
+    Color(0xFF5bc49f),
+    Color(0xFFfeb64d),
+    Color(0xFFff7c7c),
+    Color(0xFF9287e7),
+    Color(0xFF60ACFC),
+  ],
+  [
+    Color(0xFF60ACFC),
+    Color(0xFF32d3eb),
+    Color(0xFF5bc49f),
+    Color(0xFFfeb64d),
+    Color(0xFFff7c7c),
+    Color(0xFF9287e7),
+    Color(0xFF60ACFC),
+    Color(0xFF32d3eb),
+  ],
+  [
+    Color(0xFF60ACFC),
+    Color(0xFF32d3eb),
+    Color(0xFF5bc49f),
+    Color(0xFFfeb64d),
+    Color(0xFFff7c7c),
+    Color(0xFF9287e7),
+    Color(0xFF60ACFC),
+    Color(0xFF32d3eb),
+    Color(0xFF5bc49f),
+  ],
+  [
+    Color(0xFF60ACFC),
+    Color(0xFF32d3eb),
+    Color(0xFF5bc49f),
+    Color(0xFFfeb64d),
+    Color(0xFFff7c7c),
+    Color(0xFF9287e7),
+    Color(0xFF60ACFC),
+    Color(0xFF32d3eb),
+    Color(0xFF5bc49f),
+    Color(0xFFfeb64d),
+  ]
+];

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512" height="512">
+<g>
+	<polygon style="fill:#2C3B73;" points="361,61 361,421 331,451 61,451 31,421 31,61 61,30 331,30  "/>
+	<polygon style="fill:#293939;" points="361,61 361,421 331,451 196,451 196,30 331,30  "/>
+	<rect x="61" y="91" style="fill:#979FEF;" width="270" height="300"/>
+	<rect x="196" y="91" style="fill:#737EE6;" width="135" height="300"/>
+	<path style="fill:#EDF5FF;" d="M361,15v46H31V15c0-8.401,6.599-15,15-15h300C354.401,0,361,6.599,361,15z"/>
+	<path style="fill:#D7E9FF;" d="M361,15v46H196V0h150C354.401,0,361,6.599,361,15z"/>
+	<path style="fill:#EDF5FF;" d="M361,421v76c0,8.401-6.599,15-15,15H46c-8.401,0-15-6.599-15-15v-76h150l15,15l15-15H361z"/>
+	<path style="fill:#D7E9FF;" d="M211,421h150v76c0,8.401-6.599,15-15,15H196v-76L211,421z"/>
+	<path style="fill:#979FEF;" d="M211,421v15c0,8.401-6.599,15-15,15s-15-6.599-15-15v-15H211z"/>
+	<path style="fill:#737EE6;" d="M211,421v15c0,8.401-6.599,15-15,15v-30H211z"/>
+	<path style="fill:#FFDA2D;" d="M466,121H226c-8.401,0-15,6.599-15,15v180c0,8.401,6.599,15,15,15h105v45c0,6,3.6,11.4,9.3,13.801   c1.8,0.899,3.9,1.199,5.7,1.199c3.9,0,7.8-1.5,10.499-4.501L412.301,331H466c8.401,0,15-6.599,15-15V136   C481,127.599,474.401,121,466,121z"/>
+	<path style="fill:#FDBF00;" d="M481,136v180c0,8.401-6.599,15-15,15h-53.699l-55.801,55.499C353.8,389.5,349.9,391,346,391V121h120   C474.401,121,481,127.599,481,136z"/>
+	<circle style="fill:#2C3B73;" cx="406" cy="226" r="15"/>
+	<path style="fill:#47568C;" d="M361,226c0,8.401-6.599,15-15,15s-15-6.599-15-15s6.599-15,15-15S361,217.599,361,226z"/>
+	<circle style="fill:#47568C;" cx="286" cy="226" r="15"/>
+	<path style="fill:#2C3B73;" d="M361,226c0,8.401-6.599,15-15,15v-30C354.401,211,361,217.599,361,226z"/>
+</g>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</svg>
