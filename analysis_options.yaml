@@ -2,8 +2,12 @@
 
 analyzer:
   exclude:
-    - "**/*.g.dart"
-    - "**/*.freezed.dart"
+    - lib/**.g.dart
+    - lib/**.freezed.dart
+    - lib/**.inject.dart
+    - lib/**.inject.summary
+    - test/**.g.dart
+    - test/**.inject.dart
   enable-experiment:
     - extension-methods
   errors:
