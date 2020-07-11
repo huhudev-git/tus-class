@@ -67,7 +67,7 @@ class _YearSelectorState extends State<YearSelector> {
                   Icon(Icons.person),
                   SizedBox(width: 5.0),
                   BlocBuilder<cb.CurriculumBloc, cb.CurriculumState>(
-                    condition: (previous, current) {
+                    buildWhen: (previous, current) {
                       if (current is cb.Loaded) {
                         return true;
                       }
@@ -94,7 +94,7 @@ class _YearSelectorState extends State<YearSelector> {
                   Icon(Icons.supervised_user_circle),
                   SizedBox(width: 5.0),
                   BlocBuilder<acb.AllCurriculumBloc, acb.AllCurriculumState>(
-                    condition: (previous, current) {
+                    buildWhen: (previous, current) {
                       if (current is acb.Loaded) {
                         return true;
                       }

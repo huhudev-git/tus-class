@@ -42,10 +42,8 @@ class CurriculumDetailBloc extends Bloc<CurriculumDetailEvent, CurriculumDetailS
         _getCurriculumDetailUsecase = getCurriculumDetailUsecase,
         _fetchCurriculumDetailUsecase = fetchCurriculumDetailUsecase,
         _deleteCurriculumDetailUsecase = deleteCurriculumDetailUsecase,
-        _backToIndexUsecase = backToIndexUsecase;
-
-  @override
-  CurriculumDetailState get initialState => const CurriculumDetailState.initial();
+        _backToIndexUsecase = backToIndexUsecase,
+        super(CurriculumDetailState.initial());
 
   @override
   Stream<CurriculumDetailState> mapEventToState(

@@ -20,10 +20,8 @@ class MessageBloc extends Bloc<MessageEvent, MessageState> {
   MessageBloc({
     @required fpu.FetchPageUsecase fetchPageUsecase,
   })  : assert(fetchPageUsecase != null),
-        _fetchPageUsecase = fetchPageUsecase;
-
-  @override
-  MessageState get initialState => const MessageState.initial();
+        _fetchPageUsecase = fetchPageUsecase,
+        super(MessageState.initial());
 
   @override
   Stream<MessageState> mapEventToState(

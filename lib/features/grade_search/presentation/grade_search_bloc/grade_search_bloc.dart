@@ -25,10 +25,8 @@ class GradeSearchBloc extends Bloc<GradeSearchEvent, GradeSearchState> {
   })  : assert(searchGradeUsecase != null),
         assert(fetchGradeSearchPageUsecase != null),
         _searchGradeUsecase = searchGradeUsecase,
-        _fetchGradeSearchPageUsecase = fetchGradeSearchPageUsecase;
-
-  @override
-  GradeSearchState get initialState => const GradeSearchState.initial();
+        _fetchGradeSearchPageUsecase = fetchGradeSearchPageUsecase,
+        super(GradeSearchState.initial());
 
   @override
   Stream<GradeSearchState> mapEventToState(

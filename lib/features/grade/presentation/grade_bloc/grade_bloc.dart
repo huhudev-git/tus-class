@@ -21,10 +21,8 @@ class GradeBloc extends Bloc<GradeEvent, GradeState> {
   GradeBloc({
     @required FetchGradeUsecase fetchGradeUsecase,
   })  : assert(fetchGradeUsecase != null),
-        _fetchGradeUsecase = fetchGradeUsecase;
-
-  @override
-  GradeState get initialState => const GradeState.initial();
+        _fetchGradeUsecase = fetchGradeUsecase,
+        super(GradeState.initial());
 
   @override
   Stream<GradeState> mapEventToState(

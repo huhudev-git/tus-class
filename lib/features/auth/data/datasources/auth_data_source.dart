@@ -8,7 +8,6 @@ import '../models/auth_token_model.dart';
 const String autoLoginUsername = 'AUTO_LOGIN_USERNAME';
 const String autoLoginPassword = 'AUTO_LOGIN_PASSWORD';
 const String autoLoginState = 'AUTO_LOGIN_STATE';
-const String firstOpen = 'FIRST_OPEN';
 
 abstract class AuthDataSource {
   Future<AuthTokenModel> getToken();
@@ -16,7 +15,6 @@ abstract class AuthDataSource {
   Future<void> persistToken(String username, String password);
   Future<void> deleteToken();
   Future<bool> isAutoLogin();
-  Future<bool> isFirstRun();
   Future<void> setAutoLogin({bool status});
 }
 
@@ -64,13 +62,6 @@ class AuthDataSourceImpl implements AuthDataSource {
   @override
   Future<bool> isAutoLogin() async {
     return sharedPreferences.getBool(autoLoginState) ?? false;
-  }
-
-  @override
-  Future<bool> isFirstRun() async {
-    final result = sharedPreferences.getBool(firstOpen) ?? true;
-    sharedPreferences.setBool(firstOpen, false);
-    return result;
   }
 
   @override

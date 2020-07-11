@@ -49,4 +49,14 @@ class LoginRepositoryImpl implements LoginRepository {
       return Left(ServerFailure());
     }
   }
+
+  @override
+  Future<Either<Failure, bool>> isFirstRun() async {
+    try {
+      final result = await dataSource.isFirstRun();
+      return Right(result);
+    } on Exception {
+      return Left(CacheFailure());
+    }
+  }
 }

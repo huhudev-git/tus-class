@@ -41,10 +41,8 @@ class SettingBloc extends Bloc<SettingEvent, SettingState> {
         _setAutoLoginUsecase = setAutoLoginUsecase,
         _deleteAuthTokenUsecase = deleteAuthTokenUsecase,
         _setAuthTokenUsecase = setAuthTokenUsecase,
-        _deleteCacheFilesUsecase = deleteCacheFilesUsecase;
-
-  @override
-  SettingState get initialState => SettingState.initial();
+        _deleteCacheFilesUsecase = deleteCacheFilesUsecase,
+        super(SettingState.initial());
 
   @override
   Stream<SettingState> mapEventToState(

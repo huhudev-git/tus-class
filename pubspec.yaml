@@ -33,11 +33,11 @@ dependencies:
   path_provider: ^1.6.11
   injectable: ^0.4.0+1
   flutter_svg: ^0.18.0
-  flutter_bloc: ^4.0.1
+  flutter_bloc: ^5.0.1
   url_launcher: ^5.5.0
   cookie_jar: ^1.0.1
   open_file: ^3.0.1
-  equatable: ^1.2.0
+  equatable: ^1.2.2
   shimmer: ^1.1.1
   sembast: ^2.4.7+4
   get_it: ^4.0.2

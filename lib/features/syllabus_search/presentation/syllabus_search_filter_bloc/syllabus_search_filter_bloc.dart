@@ -21,10 +21,8 @@ class SyllabusSearchFilterBloc extends Bloc<SyllabusSearchFilterEvent, SyllabusS
   SyllabusSearchFilterBloc({
     @required FetchSyllabusSearchFilterUsecase fetchSyllabusSearchFilterUsecase,
   })  : assert(fetchSyllabusSearchFilterUsecase != null),
-        _fetchSyllabusSearchFilterUsecase = fetchSyllabusSearchFilterUsecase;
-
-  @override
-  SyllabusSearchFilterState get initialState => SyllabusSearchFilterState.initial();
+        _fetchSyllabusSearchFilterUsecase = fetchSyllabusSearchFilterUsecase,
+        super(SyllabusSearchFilterState.initial());
 
   @override
   Stream<SyllabusSearchFilterState> mapEventToState(

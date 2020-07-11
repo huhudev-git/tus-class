@@ -19,10 +19,8 @@ class MessageEntryBloc extends Bloc<MessageEntryEvent, MessageEntryState> {
   MessageEntryBloc({
     @required messu.MessageEntrySwitchedUsecase messageEntrySwitchedUsecase,
   })  : assert(messageEntrySwitchedUsecase != null),
-        _messageEntrySwitchedUsecase = messageEntrySwitchedUsecase;
-
-  @override
-  MessageEntryState get initialState => const MessageEntryState.initial();
+        _messageEntrySwitchedUsecase = messageEntrySwitchedUsecase,
+        super(MessageEntryState.initial());
 
   @override
   Stream<MessageEntryState> mapEventToState(

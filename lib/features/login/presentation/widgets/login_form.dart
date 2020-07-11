@@ -140,7 +140,6 @@ class _PasswordFieldState extends State<PasswordField> {
   @override
   Widget build(BuildContext context) {
     return Neumorphic(
-      padding: EdgeInsets.zero,
       style: NeumorphicStyle(depth: -3),
       child: TextFormField(
         keyboardType: TextInputType.text,

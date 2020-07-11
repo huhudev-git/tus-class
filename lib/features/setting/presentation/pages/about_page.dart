@@ -15,7 +15,7 @@ class AboutPage extends StatelessWidget {
     return BlocProvider(
       create: (context) => getIt<AboutBloc>()..add(AboutEvent.init()),
       child: BlocBuilder<AboutBloc, AboutState>(
-        condition: (previous, current) {
+        buildWhen: (previous, current) {
           if (current.error != null) {
             Scaffold.of(context)
               ..hideCurrentSnackBar()

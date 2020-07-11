@@ -19,10 +19,8 @@ class TeacherBloc extends Bloc<TeacherEvent, TeacherState> {
 
   TeacherBloc({@required FetchTeacherUsecase fetchTeacherUsecase})
       : assert(fetchTeacherUsecase != null),
-        _fetchTeacherUsecase = fetchTeacherUsecase;
-
-  @override
-  TeacherState get initialState => TeacherState.initial();
+        _fetchTeacherUsecase = fetchTeacherUsecase,
+        super(TeacherState.initial());
 
   @override
   Stream<TeacherState> mapEventToState(

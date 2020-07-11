@@ -33,6 +33,13 @@ class CacheFailure extends Failure {
   String get img => '';
 }
 
+class AutoLoginNotAllowFailure extends Failure {
+  @override
+  String get name => '';
+  @override
+  String get img => '';
+}
+
 class InvalidPasswordFailure extends Failure {
   @override
   String get name => 'INVAILD_PASSWORD';

@@ -51,7 +51,7 @@ class _SwitchSemesterWidgetState extends State<SwitchSemesterWidget> with Single
           children: [
             if (_animetion.value >= 0)
               BlocBuilder<cb.CurriculumBloc, cb.CurriculumState>(
-                condition: (previous, current) {
+                buildWhen: (previous, current) {
                   if (current is cb.Loaded) {
                     return true;
                   }

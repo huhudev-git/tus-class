@@ -7,7 +7,7 @@ import 'package:meta/meta.dart';
 
 import '../../../../core/errors/failures.dart';
 import '../../../../core/usecases/usecase.dart';
-import '../../../auth/domain/usecases/is_fisrt_run_usecase.dart';
+import '../../domain/usecases/is_fisrt_run_usecase.dart';
 import '../../domain/usecases/login_usecase.dart';
 
 part 'login_bloc.freezed.dart';
@@ -25,10 +25,8 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
   })  : assert(loginUsecase != null),
         assert(isFirstRunUsecase != null),
         _loginUsecase = loginUsecase,
-        _isFirstRunUsecase = isFirstRunUsecase;
-
-  @override
-  LoginState get initialState => const LoginState.initial();
+        _isFirstRunUsecase = isFirstRunUsecase,
+        super(LoginState.initial());
 
   @override
   Stream<LoginState> mapEventToState(

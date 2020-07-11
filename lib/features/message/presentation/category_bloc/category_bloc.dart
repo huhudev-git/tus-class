@@ -21,10 +21,8 @@ class CategoryBloc extends Bloc<CategoryEvent, CategoryState> {
   CategoryBloc({
     @required FetchCategoryUsecase fetchCategoryUsecase,
   })  : assert(fetchCategoryUsecase != null),
-        _fetchCategoryUsecase = fetchCategoryUsecase;
-
-  @override
-  CategoryState get initialState => const CategoryState.initial();
+        _fetchCategoryUsecase = fetchCategoryUsecase,
+        super(CategoryState.initial());
 
   @override
   Stream<CategoryState> mapEventToState(
