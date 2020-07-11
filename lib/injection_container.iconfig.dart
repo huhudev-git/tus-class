@@ -54,8 +54,6 @@ import 'package:tus_class/features/setting/data/datasources/i18n_data_source.dar
 import 'package:tus_class/features/setting/data/repositories/i18n_repository_impl.dart';
 import 'package:tus_class/features/setting/domain/repositories/i18n_repository.dart';
 import 'package:tus_class/features/setting/domain/usecase/init_about_usecase.dart';
-import 'package:tus_class/features/auth/domain/usecases/is_auto_auth_usecase.dart';
-import 'package:tus_class/features/auth/domain/usecases/is_fisrt_run_usecase.dart';
 import 'package:tus_class/features/login/data/datasources/login_data_source.dart';
 import 'package:tus_class/features/login/data/repositories/login_repository_impl.dart';
 import 'package:tus_class/features/login/domain/repositories/login_repository.dart';
@@ -105,6 +103,7 @@ import 'package:tus_class/features/grade_search/presentation/grade_search_detail
 import 'package:tus_class/features/grade_search/presentation/grade_search_filter_bloc/grade_search_filter_bloc.dart';
 import 'package:tus_class/features/setting/presentation/i18n_bloc/i18n_bloc.dart';
 import 'package:tus_class/features/setting/domain/usecase/init_setting_usecase.dart';
+import 'package:tus_class/features/login/domain/usecases/is_fisrt_run_usecase.dart';
 import 'package:tus_class/features/login/presentation/bloc/login_bloc.dart';
 import 'package:tus_class/features/message/presentation/message_bloc/message_bloc.dart';
 import 'package:tus_class/features/message/presentation/message_detail_bloc/message_detail_bloc.dart';
@@ -207,12 +206,9 @@ Future<void> $initGetIt(GetIt g, {String environment}) async {
       () => I18nRepositoryImpl(dataSource: g<I18nDataSource>()));
   g.registerFactory<InitAboutUsecase>(
       () => InitAboutUsecase(g<AboutRepository>()));
-  g.registerFactory<IsAutoAuthUsecase>(
-      () => IsAutoAuthUsecase(g<AuthRepository>()));
-  g.registerFactory<IsFirstRunUsecase>(
-      () => IsFirstRunUsecase(g<AuthRepository>()));
-  g.registerLazySingleton<LoginDataSource>(
-      () => LoginDataSourceImpl(tusRepository: g<TUSRepository>()));
+  g.registerLazySingleton<LoginDataSource>(() => LoginDataSourceImpl(
+      tusRepository: g<TUSRepository>(),
+      sharedPreferences: g<SharedPreferences>()));
   g.registerFactory<LoginRepository>(
       () => LoginRepositoryImpl(dataSource: g<LoginDataSource>()));
   g.registerFactory<LoginUsecase>(() => LoginUsecase(g<LoginRepository>()));
@@ -250,7 +246,6 @@ Future<void> $initGetIt(GetIt g, {String environment}) async {
         deleteTokenUsecase: g<DeleteTokenUsecase>(),
         getTokenUsecase: g<GetTokenUsecase>(),
         persistTokenUsecase: g<PersistTokenUsecase>(),
-        isAutoAuthUsecase: g<IsAutoAuthUsecase>(),
         loginUsecase: g<LoginUsecase>(),
       ));
   g.registerFactory<BackToIndexUsecase>(
@@ -321,6 +316,8 @@ Future<void> $initGetIt(GetIt g, {String environment}) async {
       setI18nUsecase: g<SetI18nUsecase>()));
   g.registerFactory<InitSettingUsecase>(
       () => InitSettingUsecase(g<SettingRepository>()));
+  g.registerFactory<IsFirstRunUsecase>(
+      () => IsFirstRunUsecase(g<LoginRepository>()));
   g.registerFactory<LoginBloc>(() => LoginBloc(
       loginUsecase: g<LoginUsecase>(),
       isFirstRunUsecase: g<IsFirstRunUsecase>()));

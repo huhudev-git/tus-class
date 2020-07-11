@@ -28,8 +28,14 @@ class AuthRepositoryImpl implements AuthRepository {
   @override
   Future<Either<Failure, AuthToken>> getToken() async {
     try {
-      final result = await dataSource.getToken();
-      return Right(result.toDomain());
+      final isAutoLogin = await dataSource.isAutoLogin();
+
+      if (isAutoLogin) {
+        final result = await dataSource.getToken();
+        return Right(result.toDomain());
+      } else {
+        return Left(AutoLoginNotAllowFailure());
+      }
     } on Exception {
       return Left(CacheFailure());
     }
@@ -50,26 +56,6 @@ class AuthRepositoryImpl implements AuthRepository {
     try {
       await dataSource.persistToken(username, password);
       return Right(unit);
-    } on Exception {
-      return Left(CacheFailure());
-    }
-  }
-
-  @override
-  Future<Either<Failure, bool>> isAutoLogin() async {
-    try {
-      final result = await dataSource.isAutoLogin();
-      return Right(result);
-    } on Exception {
-      return Left(CacheFailure());
-    }
-  }
-
-  @override
-  Future<Either<Failure, bool>> isFirstRun() async {
-    try {
-      final result = await dataSource.isFirstRun();
-      return Right(result);
     } on Exception {
       return Left(CacheFailure());
     }

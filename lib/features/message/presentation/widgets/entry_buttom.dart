@@ -57,8 +57,8 @@ class _EntryButtomState extends State<EntryButtom> {
           );
         },
         child: BlocBuilder<MessageEntryBloc, MessageEntryState>(
-          condition: (previousState, state) {
-            return state.maybeMap(
+          buildWhen: (previous, current) {
+            return current.maybeMap(
               failed: (_) => false,
               orElse: () => true,
             );

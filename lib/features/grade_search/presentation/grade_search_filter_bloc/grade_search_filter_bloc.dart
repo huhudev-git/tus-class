@@ -21,10 +21,8 @@ class GradeSearchFilterBloc extends Bloc<GradeSearchFilterEvent, GradeSearchFilt
   GradeSearchFilterBloc({
     @required FetchGradeSearchFilterUsecase fetchGradeSearchFilterUsecase,
   })  : assert(fetchGradeSearchFilterUsecase != null),
-        _fetchGradeSearchFilterUsecase = fetchGradeSearchFilterUsecase;
-
-  @override
-  GradeSearchFilterState get initialState => const GradeSearchFilterState.initial();
+        _fetchGradeSearchFilterUsecase = fetchGradeSearchFilterUsecase,
+        super(const GradeSearchFilterState.initial());
 
   @override
   Stream<GradeSearchFilterState> mapEventToState(

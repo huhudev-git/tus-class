@@ -20,10 +20,8 @@ class GradeSearchDetailBloc extends Bloc<GradeSearchDetailEvent, GradeSearchDeta
   GradeSearchDetailBloc({
     @required FetchGradeDetailUsecase fetchGradeDetailUsecase,
   })  : assert(fetchGradeDetailUsecase != null),
-        _fetchGradeDetailUsecase = fetchGradeDetailUsecase;
-
-  @override
-  GradeSearchDetailState get initialState => GradeSearchDetailState.initial();
+        _fetchGradeDetailUsecase = fetchGradeDetailUsecase,
+        super(GradeSearchDetailState.initial());
 
   @override
   Stream<GradeSearchDetailState> mapEventToState(

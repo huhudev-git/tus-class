@@ -25,10 +25,8 @@ class SyllabusSearchDetailBloc extends Bloc<SyllabusSearchDetailEvent, SyllabusS
   })  : assert(fetSyllabusDetailUsecase != null),
         assert(syllabusDetailBackUsecase != null),
         _fetSyllabusDetailUsecase = fetSyllabusDetailUsecase,
-        _syllabusDetailBackUsecase = syllabusDetailBackUsecase;
-
-  @override
-  SyllabusSearchDetailState get initialState => SyllabusSearchDetailState.initial();
+        _syllabusDetailBackUsecase = syllabusDetailBackUsecase,
+        super(SyllabusSearchDetailState.initial());
 
   @override
   Stream<SyllabusSearchDetailState> mapEventToState(

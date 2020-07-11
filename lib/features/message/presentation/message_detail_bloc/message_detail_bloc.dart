@@ -20,10 +20,8 @@ class MessageDetailBloc extends Bloc<MessageDetailEvent, MessageDetailState> {
   MessageDetailBloc({
     @required fmu.FetchMessageUsecase fetchMessageUsecase,
   })  : assert(fetchMessageUsecase != null),
-        _fetchMessageUsecase = fetchMessageUsecase;
-
-  @override
-  MessageDetailState get initialState => const MessageDetailState.initial();
+        _fetchMessageUsecase = fetchMessageUsecase,
+        super(MessageDetailState.initial());
 
   @override
   Stream<MessageDetailState> mapEventToState(

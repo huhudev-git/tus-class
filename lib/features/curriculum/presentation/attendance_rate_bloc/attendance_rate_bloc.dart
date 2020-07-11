@@ -21,10 +21,8 @@ class AttendanceRateBloc extends Bloc<AttendanceRateEvent, AttendanceRateState> 
   AttendanceRateBloc({
     @required faru.FetchAttendanceRateUsecase fetchAttendanceRateUsecase,
   })  : assert(fetchAttendanceRateUsecase != null),
-        _fetchAttendanceRateUsecase = fetchAttendanceRateUsecase;
-
-  @override
-  AttendanceRateState get initialState => AttendanceRateState.initial();
+        _fetchAttendanceRateUsecase = fetchAttendanceRateUsecase,
+        super(AttendanceRateState.initial());
 
   @override
   Stream<AttendanceRateState> mapEventToState(

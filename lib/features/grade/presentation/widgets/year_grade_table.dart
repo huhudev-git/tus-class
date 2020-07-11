@@ -61,7 +61,7 @@ class YearGradeCard extends StatelessWidget {
                       ListTile(
                         dense: true,
                         title: Text(
-                          '${item['year']}',
+                          item['year'],
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                           style: Theme.of(context).primaryTextTheme.subtitle1,
@@ -69,13 +69,13 @@ class YearGradeCard extends StatelessWidget {
                       ),
                       Center(
                         child: Text(
-                          '${item['credit']}',
+                          item['credit'],
                           style: Theme.of(context).primaryTextTheme.subtitle1,
                         ),
                       ),
                       Center(
                         child: Text(
-                          '${item['gpa']}',
+                          item['gpa'],
                           style: Theme.of(context).primaryTextTheme.subtitle1,
                         ),
                       ),
@@ -87,7 +87,7 @@ class YearGradeCard extends StatelessWidget {
         );
   }
 
-  List<Map<String, dynamic>> _yearGPA(Loaded state) {
+  List<Map<String, String>> _yearGPA(Loaded state) {
     final Map<int, List<Grade>> temp = {};
     for (final grade in state.grades) {
       if (!temp.containsKey(grade.year)) {
@@ -96,7 +96,7 @@ class YearGradeCard extends StatelessWidget {
       temp[grade.year].add(grade);
     }
 
-    final List<Map<String, dynamic>> result = [];
+    final List<Map<String, String>> result = [];
     for (final key in temp.keys) {
       double totalCredit = 0;
       double credit = 0;
@@ -111,13 +111,13 @@ class YearGradeCard extends StatelessWidget {
       }
 
       result.add({
-        'year': key,
+        'year': key.toString(),
         'gpa': (gp / totalCredit).toStringAsFixed(2),
-        'credit': credit,
+        'credit': credit.toString(),
       });
     }
 
-    result.sort((b, c) => b['year'] - c['year']);
+    result.sort((b, c) => int.parse(b['year']) - int.parse(c['year']));
     return result;
   }
 }

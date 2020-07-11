@@ -30,10 +30,8 @@ class CurriculumBloc extends Bloc<CurriculumEvent, CurriculumState> {
         assert(fetchCurriculumUsecase != null),
         _getCurriculumUsecase = getCurriculumUsecase,
         _cacheCurriculumUsecase = cacheCurriculumUsecase,
-        _fetchCurriculumUsecase = fetchCurriculumUsecase;
-
-  @override
-  CurriculumState get initialState => CurriculumState.initial();
+        _fetchCurriculumUsecase = fetchCurriculumUsecase,
+        super(CurriculumState.initial());
 
   @override
   Stream<CurriculumState> mapEventToState(

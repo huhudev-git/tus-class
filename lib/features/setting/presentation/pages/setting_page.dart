@@ -22,7 +22,7 @@ class _SettingPageState extends State<SettingPage> with AutomaticKeepAliveClient
     return BlocProvider(
       create: (context) => getIt<SettingBloc>()..add(const SettingEvent.init()),
       child: BlocBuilder<SettingBloc, SettingState>(
-        condition: (previous, current) {
+        buildWhen: (previous, current) {
           if (current.error != null) {
             Scaffold.of(context)
               ..hideCurrentSnackBar()

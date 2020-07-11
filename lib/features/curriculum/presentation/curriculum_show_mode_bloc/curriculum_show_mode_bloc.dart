@@ -25,9 +25,8 @@ class CurriculumShowModeBloc extends Bloc<CurriculumShowModeEvent, CurriculumSho
     @required gsmu.GetShowModeUsecase getShowModeUsecase,
   })  : assert(getShowModeUsecase != null),
         _saveShowModeUsecase = saveShowModeUsecase,
-        _getShowModeUsecase = getShowModeUsecase;
-  @override
-  CurriculumShowModeState get initialState => CurriculumShowModeState.initial();
+        _getShowModeUsecase = getShowModeUsecase,
+        super(CurriculumShowModeState.initial());
 
   @override
   Stream<CurriculumShowModeState> mapEventToState(

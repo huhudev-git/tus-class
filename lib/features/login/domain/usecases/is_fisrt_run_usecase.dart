@@ -1,13 +1,13 @@
 import 'package:dartz/dartz.dart';
 import 'package:injectable/injectable.dart';
+import 'package:tus_class/features/login/domain/repositories/login_repository.dart';
 
 import '../../../../core/errors/failures.dart';
 import '../../../../core/usecases/usecase.dart';
-import '../repositories/auth_repository.dart';
 
 @injectable
 class IsFirstRunUsecase implements UseCase<bool, NoParams> {
-  final AuthRepository repository;
+  final LoginRepository repository;
 
   IsFirstRunUsecase(this.repository);
 

@@ -21,10 +21,8 @@ class AboutBloc extends Bloc<AboutEvent, AboutState> {
   AboutBloc({
     @required InitAboutUsecase initAboutUsecase,
   })  : assert(initAboutUsecase != null),
-        _initAboutUsecase = initAboutUsecase;
-
-  @override
-  AboutState get initialState => AboutState.initial();
+        _initAboutUsecase = initAboutUsecase,
+        super(AboutState.initial());
 
   @override
   Stream<AboutState> mapEventToState(

@@ -31,10 +31,8 @@ class AllCurriculumBloc extends Bloc<AllCurriculumEvent, AllCurriculumState> {
         assert(fetchAllCurriculumUsecase != null),
         _getAllCurriculumUsecase = getAllCurriculumUsecase,
         _cacheAllCurriculumUsecase = cacheAllCurriculumUsecase,
-        _fetchAllCurriculumUsecase = fetchAllCurriculumUsecase;
-
-  @override
-  AllCurriculumState get initialState => AllCurriculumState.initial();
+        _fetchAllCurriculumUsecase = fetchAllCurriculumUsecase,
+        super(AllCurriculumState.initial());
 
   @override
   Stream<AllCurriculumState> mapEventToState(

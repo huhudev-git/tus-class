@@ -25,10 +25,8 @@ class SyllabusSearchBloc extends Bloc<SyllabusSearchEvent, SyllabusSearchState> 
   })  : assert(searchSyllabusUsecase != null),
         assert(fetchSyllabusUsecase != null),
         _searchSyllabusUsecase = searchSyllabusUsecase,
-        _fetchSyllabusUsecase = fetchSyllabusUsecase;
-
-  @override
-  SyllabusSearchState get initialState => SyllabusSearchState.initial();
+        _fetchSyllabusUsecase = fetchSyllabusUsecase,
+        super(SyllabusSearchState.initial());
 
   @override
   Stream<SyllabusSearchState> mapEventToState(

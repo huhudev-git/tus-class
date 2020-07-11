@@ -36,10 +36,8 @@ class CurriculumSettingBloc extends Bloc<CurriculumSettingEvent, CurriculumSetti
         _getCurriculumSettingUsecase = getCurriculumSettingUsecase,
         _getAllCurriculumSettingUsecase = getAllCurriculumSettingUsecase,
         _saveCurriculumSettingUsecase = saveCurriculumSettingUsecase,
-        _deleteCurriculumSettingUsecase = deleteCurriculumSettingUsecase;
-
-  @override
-  CurriculumSettingState get initialState => CurriculumSettingState.initial();
+        _deleteCurriculumSettingUsecase = deleteCurriculumSettingUsecase,
+        super(CurriculumSettingState.initial());
 
   @override
   Stream<CurriculumSettingState> mapEventToState(

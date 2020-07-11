@@ -28,10 +28,8 @@ class I18nBloc extends Bloc<I18nEvent, I18nState> {
   })  : assert(getI18nUsecase != null),
         assert(setI18nUsecase != null),
         _getI18nUsecase = getI18nUsecase,
-        _setI18nUsecase = setI18nUsecase;
-
-  @override
-  I18nState get initialState => I18nState.initial(locale: defaultLanguageCode);
+        _setI18nUsecase = setI18nUsecase,
+        super(I18nState.initial(locale: defaultLanguageCode));
 
   @override
   Stream<I18nState> mapEventToState(
