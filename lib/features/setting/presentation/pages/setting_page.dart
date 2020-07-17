@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
+import 'package:store_redirect/store_redirect.dart';
 
 import '../../../../injection_container.dart';
 import '../../../../lang/localizations.dart';
 import '../i18n_bloc/i18n_bloc.dart';
-import '../setting_bloc/setting_bloc.dart';
+import '../version_bloc/version_bloc.dart' as vb;
+import '../setting_bloc/setting_bloc.dart' as sb;
 import '../widgets/setting_list_tile.dart';
 import 'about_page.dart';
 import 'language_page.dart';
@@ -19,9 +21,16 @@ class _SettingPageState extends State<SettingPage> with AutomaticKeepAliveClient
   @override
   Widget build(BuildContext context) {
     super.build(context);
-    return BlocProvider(
-      create: (context) => getIt<SettingBloc>()..add(const SettingEvent.init()),
-      child: BlocBuilder<SettingBloc, SettingState>(
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (context) => getIt<sb.SettingBloc>()..add(const sb.SettingEvent.init()),
+        ),
+        BlocProvider(
+          create: (context) => getIt<vb.VersionBloc>()..add(const vb.VersionEvent.check()),
+        ),
+      ],
+      child: BlocBuilder<sb.SettingBloc, sb.SettingState>(
         buildWhen: (previous, current) {
           if (current.error != null) {
             Scaffold.of(context)
@@ -59,7 +68,7 @@ class _SettingPage extends StatefulWidget {
 }
 
 class __SettingPageState extends State<_SettingPage> {
-  SettingState get state => BlocProvider.of<SettingBloc>(context).state;
+  sb.SettingState get state => BlocProvider.of<sb.SettingBloc>(context).state;
   String _username, _password;
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
@@ -77,19 +86,19 @@ class __SettingPageState extends State<_SettingPage> {
         children: <Widget>[
           _title(AppLocalizations.of(context).translate('LABEL_ACCOUNT')),
           Divider(height: 0.0),
-          _resetAutoLoginListTile(BlocProvider.of<SettingBloc>(context)),
+          _resetAutoLoginListTile(BlocProvider.of<sb.SettingBloc>(context)),
           Divider(height: 0.0),
           _enableAutoLoginListTile(),
           Divider(height: 0.0),
           _title(AppLocalizations.of(context).translate('LABEL_CACHE_FILE')),
           Divider(height: 0.0),
-          _deleteCacheFileListTile(BlocProvider.of<SettingBloc>(context)),
+          _deleteCacheFileListTile(BlocProvider.of<sb.SettingBloc>(context)),
           Divider(height: 0.0),
           _title(AppLocalizations.of(context).translate('LABEL_LANGUAGE')),
           Divider(height: 0.0),
           SettingListTile(
             icon: Icons.language,
-            color: Colors.green,
+            color: Colors.purple,
             text: AppLocalizations.of(context).translate('LABEL_LANGUAGE'),
             onTap: () {
               Navigator.of(context).push(
@@ -104,6 +113,111 @@ class __SettingPageState extends State<_SettingPage> {
           ),
           Divider(height: 0.0),
           _title(AppLocalizations.of(context).translate('LABEL_ABOUT')),
+          Divider(height: 0.0),
+          BlocBuilder<vb.VersionBloc, vb.VersionState>(
+            builder: (context, state) {
+              return state.maybeMap(
+                orElse: () => SettingListTile(
+                  icon: Icons.update,
+                  color: Colors.green,
+                  text: AppLocalizations.of(context).translate('LABEL_UPDATE'),
+                  onTap: () {},
+                  trailing: SizedBox(
+                    width: 20.0,
+                    height: 20.0,
+                    child: CircularProgressIndicator(
+                      strokeWidth: 2.0,
+                    ),
+                  ),
+                ),
+                failed: (state) => SettingListTile(
+                  icon: Icons.update,
+                  color: Colors.green,
+                  text: AppLocalizations.of(context).translate('LABEL_UPDATE'),
+                  onTap: () {
+                    BlocProvider.of<vb.VersionBloc>(context).add(const vb.VersionEvent.check());
+                  },
+                  trailing: Icon(
+                    Icons.clear,
+                    color: Colors.red,
+                  ),
+                ),
+                loaded: (state) => SettingListTile(
+                  icon: Icons.update,
+                  color: state.hasUpdate ? Colors.orange : Colors.green,
+                  text: AppLocalizations.of(context).translate('LABEL_UPDATE'),
+                  onTap: () {
+                    if (state.hasUpdate) {
+                      showDialog<void>(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                            backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+                            title: Text(AppLocalizations.of(context).translate('MESSAGE_HAS_UPDATE')),
+                            content: SingleChildScrollView(
+                              child: ListBody(
+                                children: <Widget>[
+                                  Text(
+                                    AppLocalizations.of(context).translate('MESSAGE_HAS_UPDATE_TEXT'),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            actions: <Widget>[
+                              NeumorphicButton(
+                                onPressed: () {
+                                  StoreRedirect.redirect(androidAppId: "com.huhu.tusclass", iOSAppId: "1513692491");
+                                  Navigator.of(context).pop();
+                                },
+                                child: Text(
+                                  AppLocalizations.of(context).translate('LABEL_YES'),
+                                  style: TextStyle(color: Colors.green),
+                                ),
+                              ),
+                              NeumorphicButton(
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                },
+                                child: Text(
+                                  AppLocalizations.of(context).translate('LABEL_NO'),
+                                  style: TextStyle(color: Colors.red),
+                                ),
+                              ),
+                            ],
+                          );
+                        },
+                      );
+                    } else {
+                      Scaffold.of(context)
+                        ..hideCurrentSnackBar()
+                        ..showSnackBar(
+                          SnackBar(
+                            content: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(AppLocalizations.of(context).translate('MESSAGE_NO_UPDATE')),
+                                Icon(Icons.check),
+                              ],
+                            ),
+                            backgroundColor: Colors.green,
+                          ),
+                        );
+                    }
+                  },
+                  trailing: state.hasUpdate
+                      ? Icon(
+                          Icons.error,
+                          color: Colors.orange,
+                        )
+                      : Icon(
+                          Icons.check,
+                          color: Colors.green,
+                        ),
+                ),
+              );
+            },
+          ),
           Divider(height: 0.0),
           SettingListTile(
             icon: Icons.info_outline,
@@ -152,7 +266,7 @@ class __SettingPageState extends State<_SettingPage> {
                 actions: <Widget>[
                   NeumorphicButton(
                     onPressed: () {
-                      bloc.add(SettingEvent.deleteAuthToken());
+                      bloc.add(sb.SettingEvent.deleteAuthToken());
                       Navigator.of(context).pop();
                     },
                     child: Text(
@@ -254,7 +368,7 @@ class __SettingPageState extends State<_SettingPage> {
                       if (_formKey.currentState.validate()) {
                         _formKey.currentState.save();
                         bloc.add(
-                          SettingEvent.setAuthToken(
+                          sb.SettingEvent.setAuthToken(
                             username: _username,
                             password: _password,
                           ),
@@ -294,8 +408,8 @@ class __SettingPageState extends State<_SettingPage> {
       value: state.setting.hasToken && state.setting.isAutoLogin,
       onChanged: state.setting.hasToken
           ? (bool value) {
-              BlocProvider.of<SettingBloc>(context).add(
-                SettingEvent.setAutoLogin(
+              BlocProvider.of<sb.SettingBloc>(context).add(
+                sb.SettingEvent.setAutoLogin(
                   status: !state.setting.isAutoLogin,
                 ),
               );
@@ -342,7 +456,7 @@ class __SettingPageState extends State<_SettingPage> {
               actions: <Widget>[
                 NeumorphicButton(
                   onPressed: () {
-                    bloc.add(SettingEvent.deleteCacheFiles());
+                    bloc.add(sb.SettingEvent.deleteCacheFiles());
                     Navigator.of(context).pop();
                   },
                   child: Text(

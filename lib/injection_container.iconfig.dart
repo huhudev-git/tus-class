@@ -16,6 +16,9 @@ import 'package:tus_class/core/tus_client/repositories/tus_repository.dart';
 import 'package:tus_class/features/teacher/data/datasources/teacher_data_source.dart';
 import 'package:tus_class/features/teacher/data/repositories/teacher_repository_impl.dart';
 import 'package:tus_class/features/teacher/domain/repositories/teacher_repository.dart';
+import 'package:tus_class/features/setting/data/datasources/version_data_source.dart';
+import 'package:tus_class/features/setting/data/repositories/version_repository_impl.dart';
+import 'package:tus_class/features/setting/domain/repositories/version_repository.dart';
 import 'package:tus_class/features/setting/data/datasources/about_data_source.dart';
 import 'package:tus_class/features/setting/data/repositories/about_repository_impl.dart';
 import 'package:tus_class/features/setting/domain/repositories/about_repository.dart';
@@ -73,6 +76,7 @@ import 'package:tus_class/features/syllabus_search/data/datasources/syllabus_sea
 import 'package:tus_class/features/syllabus_search/data/repositories/syllabus_search_repository_impl.dart';
 import 'package:tus_class/features/syllabus_search/domain/repositories/syllabus_search_repository.dart';
 import 'package:tus_class/features/teacher/presentation/teacher_bloc/teacher_bloc.dart';
+import 'package:tus_class/features/setting/domain/usecase/version_check_usecase.dart';
 import 'package:tus_class/features/setting/presentation/about_bloc/about_bloc.dart';
 import 'package:tus_class/features/curriculum/presentation/attendance_rate_bloc/attendance_rate_bloc.dart';
 import 'package:tus_class/features/auth/presentation/bloc/auth_bloc.dart';
@@ -116,6 +120,7 @@ import 'package:tus_class/features/syllabus_search/domain/usecase/syllabus_detai
 import 'package:tus_class/features/syllabus_search/presentation/syllabus_search_bloc/syllabus_search_bloc.dart';
 import 'package:tus_class/features/syllabus_search/presentation/syllabus_search_detail_bloc/syllabus_search_detail_bloc.dart';
 import 'package:tus_class/features/syllabus_search/presentation/syllabus_search_filter_bloc/syllabus_search_filter_bloc.dart';
+import 'package:tus_class/features/setting/presentation/version_bloc/version_bloc.dart';
 import 'package:tus_class/features/curriculum/presentation/all_curriculum_bloc/all_curriculum_bloc.dart';
 import 'package:tus_class/features/message/presentation/category_bloc/category_bloc.dart';
 import 'package:tus_class/features/message/presentation/message_entry_bloc/message_entry_bloc.dart';
@@ -140,6 +145,10 @@ Future<void> $initGetIt(GetIt g, {String environment}) async {
       () => TeacherDataSourceImpl(tusRepository: g<TUSRepository>()));
   g.registerFactory<TeacherRepository>(
       () => TeacherRepositoryImpl(dataSource: g<TeacherDataSource>()));
+  g.registerLazySingleton<VersionDataSource>(
+      () => VersionDataSourceImpl(packageInfo: g<PackageInfo>()));
+  g.registerFactory<VersionRepository>(
+      () => VersionRepositoryImpl(dataSource: g<VersionDataSource>()));
   g.registerLazySingleton<AboutDataSource>(
       () => AboutDataSourceImpl(packageInfo: g<PackageInfo>()));
   g.registerFactory<AboutRepository>(
@@ -238,6 +247,8 @@ Future<void> $initGetIt(GetIt g, {String environment}) async {
       SyllabusSearchRepositoryImpl(dataSource: g<SyllabusSearchDataSource>()));
   g.registerFactory<TeacherBloc>(
       () => TeacherBloc(fetchTeacherUsecase: g<FetchTeacherUsecase>()));
+  g.registerFactory<VersionCheckUsecase>(
+      () => VersionCheckUsecase(g<VersionRepository>()));
   g.registerFactory<AboutBloc>(
       () => AboutBloc(initAboutUsecase: g<InitAboutUsecase>()));
   g.registerFactory<AttendanceRateBloc>(() => AttendanceRateBloc(
@@ -350,6 +361,8 @@ Future<void> $initGetIt(GetIt g, {String environment}) async {
       syllabusDetailBackUsecase: g<SyllabusDetailBackUsecase>()));
   g.registerFactory<SyllabusSearchFilterBloc>(() => SyllabusSearchFilterBloc(
       fetchSyllabusSearchFilterUsecase: g<FetchSyllabusSearchFilterUsecase>()));
+  g.registerFactory<VersionBloc>(
+      () => VersionBloc(versionCheckUsecase: g<VersionCheckUsecase>()));
   g.registerFactory<AllCurriculumBloc>(() => AllCurriculumBloc(
         getAllCurriculumUsecase: g<GetAllCurriculumUsecase>(),
         cacheAllCurriculumUsecase: g<CacheAllCurriculumUsecase>(),
