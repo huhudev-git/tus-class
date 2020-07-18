@@ -33,7 +33,7 @@
 ## Introduction
 
 [![Platform](https://img.shields.io/badge/Platform-Flutter-green.svg)](https://flutter.io)
-![Version](https://img.shields.io/badge/dynamic/yaml?url=https://raw.githubusercontent.com/huhugiter/tus-class/dev/pubspec.yaml&label=Version&query=version&color=orange)
+![Version](https://img.shields.io/badge/dynamic/yaml?url=https://raw.githubusercontent.com/huhugiter/tus-class/master/pubspec.yaml&label=Version&query=version&color=orange)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://choosealicense.com/licenses/mit/)
 
 A Front-end APP for [TUS CLASS](https://class.admin.tus.ac.jp/up/faces/login/Com00501A.jsp). This project is only for Tokyo University of Science students. Powered by [Flutter](https://flutter.dev/)
@@ -65,7 +65,7 @@ A Front-end APP for [TUS CLASS](https://class.admin.tus.ac.jp/up/faces/login/Com
 
 > :exclamation: **Important**: Only the Faculty of Engineering is currently tested. There may be a lot of places without adaptation!
 
-If you meet any bugs or issues, please contact with developer, or file an issue and describe what operation caused the bugs.Please file any issues, bugs, or feature requests in the [Issues](https://github.com/huhugiter/TUS_CLASS/issues). Thx :kissing_heart:
+If you meet any bugs or issues, please contact with developer, or file an issue and describe what operation caused the bugs. Please file any issues, bugs, or feature requests in the [Issues](https://github.com/huhugiter/TUS_CLASS/issues). Thx :kissing_heart:
 
 ### Known bugs / issues
 
@@ -96,8 +96,8 @@ Please make sure to update tests as appropriate.
 
 - [x] I18N
 - [x] Course may have more than one period
+- [x] Version check
 - [ ] Theme
-- [ ] Version check
 - [ ] Schedule table cell customize
 - [ ] More user-friendly Exception handle
 
