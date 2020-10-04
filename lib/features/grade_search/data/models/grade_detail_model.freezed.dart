@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'grade_detail_model.dart';
 
@@ -12,9 +12,11 @@ GradeDetailModel _$GradeDetailModelFromJson(Map<String, dynamic> json) {
   return _GradeDetailModel.fromJson(json);
 }
 
+/// @nodoc
 class _$GradeDetailModelTearOff {
   const _$GradeDetailModelTearOff();
 
+// ignore: unused_element
   _GradeDetailModel call(
       {@required String code,
       @required String courseJp,
@@ -91,11 +93,18 @@ class _$GradeDetailModelTearOff {
       dayPeriod: dayPeriod,
     );
   }
+
+// ignore: unused_element
+  GradeDetailModel fromJson(Map<String, Object> json) {
+    return GradeDetailModel.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $GradeDetailModel = _$GradeDetailModelTearOff();
 
+/// @nodoc
 mixin _$GradeDetailModel {
   String get code;
   String get courseJp;
@@ -138,6 +147,7 @@ mixin _$GradeDetailModel {
   $GradeDetailModelCopyWith<GradeDetailModel> get copyWith;
 }
 
+/// @nodoc
 abstract class $GradeDetailModelCopyWith<$Res> {
   factory $GradeDetailModelCopyWith(
           GradeDetailModel value, $Res Function(GradeDetailModel) then) =
@@ -181,6 +191,7 @@ abstract class $GradeDetailModelCopyWith<$Res> {
       String dayPeriod});
 }
 
+/// @nodoc
 class _$GradeDetailModelCopyWithImpl<$Res>
     implements $GradeDetailModelCopyWith<$Res> {
   _$GradeDetailModelCopyWithImpl(this._value, this._then);
@@ -291,6 +302,7 @@ class _$GradeDetailModelCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$GradeDetailModelCopyWith<$Res>
     implements $GradeDetailModelCopyWith<$Res> {
   factory _$GradeDetailModelCopyWith(
@@ -336,6 +348,7 @@ abstract class _$GradeDetailModelCopyWith<$Res>
       String dayPeriod});
 }
 
+/// @nodoc
 class __$GradeDetailModelCopyWithImpl<$Res>
     extends _$GradeDetailModelCopyWithImpl<$Res>
     implements _$GradeDetailModelCopyWith<$Res> {
@@ -449,6 +462,8 @@ class __$GradeDetailModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_GradeDetailModel extends _GradeDetailModel {
   const _$_GradeDetailModel(
       {@required this.code,

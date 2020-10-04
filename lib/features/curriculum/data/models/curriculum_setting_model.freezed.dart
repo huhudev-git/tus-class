@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'curriculum_setting_model.dart';
 
@@ -13,9 +13,11 @@ CurriculumSettingModel _$CurriculumSettingModelFromJson(
   return _CurriculumSettingModel.fromJson(json);
 }
 
+/// @nodoc
 class _$CurriculumSettingModelTearOff {
   const _$CurriculumSettingModelTearOff();
 
+// ignore: unused_element
   _CurriculumSettingModel call(
       {@required String course,
       @required String code,
@@ -36,11 +38,18 @@ class _$CurriculumSettingModelTearOff {
       grade: grade,
     );
   }
+
+// ignore: unused_element
+  CurriculumSettingModel fromJson(Map<String, Object> json) {
+    return CurriculumSettingModel.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $CurriculumSettingModel = _$CurriculumSettingModelTearOff();
 
+/// @nodoc
 mixin _$CurriculumSettingModel {
   String get course;
   String get code;
@@ -55,6 +64,7 @@ mixin _$CurriculumSettingModel {
   $CurriculumSettingModelCopyWith<CurriculumSettingModel> get copyWith;
 }
 
+/// @nodoc
 abstract class $CurriculumSettingModelCopyWith<$Res> {
   factory $CurriculumSettingModelCopyWith(CurriculumSettingModel value,
           $Res Function(CurriculumSettingModel) then) =
@@ -70,6 +80,7 @@ abstract class $CurriculumSettingModelCopyWith<$Res> {
       String grade});
 }
 
+/// @nodoc
 class _$CurriculumSettingModelCopyWithImpl<$Res>
     implements $CurriculumSettingModelCopyWith<$Res> {
   _$CurriculumSettingModelCopyWithImpl(this._value, this._then);
@@ -103,6 +114,7 @@ class _$CurriculumSettingModelCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$CurriculumSettingModelCopyWith<$Res>
     implements $CurriculumSettingModelCopyWith<$Res> {
   factory _$CurriculumSettingModelCopyWith(_CurriculumSettingModel value,
@@ -120,6 +132,7 @@ abstract class _$CurriculumSettingModelCopyWith<$Res>
       String grade});
 }
 
+/// @nodoc
 class __$CurriculumSettingModelCopyWithImpl<$Res>
     extends _$CurriculumSettingModelCopyWithImpl<$Res>
     implements _$CurriculumSettingModelCopyWith<$Res> {
@@ -156,6 +169,8 @@ class __$CurriculumSettingModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_CurriculumSettingModel extends _CurriculumSettingModel {
   const _$_CurriculumSettingModel(
       {@required this.course,

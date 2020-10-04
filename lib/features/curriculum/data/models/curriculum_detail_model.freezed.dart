@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'curriculum_detail_model.dart';
 
@@ -13,9 +13,11 @@ CurriculumDetailModel _$CurriculumDetailModelFromJson(
   return _CurriculumDetailModel.fromJson(json);
 }
 
+/// @nodoc
 class _$CurriculumDetailModelTearOff {
   const _$CurriculumDetailModelTearOff();
 
+// ignore: unused_element
   _CurriculumDetailModel call(
       {@required String code,
       @required String courseJp,
@@ -92,11 +94,18 @@ class _$CurriculumDetailModelTearOff {
       dayPeriod: dayPeriod,
     );
   }
+
+// ignore: unused_element
+  CurriculumDetailModel fromJson(Map<String, Object> json) {
+    return CurriculumDetailModel.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $CurriculumDetailModel = _$CurriculumDetailModelTearOff();
 
+/// @nodoc
 mixin _$CurriculumDetailModel {
   String get code;
   String get courseJp;
@@ -139,6 +148,7 @@ mixin _$CurriculumDetailModel {
   $CurriculumDetailModelCopyWith<CurriculumDetailModel> get copyWith;
 }
 
+/// @nodoc
 abstract class $CurriculumDetailModelCopyWith<$Res> {
   factory $CurriculumDetailModelCopyWith(CurriculumDetailModel value,
           $Res Function(CurriculumDetailModel) then) =
@@ -182,6 +192,7 @@ abstract class $CurriculumDetailModelCopyWith<$Res> {
       String dayPeriod});
 }
 
+/// @nodoc
 class _$CurriculumDetailModelCopyWithImpl<$Res>
     implements $CurriculumDetailModelCopyWith<$Res> {
   _$CurriculumDetailModelCopyWithImpl(this._value, this._then);
@@ -292,6 +303,7 @@ class _$CurriculumDetailModelCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$CurriculumDetailModelCopyWith<$Res>
     implements $CurriculumDetailModelCopyWith<$Res> {
   factory _$CurriculumDetailModelCopyWith(_CurriculumDetailModel value,
@@ -337,6 +349,7 @@ abstract class _$CurriculumDetailModelCopyWith<$Res>
       String dayPeriod});
 }
 
+/// @nodoc
 class __$CurriculumDetailModelCopyWithImpl<$Res>
     extends _$CurriculumDetailModelCopyWithImpl<$Res>
     implements _$CurriculumDetailModelCopyWith<$Res> {
@@ -450,6 +463,8 @@ class __$CurriculumDetailModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_CurriculumDetailModel extends _CurriculumDetailModel {
   const _$_CurriculumDetailModel(
       {@required this.code,

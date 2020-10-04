@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'about_bloc.dart';
 
@@ -9,25 +9,50 @@ part of 'about_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$AboutEventTearOff {
   const _$AboutEventTearOff();
 
+// ignore: unused_element
   Init init() {
     return const Init();
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $AboutEvent = _$AboutEventTearOff();
 
-mixin _$AboutEvent {}
+/// @nodoc
+mixin _$AboutEvent {
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result init(),
+  });
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result init(),
+    @required Result orElse(),
+  });
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result init(Init value),
+  });
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result init(Init value),
+    @required Result orElse(),
+  });
+}
 
+/// @nodoc
 abstract class $AboutEventCopyWith<$Res> {
   factory $AboutEventCopyWith(
           AboutEvent value, $Res Function(AboutEvent) then) =
       _$AboutEventCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$AboutEventCopyWithImpl<$Res> implements $AboutEventCopyWith<$Res> {
   _$AboutEventCopyWithImpl(this._value, this._then);
 
@@ -36,11 +61,13 @@ class _$AboutEventCopyWithImpl<$Res> implements $AboutEventCopyWith<$Res> {
   final $Res Function(AboutEvent) _then;
 }
 
+/// @nodoc
 abstract class $InitCopyWith<$Res> {
   factory $InitCopyWith(Init value, $Res Function(Init) then) =
       _$InitCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InitCopyWithImpl<$Res> extends _$AboutEventCopyWithImpl<$Res>
     implements $InitCopyWith<$Res> {
   _$InitCopyWithImpl(Init _value, $Res Function(Init) _then)
@@ -50,6 +77,7 @@ class _$InitCopyWithImpl<$Res> extends _$AboutEventCopyWithImpl<$Res>
   Init get _value => super._value as Init;
 }
 
+/// @nodoc
 class _$Init implements Init {
   const _$Init();
 
@@ -65,15 +93,61 @@ class _$Init implements Init {
 
   @override
   int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result init(),
+  }) {
+    assert(init != null);
+    return init();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result init(),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (init != null) {
+      return init();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result init(Init value),
+  }) {
+    assert(init != null);
+    return init(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result init(Init value),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (init != null) {
+      return init(this);
+    }
+    return orElse();
+  }
 }
 
 abstract class Init implements AboutEvent {
   const factory Init() = _$Init;
 }
 
+/// @nodoc
 class _$AboutStateTearOff {
   const _$AboutStateTearOff();
 
+// ignore: unused_element
   _AboutState call({About about, Failure error}) {
     return _AboutState(
       about: about,
@@ -82,9 +156,11 @@ class _$AboutStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $AboutState = _$AboutStateTearOff();
 
+/// @nodoc
 mixin _$AboutState {
   About get about;
   Failure get error;
@@ -92,6 +168,7 @@ mixin _$AboutState {
   $AboutStateCopyWith<AboutState> get copyWith;
 }
 
+/// @nodoc
 abstract class $AboutStateCopyWith<$Res> {
   factory $AboutStateCopyWith(
           AboutState value, $Res Function(AboutState) then) =
@@ -99,6 +176,7 @@ abstract class $AboutStateCopyWith<$Res> {
   $Res call({About about, Failure error});
 }
 
+/// @nodoc
 class _$AboutStateCopyWithImpl<$Res> implements $AboutStateCopyWith<$Res> {
   _$AboutStateCopyWithImpl(this._value, this._then);
 
@@ -118,6 +196,7 @@ class _$AboutStateCopyWithImpl<$Res> implements $AboutStateCopyWith<$Res> {
   }
 }
 
+/// @nodoc
 abstract class _$AboutStateCopyWith<$Res> implements $AboutStateCopyWith<$Res> {
   factory _$AboutStateCopyWith(
           _AboutState value, $Res Function(_AboutState) then) =
@@ -126,6 +205,7 @@ abstract class _$AboutStateCopyWith<$Res> implements $AboutStateCopyWith<$Res> {
   $Res call({About about, Failure error});
 }
 
+/// @nodoc
 class __$AboutStateCopyWithImpl<$Res> extends _$AboutStateCopyWithImpl<$Res>
     implements _$AboutStateCopyWith<$Res> {
   __$AboutStateCopyWithImpl(
@@ -147,6 +227,7 @@ class __$AboutStateCopyWithImpl<$Res> extends _$AboutStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_AboutState implements _AboutState {
   const _$_AboutState({this.about, this.error});
 

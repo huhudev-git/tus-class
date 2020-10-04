@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'setting_bloc.dart';
 
@@ -9,23 +9,28 @@ part of 'setting_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$SettingEventTearOff {
   const _$SettingEventTearOff();
 
+// ignore: unused_element
   Init init() {
     return const Init();
   }
 
+// ignore: unused_element
   SetAutoLogin setAutoLogin({bool status}) {
     return SetAutoLogin(
       status: status,
     );
   }
 
+// ignore: unused_element
   DeleteAuthToken deleteAuthToken() {
     return const DeleteAuthToken();
   }
 
+// ignore: unused_element
   SetAuthToken setAuthToken({String username, String password}) {
     return SetAuthToken(
       username: username,
@@ -33,14 +38,17 @@ class _$SettingEventTearOff {
     );
   }
 
+// ignore: unused_element
   DeleteCacheFiles deleteCacheFiles() {
     return const DeleteCacheFiles();
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $SettingEvent = _$SettingEventTearOff();
 
+/// @nodoc
 mixin _$SettingEvent {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -78,12 +86,14 @@ mixin _$SettingEvent {
   });
 }
 
+/// @nodoc
 abstract class $SettingEventCopyWith<$Res> {
   factory $SettingEventCopyWith(
           SettingEvent value, $Res Function(SettingEvent) then) =
       _$SettingEventCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$SettingEventCopyWithImpl<$Res> implements $SettingEventCopyWith<$Res> {
   _$SettingEventCopyWithImpl(this._value, this._then);
 
@@ -92,11 +102,13 @@ class _$SettingEventCopyWithImpl<$Res> implements $SettingEventCopyWith<$Res> {
   final $Res Function(SettingEvent) _then;
 }
 
+/// @nodoc
 abstract class $InitCopyWith<$Res> {
   factory $InitCopyWith(Init value, $Res Function(Init) then) =
       _$InitCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InitCopyWithImpl<$Res> extends _$SettingEventCopyWithImpl<$Res>
     implements $InitCopyWith<$Res> {
   _$InitCopyWithImpl(Init _value, $Res Function(Init) _then)
@@ -106,6 +118,7 @@ class _$InitCopyWithImpl<$Res> extends _$SettingEventCopyWithImpl<$Res>
   Init get _value => super._value as Init;
 }
 
+/// @nodoc
 class _$Init implements Init {
   const _$Init();
 
@@ -195,6 +208,7 @@ abstract class Init implements SettingEvent {
   const factory Init() = _$Init;
 }
 
+/// @nodoc
 abstract class $SetAutoLoginCopyWith<$Res> {
   factory $SetAutoLoginCopyWith(
           SetAutoLogin value, $Res Function(SetAutoLogin) then) =
@@ -202,6 +216,7 @@ abstract class $SetAutoLoginCopyWith<$Res> {
   $Res call({bool status});
 }
 
+/// @nodoc
 class _$SetAutoLoginCopyWithImpl<$Res> extends _$SettingEventCopyWithImpl<$Res>
     implements $SetAutoLoginCopyWith<$Res> {
   _$SetAutoLoginCopyWithImpl(
@@ -221,6 +236,7 @@ class _$SetAutoLoginCopyWithImpl<$Res> extends _$SettingEventCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$SetAutoLogin implements SetAutoLogin {
   const _$SetAutoLogin({this.status});
 
@@ -324,12 +340,14 @@ abstract class SetAutoLogin implements SettingEvent {
   $SetAutoLoginCopyWith<SetAutoLogin> get copyWith;
 }
 
+/// @nodoc
 abstract class $DeleteAuthTokenCopyWith<$Res> {
   factory $DeleteAuthTokenCopyWith(
           DeleteAuthToken value, $Res Function(DeleteAuthToken) then) =
       _$DeleteAuthTokenCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$DeleteAuthTokenCopyWithImpl<$Res>
     extends _$SettingEventCopyWithImpl<$Res>
     implements $DeleteAuthTokenCopyWith<$Res> {
@@ -341,6 +359,7 @@ class _$DeleteAuthTokenCopyWithImpl<$Res>
   DeleteAuthToken get _value => super._value as DeleteAuthToken;
 }
 
+/// @nodoc
 class _$DeleteAuthToken implements DeleteAuthToken {
   const _$DeleteAuthToken();
 
@@ -430,6 +449,7 @@ abstract class DeleteAuthToken implements SettingEvent {
   const factory DeleteAuthToken() = _$DeleteAuthToken;
 }
 
+/// @nodoc
 abstract class $SetAuthTokenCopyWith<$Res> {
   factory $SetAuthTokenCopyWith(
           SetAuthToken value, $Res Function(SetAuthToken) then) =
@@ -437,6 +457,7 @@ abstract class $SetAuthTokenCopyWith<$Res> {
   $Res call({String username, String password});
 }
 
+/// @nodoc
 class _$SetAuthTokenCopyWithImpl<$Res> extends _$SettingEventCopyWithImpl<$Res>
     implements $SetAuthTokenCopyWith<$Res> {
   _$SetAuthTokenCopyWithImpl(
@@ -458,6 +479,7 @@ class _$SetAuthTokenCopyWithImpl<$Res> extends _$SettingEventCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$SetAuthToken implements SetAuthToken {
   const _$SetAuthToken({this.username, this.password});
 
@@ -571,12 +593,14 @@ abstract class SetAuthToken implements SettingEvent {
   $SetAuthTokenCopyWith<SetAuthToken> get copyWith;
 }
 
+/// @nodoc
 abstract class $DeleteCacheFilesCopyWith<$Res> {
   factory $DeleteCacheFilesCopyWith(
           DeleteCacheFiles value, $Res Function(DeleteCacheFiles) then) =
       _$DeleteCacheFilesCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$DeleteCacheFilesCopyWithImpl<$Res>
     extends _$SettingEventCopyWithImpl<$Res>
     implements $DeleteCacheFilesCopyWith<$Res> {
@@ -588,6 +612,7 @@ class _$DeleteCacheFilesCopyWithImpl<$Res>
   DeleteCacheFiles get _value => super._value as DeleteCacheFiles;
 }
 
+/// @nodoc
 class _$DeleteCacheFiles implements DeleteCacheFiles {
   const _$DeleteCacheFiles();
 
@@ -677,9 +702,11 @@ abstract class DeleteCacheFiles implements SettingEvent {
   const factory DeleteCacheFiles() = _$DeleteCacheFiles;
 }
 
+/// @nodoc
 class _$SettingStateTearOff {
   const _$SettingStateTearOff();
 
+// ignore: unused_element
   _SettingState call({Setting setting, Failure error}) {
     return _SettingState(
       setting: setting,
@@ -688,9 +715,11 @@ class _$SettingStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $SettingState = _$SettingStateTearOff();
 
+/// @nodoc
 mixin _$SettingState {
   Setting get setting;
   Failure get error;
@@ -698,6 +727,7 @@ mixin _$SettingState {
   $SettingStateCopyWith<SettingState> get copyWith;
 }
 
+/// @nodoc
 abstract class $SettingStateCopyWith<$Res> {
   factory $SettingStateCopyWith(
           SettingState value, $Res Function(SettingState) then) =
@@ -705,6 +735,7 @@ abstract class $SettingStateCopyWith<$Res> {
   $Res call({Setting setting, Failure error});
 }
 
+/// @nodoc
 class _$SettingStateCopyWithImpl<$Res> implements $SettingStateCopyWith<$Res> {
   _$SettingStateCopyWithImpl(this._value, this._then);
 
@@ -724,6 +755,7 @@ class _$SettingStateCopyWithImpl<$Res> implements $SettingStateCopyWith<$Res> {
   }
 }
 
+/// @nodoc
 abstract class _$SettingStateCopyWith<$Res>
     implements $SettingStateCopyWith<$Res> {
   factory _$SettingStateCopyWith(
@@ -733,6 +765,7 @@ abstract class _$SettingStateCopyWith<$Res>
   $Res call({Setting setting, Failure error});
 }
 
+/// @nodoc
 class __$SettingStateCopyWithImpl<$Res> extends _$SettingStateCopyWithImpl<$Res>
     implements _$SettingStateCopyWith<$Res> {
   __$SettingStateCopyWithImpl(
@@ -754,6 +787,7 @@ class __$SettingStateCopyWithImpl<$Res> extends _$SettingStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_SettingState implements _SettingState {
   const _$_SettingState({this.setting, this.error});
 

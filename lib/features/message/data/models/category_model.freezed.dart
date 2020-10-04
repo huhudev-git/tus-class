@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'category_model.dart';
 
@@ -12,9 +12,11 @@ CategoryModel _$CategoryModelFromJson(Map<String, dynamic> json) {
   return _CategoryModel.fromJson(json);
 }
 
+/// @nodoc
 class _$CategoryModelTearOff {
   const _$CategoryModelTearOff();
 
+// ignore: unused_element
   _CategoryModel call(
       {@required int index,
       @required List<MessageModel> messages,
@@ -29,11 +31,18 @@ class _$CategoryModelTearOff {
       isLastPage: isLastPage,
     );
   }
+
+// ignore: unused_element
+  CategoryModel fromJson(Map<String, Object> json) {
+    return CategoryModel.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $CategoryModel = _$CategoryModelTearOff();
 
+/// @nodoc
 mixin _$CategoryModel {
   int get index;
   List<MessageModel> get messages;
@@ -45,6 +54,7 @@ mixin _$CategoryModel {
   $CategoryModelCopyWith<CategoryModel> get copyWith;
 }
 
+/// @nodoc
 abstract class $CategoryModelCopyWith<$Res> {
   factory $CategoryModelCopyWith(
           CategoryModel value, $Res Function(CategoryModel) then) =
@@ -57,6 +67,7 @@ abstract class $CategoryModelCopyWith<$Res> {
       bool isLastPage});
 }
 
+/// @nodoc
 class _$CategoryModelCopyWithImpl<$Res>
     implements $CategoryModelCopyWith<$Res> {
   _$CategoryModelCopyWithImpl(this._value, this._then);
@@ -86,6 +97,7 @@ class _$CategoryModelCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$CategoryModelCopyWith<$Res>
     implements $CategoryModelCopyWith<$Res> {
   factory _$CategoryModelCopyWith(
@@ -100,6 +112,7 @@ abstract class _$CategoryModelCopyWith<$Res>
       bool isLastPage});
 }
 
+/// @nodoc
 class __$CategoryModelCopyWithImpl<$Res>
     extends _$CategoryModelCopyWithImpl<$Res>
     implements _$CategoryModelCopyWith<$Res> {
@@ -132,6 +145,8 @@ class __$CategoryModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_CategoryModel extends _CategoryModel {
   const _$_CategoryModel(
       {@required this.index,

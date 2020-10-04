@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'attendance_rate_model.dart';
 
@@ -12,9 +12,11 @@ AttendanceRateModel _$AttendanceRateModelFromJson(Map<String, dynamic> json) {
   return _AttendanceRateModel.fromJson(json);
 }
 
+/// @nodoc
 class _$AttendanceRateModelTearOff {
   const _$AttendanceRateModelTearOff();
 
+// ignore: unused_element
   _AttendanceRateModel call(
       {@required String code, @required String course, @required int rate}) {
     return _AttendanceRateModel(
@@ -23,11 +25,18 @@ class _$AttendanceRateModelTearOff {
       rate: rate,
     );
   }
+
+// ignore: unused_element
+  AttendanceRateModel fromJson(Map<String, Object> json) {
+    return AttendanceRateModel.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $AttendanceRateModel = _$AttendanceRateModelTearOff();
 
+/// @nodoc
 mixin _$AttendanceRateModel {
   String get code;
   String get course;
@@ -37,6 +46,7 @@ mixin _$AttendanceRateModel {
   $AttendanceRateModelCopyWith<AttendanceRateModel> get copyWith;
 }
 
+/// @nodoc
 abstract class $AttendanceRateModelCopyWith<$Res> {
   factory $AttendanceRateModelCopyWith(
           AttendanceRateModel value, $Res Function(AttendanceRateModel) then) =
@@ -44,6 +54,7 @@ abstract class $AttendanceRateModelCopyWith<$Res> {
   $Res call({String code, String course, int rate});
 }
 
+/// @nodoc
 class _$AttendanceRateModelCopyWithImpl<$Res>
     implements $AttendanceRateModelCopyWith<$Res> {
   _$AttendanceRateModelCopyWithImpl(this._value, this._then);
@@ -66,6 +77,7 @@ class _$AttendanceRateModelCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$AttendanceRateModelCopyWith<$Res>
     implements $AttendanceRateModelCopyWith<$Res> {
   factory _$AttendanceRateModelCopyWith(_AttendanceRateModel value,
@@ -75,6 +87,7 @@ abstract class _$AttendanceRateModelCopyWith<$Res>
   $Res call({String code, String course, int rate});
 }
 
+/// @nodoc
 class __$AttendanceRateModelCopyWithImpl<$Res>
     extends _$AttendanceRateModelCopyWithImpl<$Res>
     implements _$AttendanceRateModelCopyWith<$Res> {
@@ -100,6 +113,8 @@ class __$AttendanceRateModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_AttendanceRateModel extends _AttendanceRateModel {
   const _$_AttendanceRateModel(
       {@required this.code, @required this.course, @required this.rate})

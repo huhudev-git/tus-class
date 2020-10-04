@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'grade_bloc.dart';
 
@@ -9,25 +9,50 @@ part of 'grade_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$GradeEventTearOff {
   const _$GradeEventTearOff();
 
+// ignore: unused_element
   FetchGrade fetchGrade() {
     return const FetchGrade();
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $GradeEvent = _$GradeEventTearOff();
 
-mixin _$GradeEvent {}
+/// @nodoc
+mixin _$GradeEvent {
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result fetchGrade(),
+  });
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result fetchGrade(),
+    @required Result orElse(),
+  });
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result fetchGrade(FetchGrade value),
+  });
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result fetchGrade(FetchGrade value),
+    @required Result orElse(),
+  });
+}
 
+/// @nodoc
 abstract class $GradeEventCopyWith<$Res> {
   factory $GradeEventCopyWith(
           GradeEvent value, $Res Function(GradeEvent) then) =
       _$GradeEventCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$GradeEventCopyWithImpl<$Res> implements $GradeEventCopyWith<$Res> {
   _$GradeEventCopyWithImpl(this._value, this._then);
 
@@ -36,12 +61,14 @@ class _$GradeEventCopyWithImpl<$Res> implements $GradeEventCopyWith<$Res> {
   final $Res Function(GradeEvent) _then;
 }
 
+/// @nodoc
 abstract class $FetchGradeCopyWith<$Res> {
   factory $FetchGradeCopyWith(
           FetchGrade value, $Res Function(FetchGrade) then) =
       _$FetchGradeCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$FetchGradeCopyWithImpl<$Res> extends _$GradeEventCopyWithImpl<$Res>
     implements $FetchGradeCopyWith<$Res> {
   _$FetchGradeCopyWithImpl(FetchGrade _value, $Res Function(FetchGrade) _then)
@@ -51,6 +78,7 @@ class _$FetchGradeCopyWithImpl<$Res> extends _$GradeEventCopyWithImpl<$Res>
   FetchGrade get _value => super._value as FetchGrade;
 }
 
+/// @nodoc
 class _$FetchGrade implements FetchGrade {
   const _$FetchGrade();
 
@@ -66,29 +94,78 @@ class _$FetchGrade implements FetchGrade {
 
   @override
   int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result fetchGrade(),
+  }) {
+    assert(fetchGrade != null);
+    return fetchGrade();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result fetchGrade(),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (fetchGrade != null) {
+      return fetchGrade();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result fetchGrade(FetchGrade value),
+  }) {
+    assert(fetchGrade != null);
+    return fetchGrade(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result fetchGrade(FetchGrade value),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (fetchGrade != null) {
+      return fetchGrade(this);
+    }
+    return orElse();
+  }
 }
 
 abstract class FetchGrade implements GradeEvent {
   const factory FetchGrade() = _$FetchGrade;
 }
 
+/// @nodoc
 class _$GradeStateTearOff {
   const _$GradeStateTearOff();
 
+// ignore: unused_element
   Initial initial() {
     return const Initial();
   }
 
+// ignore: unused_element
   Loading loading() {
     return const Loading();
   }
 
+// ignore: unused_element
   Failed failed({Failure error}) {
     return Failed(
       error: error,
     );
   }
 
+// ignore: unused_element
   Loaded loaded({List<Grade> grades}) {
     return Loaded(
       grades: grades,
@@ -96,9 +173,11 @@ class _$GradeStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $GradeState = _$GradeStateTearOff();
 
+/// @nodoc
 mixin _$GradeState {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -132,12 +211,14 @@ mixin _$GradeState {
   });
 }
 
+/// @nodoc
 abstract class $GradeStateCopyWith<$Res> {
   factory $GradeStateCopyWith(
           GradeState value, $Res Function(GradeState) then) =
       _$GradeStateCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$GradeStateCopyWithImpl<$Res> implements $GradeStateCopyWith<$Res> {
   _$GradeStateCopyWithImpl(this._value, this._then);
 
@@ -146,11 +227,13 @@ class _$GradeStateCopyWithImpl<$Res> implements $GradeStateCopyWith<$Res> {
   final $Res Function(GradeState) _then;
 }
 
+/// @nodoc
 abstract class $InitialCopyWith<$Res> {
   factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
       _$InitialCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InitialCopyWithImpl<$Res> extends _$GradeStateCopyWithImpl<$Res>
     implements $InitialCopyWith<$Res> {
   _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
@@ -160,6 +243,7 @@ class _$InitialCopyWithImpl<$Res> extends _$GradeStateCopyWithImpl<$Res>
   Initial get _value => super._value as Initial;
 }
 
+/// @nodoc
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -243,11 +327,13 @@ abstract class Initial implements GradeState {
   const factory Initial() = _$Initial;
 }
 
+/// @nodoc
 abstract class $LoadingCopyWith<$Res> {
   factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
       _$LoadingCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$LoadingCopyWithImpl<$Res> extends _$GradeStateCopyWithImpl<$Res>
     implements $LoadingCopyWith<$Res> {
   _$LoadingCopyWithImpl(Loading _value, $Res Function(Loading) _then)
@@ -257,6 +343,7 @@ class _$LoadingCopyWithImpl<$Res> extends _$GradeStateCopyWithImpl<$Res>
   Loading get _value => super._value as Loading;
 }
 
+/// @nodoc
 class _$Loading implements Loading {
   const _$Loading();
 
@@ -340,12 +427,14 @@ abstract class Loading implements GradeState {
   const factory Loading() = _$Loading;
 }
 
+/// @nodoc
 abstract class $FailedCopyWith<$Res> {
   factory $FailedCopyWith(Failed value, $Res Function(Failed) then) =
       _$FailedCopyWithImpl<$Res>;
   $Res call({Failure error});
 }
 
+/// @nodoc
 class _$FailedCopyWithImpl<$Res> extends _$GradeStateCopyWithImpl<$Res>
     implements $FailedCopyWith<$Res> {
   _$FailedCopyWithImpl(Failed _value, $Res Function(Failed) _then)
@@ -364,6 +453,7 @@ class _$FailedCopyWithImpl<$Res> extends _$GradeStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Failed implements Failed {
   const _$Failed({this.error});
 
@@ -461,12 +551,14 @@ abstract class Failed implements GradeState {
   $FailedCopyWith<Failed> get copyWith;
 }
 
+/// @nodoc
 abstract class $LoadedCopyWith<$Res> {
   factory $LoadedCopyWith(Loaded value, $Res Function(Loaded) then) =
       _$LoadedCopyWithImpl<$Res>;
   $Res call({List<Grade> grades});
 }
 
+/// @nodoc
 class _$LoadedCopyWithImpl<$Res> extends _$GradeStateCopyWithImpl<$Res>
     implements $LoadedCopyWith<$Res> {
   _$LoadedCopyWithImpl(Loaded _value, $Res Function(Loaded) _then)
@@ -485,6 +577,7 @@ class _$LoadedCopyWithImpl<$Res> extends _$GradeStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Loaded implements Loaded {
   const _$Loaded({this.grades});
 

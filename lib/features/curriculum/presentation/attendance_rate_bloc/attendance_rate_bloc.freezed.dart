@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'attendance_rate_bloc.dart';
 
@@ -9,25 +9,50 @@ part of 'attendance_rate_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$AttendanceRateEventTearOff {
   const _$AttendanceRateEventTearOff();
 
+// ignore: unused_element
   FetchAttendanceRate fetchAttendanceRate() {
     return const FetchAttendanceRate();
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $AttendanceRateEvent = _$AttendanceRateEventTearOff();
 
-mixin _$AttendanceRateEvent {}
+/// @nodoc
+mixin _$AttendanceRateEvent {
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result fetchAttendanceRate(),
+  });
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result fetchAttendanceRate(),
+    @required Result orElse(),
+  });
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result fetchAttendanceRate(FetchAttendanceRate value),
+  });
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result fetchAttendanceRate(FetchAttendanceRate value),
+    @required Result orElse(),
+  });
+}
 
+/// @nodoc
 abstract class $AttendanceRateEventCopyWith<$Res> {
   factory $AttendanceRateEventCopyWith(
           AttendanceRateEvent value, $Res Function(AttendanceRateEvent) then) =
       _$AttendanceRateEventCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$AttendanceRateEventCopyWithImpl<$Res>
     implements $AttendanceRateEventCopyWith<$Res> {
   _$AttendanceRateEventCopyWithImpl(this._value, this._then);
@@ -37,12 +62,14 @@ class _$AttendanceRateEventCopyWithImpl<$Res>
   final $Res Function(AttendanceRateEvent) _then;
 }
 
+/// @nodoc
 abstract class $FetchAttendanceRateCopyWith<$Res> {
   factory $FetchAttendanceRateCopyWith(
           FetchAttendanceRate value, $Res Function(FetchAttendanceRate) then) =
       _$FetchAttendanceRateCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$FetchAttendanceRateCopyWithImpl<$Res>
     extends _$AttendanceRateEventCopyWithImpl<$Res>
     implements $FetchAttendanceRateCopyWith<$Res> {
@@ -54,6 +81,7 @@ class _$FetchAttendanceRateCopyWithImpl<$Res>
   FetchAttendanceRate get _value => super._value as FetchAttendanceRate;
 }
 
+/// @nodoc
 class _$FetchAttendanceRate implements FetchAttendanceRate {
   const _$FetchAttendanceRate();
 
@@ -69,29 +97,78 @@ class _$FetchAttendanceRate implements FetchAttendanceRate {
 
   @override
   int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result fetchAttendanceRate(),
+  }) {
+    assert(fetchAttendanceRate != null);
+    return fetchAttendanceRate();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result fetchAttendanceRate(),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (fetchAttendanceRate != null) {
+      return fetchAttendanceRate();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result fetchAttendanceRate(FetchAttendanceRate value),
+  }) {
+    assert(fetchAttendanceRate != null);
+    return fetchAttendanceRate(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result fetchAttendanceRate(FetchAttendanceRate value),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (fetchAttendanceRate != null) {
+      return fetchAttendanceRate(this);
+    }
+    return orElse();
+  }
 }
 
 abstract class FetchAttendanceRate implements AttendanceRateEvent {
   const factory FetchAttendanceRate() = _$FetchAttendanceRate;
 }
 
+/// @nodoc
 class _$AttendanceRateStateTearOff {
   const _$AttendanceRateStateTearOff();
 
+// ignore: unused_element
   Initial initial() {
     return const Initial();
   }
 
+// ignore: unused_element
   Loading loading() {
     return const Loading();
   }
 
+// ignore: unused_element
   Failed failed({Failure error}) {
     return Failed(
       error: error,
     );
   }
 
+// ignore: unused_element
   Loaded loaded(
       {List<AttendanceRate> rates, String selectCode, String selectCourse}) {
     return Loaded(
@@ -102,9 +179,11 @@ class _$AttendanceRateStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $AttendanceRateState = _$AttendanceRateStateTearOff();
 
+/// @nodoc
 mixin _$AttendanceRateState {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -141,12 +220,14 @@ mixin _$AttendanceRateState {
   });
 }
 
+/// @nodoc
 abstract class $AttendanceRateStateCopyWith<$Res> {
   factory $AttendanceRateStateCopyWith(
           AttendanceRateState value, $Res Function(AttendanceRateState) then) =
       _$AttendanceRateStateCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$AttendanceRateStateCopyWithImpl<$Res>
     implements $AttendanceRateStateCopyWith<$Res> {
   _$AttendanceRateStateCopyWithImpl(this._value, this._then);
@@ -156,11 +237,13 @@ class _$AttendanceRateStateCopyWithImpl<$Res>
   final $Res Function(AttendanceRateState) _then;
 }
 
+/// @nodoc
 abstract class $InitialCopyWith<$Res> {
   factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
       _$InitialCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InitialCopyWithImpl<$Res>
     extends _$AttendanceRateStateCopyWithImpl<$Res>
     implements $InitialCopyWith<$Res> {
@@ -171,6 +254,7 @@ class _$InitialCopyWithImpl<$Res>
   Initial get _value => super._value as Initial;
 }
 
+/// @nodoc
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -257,11 +341,13 @@ abstract class Initial implements AttendanceRateState {
   const factory Initial() = _$Initial;
 }
 
+/// @nodoc
 abstract class $LoadingCopyWith<$Res> {
   factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
       _$LoadingCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$LoadingCopyWithImpl<$Res>
     extends _$AttendanceRateStateCopyWithImpl<$Res>
     implements $LoadingCopyWith<$Res> {
@@ -272,6 +358,7 @@ class _$LoadingCopyWithImpl<$Res>
   Loading get _value => super._value as Loading;
 }
 
+/// @nodoc
 class _$Loading implements Loading {
   const _$Loading();
 
@@ -358,12 +445,14 @@ abstract class Loading implements AttendanceRateState {
   const factory Loading() = _$Loading;
 }
 
+/// @nodoc
 abstract class $FailedCopyWith<$Res> {
   factory $FailedCopyWith(Failed value, $Res Function(Failed) then) =
       _$FailedCopyWithImpl<$Res>;
   $Res call({Failure error});
 }
 
+/// @nodoc
 class _$FailedCopyWithImpl<$Res> extends _$AttendanceRateStateCopyWithImpl<$Res>
     implements $FailedCopyWith<$Res> {
   _$FailedCopyWithImpl(Failed _value, $Res Function(Failed) _then)
@@ -382,6 +471,7 @@ class _$FailedCopyWithImpl<$Res> extends _$AttendanceRateStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Failed implements Failed {
   const _$Failed({this.error});
 
@@ -482,6 +572,7 @@ abstract class Failed implements AttendanceRateState {
   $FailedCopyWith<Failed> get copyWith;
 }
 
+/// @nodoc
 abstract class $LoadedCopyWith<$Res> {
   factory $LoadedCopyWith(Loaded value, $Res Function(Loaded) then) =
       _$LoadedCopyWithImpl<$Res>;
@@ -489,6 +580,7 @@ abstract class $LoadedCopyWith<$Res> {
       {List<AttendanceRate> rates, String selectCode, String selectCourse});
 }
 
+/// @nodoc
 class _$LoadedCopyWithImpl<$Res> extends _$AttendanceRateStateCopyWithImpl<$Res>
     implements $LoadedCopyWith<$Res> {
   _$LoadedCopyWithImpl(Loaded _value, $Res Function(Loaded) _then)
@@ -514,6 +606,7 @@ class _$LoadedCopyWithImpl<$Res> extends _$AttendanceRateStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Loaded implements Loaded {
   const _$Loaded({this.rates, this.selectCode, this.selectCourse});
 

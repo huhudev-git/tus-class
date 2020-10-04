@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'fetch_syllabus_result_model.dart';
 
@@ -13,9 +13,11 @@ FetchSyllabusResultModel _$FetchSyllabusResultModelFromJson(
   return _FetchSyllabusResultModel.fromJson(json);
 }
 
+/// @nodoc
 class _$FetchSyllabusResultModelTearOff {
   const _$FetchSyllabusResultModelTearOff();
 
+// ignore: unused_element
   _FetchSyllabusResultModel call(
       {@required List<SyllabusModel> syllabusList, @required bool isLastPage}) {
     return _FetchSyllabusResultModel(
@@ -23,11 +25,18 @@ class _$FetchSyllabusResultModelTearOff {
       isLastPage: isLastPage,
     );
   }
+
+// ignore: unused_element
+  FetchSyllabusResultModel fromJson(Map<String, Object> json) {
+    return FetchSyllabusResultModel.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $FetchSyllabusResultModel = _$FetchSyllabusResultModelTearOff();
 
+/// @nodoc
 mixin _$FetchSyllabusResultModel {
   List<SyllabusModel> get syllabusList;
   bool get isLastPage;
@@ -36,6 +45,7 @@ mixin _$FetchSyllabusResultModel {
   $FetchSyllabusResultModelCopyWith<FetchSyllabusResultModel> get copyWith;
 }
 
+/// @nodoc
 abstract class $FetchSyllabusResultModelCopyWith<$Res> {
   factory $FetchSyllabusResultModelCopyWith(FetchSyllabusResultModel value,
           $Res Function(FetchSyllabusResultModel) then) =
@@ -43,6 +53,7 @@ abstract class $FetchSyllabusResultModelCopyWith<$Res> {
   $Res call({List<SyllabusModel> syllabusList, bool isLastPage});
 }
 
+/// @nodoc
 class _$FetchSyllabusResultModelCopyWithImpl<$Res>
     implements $FetchSyllabusResultModelCopyWith<$Res> {
   _$FetchSyllabusResultModelCopyWithImpl(this._value, this._then);
@@ -66,6 +77,7 @@ class _$FetchSyllabusResultModelCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$FetchSyllabusResultModelCopyWith<$Res>
     implements $FetchSyllabusResultModelCopyWith<$Res> {
   factory _$FetchSyllabusResultModelCopyWith(_FetchSyllabusResultModel value,
@@ -75,6 +87,7 @@ abstract class _$FetchSyllabusResultModelCopyWith<$Res>
   $Res call({List<SyllabusModel> syllabusList, bool isLastPage});
 }
 
+/// @nodoc
 class __$FetchSyllabusResultModelCopyWithImpl<$Res>
     extends _$FetchSyllabusResultModelCopyWithImpl<$Res>
     implements _$FetchSyllabusResultModelCopyWith<$Res> {
@@ -102,6 +115,8 @@ class __$FetchSyllabusResultModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_FetchSyllabusResultModel extends _FetchSyllabusResultModel {
   const _$_FetchSyllabusResultModel(
       {@required this.syllabusList, @required this.isLastPage})

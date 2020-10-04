@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'message_detail_model.dart';
 
@@ -12,9 +12,11 @@ MessageDetailModel _$MessageDetailModelFromJson(Map<String, dynamic> json) {
   return _MessageDetailModel.fromJson(json);
 }
 
+/// @nodoc
 class _$MessageDetailModelTearOff {
   const _$MessageDetailModelTearOff();
 
+// ignore: unused_element
   _MessageDetailModel call(
       {@required String pageId,
       @required String sender,
@@ -33,11 +35,18 @@ class _$MessageDetailModelTearOff {
       isEntry: isEntry,
     );
   }
+
+// ignore: unused_element
+  MessageDetailModel fromJson(Map<String, Object> json) {
+    return MessageDetailModel.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $MessageDetailModel = _$MessageDetailModelTearOff();
 
+/// @nodoc
 mixin _$MessageDetailModel {
   String get pageId;
   String get sender;
@@ -51,6 +60,7 @@ mixin _$MessageDetailModel {
   $MessageDetailModelCopyWith<MessageDetailModel> get copyWith;
 }
 
+/// @nodoc
 abstract class $MessageDetailModelCopyWith<$Res> {
   factory $MessageDetailModelCopyWith(
           MessageDetailModel value, $Res Function(MessageDetailModel) then) =
@@ -65,6 +75,7 @@ abstract class $MessageDetailModelCopyWith<$Res> {
       bool isEntry});
 }
 
+/// @nodoc
 class _$MessageDetailModelCopyWithImpl<$Res>
     implements $MessageDetailModelCopyWith<$Res> {
   _$MessageDetailModelCopyWithImpl(this._value, this._then);
@@ -96,6 +107,7 @@ class _$MessageDetailModelCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$MessageDetailModelCopyWith<$Res>
     implements $MessageDetailModelCopyWith<$Res> {
   factory _$MessageDetailModelCopyWith(
@@ -112,6 +124,7 @@ abstract class _$MessageDetailModelCopyWith<$Res>
       bool isEntry});
 }
 
+/// @nodoc
 class __$MessageDetailModelCopyWithImpl<$Res>
     extends _$MessageDetailModelCopyWithImpl<$Res>
     implements _$MessageDetailModelCopyWith<$Res> {
@@ -146,6 +159,8 @@ class __$MessageDetailModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_MessageDetailModel extends _MessageDetailModel {
   const _$_MessageDetailModel(
       {@required this.pageId,

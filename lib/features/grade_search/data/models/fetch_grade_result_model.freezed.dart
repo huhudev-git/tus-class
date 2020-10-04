@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'fetch_grade_result_model.dart';
 
@@ -13,9 +13,11 @@ FetchGradeResultModel _$FetchGradeResultModelFromJson(
   return _FetchGradeResultModel.fromJson(json);
 }
 
+/// @nodoc
 class _$FetchGradeResultModelTearOff {
   const _$FetchGradeResultModelTearOff();
 
+// ignore: unused_element
   _FetchGradeResultModel call(
       {@required List<GradeModel> grades, @required bool isLastPage}) {
     return _FetchGradeResultModel(
@@ -23,11 +25,18 @@ class _$FetchGradeResultModelTearOff {
       isLastPage: isLastPage,
     );
   }
+
+// ignore: unused_element
+  FetchGradeResultModel fromJson(Map<String, Object> json) {
+    return FetchGradeResultModel.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $FetchGradeResultModel = _$FetchGradeResultModelTearOff();
 
+/// @nodoc
 mixin _$FetchGradeResultModel {
   List<GradeModel> get grades;
   bool get isLastPage;
@@ -36,6 +45,7 @@ mixin _$FetchGradeResultModel {
   $FetchGradeResultModelCopyWith<FetchGradeResultModel> get copyWith;
 }
 
+/// @nodoc
 abstract class $FetchGradeResultModelCopyWith<$Res> {
   factory $FetchGradeResultModelCopyWith(FetchGradeResultModel value,
           $Res Function(FetchGradeResultModel) then) =
@@ -43,6 +53,7 @@ abstract class $FetchGradeResultModelCopyWith<$Res> {
   $Res call({List<GradeModel> grades, bool isLastPage});
 }
 
+/// @nodoc
 class _$FetchGradeResultModelCopyWithImpl<$Res>
     implements $FetchGradeResultModelCopyWith<$Res> {
   _$FetchGradeResultModelCopyWithImpl(this._value, this._then);
@@ -64,6 +75,7 @@ class _$FetchGradeResultModelCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$FetchGradeResultModelCopyWith<$Res>
     implements $FetchGradeResultModelCopyWith<$Res> {
   factory _$FetchGradeResultModelCopyWith(_FetchGradeResultModel value,
@@ -73,6 +85,7 @@ abstract class _$FetchGradeResultModelCopyWith<$Res>
   $Res call({List<GradeModel> grades, bool isLastPage});
 }
 
+/// @nodoc
 class __$FetchGradeResultModelCopyWithImpl<$Res>
     extends _$FetchGradeResultModelCopyWithImpl<$Res>
     implements _$FetchGradeResultModelCopyWith<$Res> {
@@ -97,6 +110,8 @@ class __$FetchGradeResultModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_FetchGradeResultModel extends _FetchGradeResultModel {
   const _$_FetchGradeResultModel(
       {@required this.grades, @required this.isLastPage})

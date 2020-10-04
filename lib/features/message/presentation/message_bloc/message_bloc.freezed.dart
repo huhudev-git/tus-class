@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'message_bloc.dart';
 
@@ -9,9 +9,11 @@ part of 'message_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$MessageEventTearOff {
   const _$MessageEventTearOff();
 
+// ignore: unused_element
   Init init(
       {List<Message> messages,
       int categoryId,
@@ -25,6 +27,7 @@ class _$MessageEventTearOff {
     );
   }
 
+// ignore: unused_element
   FetchPage fetchPage({int categoryId, int page}) {
     return FetchPage(
       categoryId: categoryId,
@@ -32,6 +35,7 @@ class _$MessageEventTearOff {
     );
   }
 
+// ignore: unused_element
   Read read({int categoryId, int index}) {
     return Read(
       categoryId: categoryId,
@@ -40,9 +44,11 @@ class _$MessageEventTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $MessageEvent = _$MessageEventTearOff();
 
+/// @nodoc
 mixin _$MessageEvent {
   int get categoryId;
 
@@ -79,6 +85,7 @@ mixin _$MessageEvent {
   $MessageEventCopyWith<MessageEvent> get copyWith;
 }
 
+/// @nodoc
 abstract class $MessageEventCopyWith<$Res> {
   factory $MessageEventCopyWith(
           MessageEvent value, $Res Function(MessageEvent) then) =
@@ -86,6 +93,7 @@ abstract class $MessageEventCopyWith<$Res> {
   $Res call({int categoryId});
 }
 
+/// @nodoc
 class _$MessageEventCopyWithImpl<$Res> implements $MessageEventCopyWith<$Res> {
   _$MessageEventCopyWithImpl(this._value, this._then);
 
@@ -103,6 +111,7 @@ class _$MessageEventCopyWithImpl<$Res> implements $MessageEventCopyWith<$Res> {
   }
 }
 
+/// @nodoc
 abstract class $InitCopyWith<$Res> implements $MessageEventCopyWith<$Res> {
   factory $InitCopyWith(Init value, $Res Function(Init) then) =
       _$InitCopyWithImpl<$Res>;
@@ -114,6 +123,7 @@ abstract class $InitCopyWith<$Res> implements $MessageEventCopyWith<$Res> {
       bool isLastPage});
 }
 
+/// @nodoc
 class _$InitCopyWithImpl<$Res> extends _$MessageEventCopyWithImpl<$Res>
     implements $InitCopyWith<$Res> {
   _$InitCopyWithImpl(Init _value, $Res Function(Init) _then)
@@ -140,6 +150,7 @@ class _$InitCopyWithImpl<$Res> extends _$MessageEventCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Init implements Init {
   const _$Init(
       {this.messages, this.categoryId, this.category, this.isLastPage});
@@ -264,6 +275,7 @@ abstract class Init implements MessageEvent {
   $InitCopyWith<Init> get copyWith;
 }
 
+/// @nodoc
 abstract class $FetchPageCopyWith<$Res> implements $MessageEventCopyWith<$Res> {
   factory $FetchPageCopyWith(FetchPage value, $Res Function(FetchPage) then) =
       _$FetchPageCopyWithImpl<$Res>;
@@ -271,6 +283,7 @@ abstract class $FetchPageCopyWith<$Res> implements $MessageEventCopyWith<$Res> {
   $Res call({int categoryId, int page});
 }
 
+/// @nodoc
 class _$FetchPageCopyWithImpl<$Res> extends _$MessageEventCopyWithImpl<$Res>
     implements $FetchPageCopyWith<$Res> {
   _$FetchPageCopyWithImpl(FetchPage _value, $Res Function(FetchPage) _then)
@@ -291,6 +304,7 @@ class _$FetchPageCopyWithImpl<$Res> extends _$MessageEventCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$FetchPage implements FetchPage {
   const _$FetchPage({this.categoryId, this.page});
 
@@ -395,6 +409,7 @@ abstract class FetchPage implements MessageEvent {
   $FetchPageCopyWith<FetchPage> get copyWith;
 }
 
+/// @nodoc
 abstract class $ReadCopyWith<$Res> implements $MessageEventCopyWith<$Res> {
   factory $ReadCopyWith(Read value, $Res Function(Read) then) =
       _$ReadCopyWithImpl<$Res>;
@@ -402,6 +417,7 @@ abstract class $ReadCopyWith<$Res> implements $MessageEventCopyWith<$Res> {
   $Res call({int categoryId, int index});
 }
 
+/// @nodoc
 class _$ReadCopyWithImpl<$Res> extends _$MessageEventCopyWithImpl<$Res>
     implements $ReadCopyWith<$Res> {
   _$ReadCopyWithImpl(Read _value, $Res Function(Read) _then)
@@ -422,6 +438,7 @@ class _$ReadCopyWithImpl<$Res> extends _$MessageEventCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Read implements Read {
   const _$Read({this.categoryId, this.index});
 
@@ -526,19 +543,23 @@ abstract class Read implements MessageEvent {
   $ReadCopyWith<Read> get copyWith;
 }
 
+/// @nodoc
 class _$MessageStateTearOff {
   const _$MessageStateTearOff();
 
+// ignore: unused_element
   Initial initial() {
     return const Initial();
   }
 
+// ignore: unused_element
   Failed failed({Failure error}) {
     return Failed(
       error: error,
     );
   }
 
+// ignore: unused_element
   Loaded loaded(
       {List<Message> messages,
       String category,
@@ -557,9 +578,11 @@ class _$MessageStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $MessageState = _$MessageStateTearOff();
 
+/// @nodoc
 mixin _$MessageState {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -592,12 +615,14 @@ mixin _$MessageState {
   });
 }
 
+/// @nodoc
 abstract class $MessageStateCopyWith<$Res> {
   factory $MessageStateCopyWith(
           MessageState value, $Res Function(MessageState) then) =
       _$MessageStateCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$MessageStateCopyWithImpl<$Res> implements $MessageStateCopyWith<$Res> {
   _$MessageStateCopyWithImpl(this._value, this._then);
 
@@ -606,11 +631,13 @@ class _$MessageStateCopyWithImpl<$Res> implements $MessageStateCopyWith<$Res> {
   final $Res Function(MessageState) _then;
 }
 
+/// @nodoc
 abstract class $InitialCopyWith<$Res> {
   factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
       _$InitialCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InitialCopyWithImpl<$Res> extends _$MessageStateCopyWithImpl<$Res>
     implements $InitialCopyWith<$Res> {
   _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
@@ -620,6 +647,7 @@ class _$InitialCopyWithImpl<$Res> extends _$MessageStateCopyWithImpl<$Res>
   Initial get _value => super._value as Initial;
 }
 
+/// @nodoc
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -700,12 +728,14 @@ abstract class Initial implements MessageState {
   const factory Initial() = _$Initial;
 }
 
+/// @nodoc
 abstract class $FailedCopyWith<$Res> {
   factory $FailedCopyWith(Failed value, $Res Function(Failed) then) =
       _$FailedCopyWithImpl<$Res>;
   $Res call({Failure error});
 }
 
+/// @nodoc
 class _$FailedCopyWithImpl<$Res> extends _$MessageStateCopyWithImpl<$Res>
     implements $FailedCopyWith<$Res> {
   _$FailedCopyWithImpl(Failed _value, $Res Function(Failed) _then)
@@ -724,6 +754,7 @@ class _$FailedCopyWithImpl<$Res> extends _$MessageStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Failed implements Failed {
   const _$Failed({this.error});
 
@@ -818,6 +849,7 @@ abstract class Failed implements MessageState {
   $FailedCopyWith<Failed> get copyWith;
 }
 
+/// @nodoc
 abstract class $LoadedCopyWith<$Res> {
   factory $LoadedCopyWith(Loaded value, $Res Function(Loaded) then) =
       _$LoadedCopyWithImpl<$Res>;
@@ -830,6 +862,7 @@ abstract class $LoadedCopyWith<$Res> {
       bool isLastPage});
 }
 
+/// @nodoc
 class _$LoadedCopyWithImpl<$Res> extends _$MessageStateCopyWithImpl<$Res>
     implements $LoadedCopyWith<$Res> {
   _$LoadedCopyWithImpl(Loaded _value, $Res Function(Loaded) _then)
@@ -860,6 +893,7 @@ class _$LoadedCopyWithImpl<$Res> extends _$MessageStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Loaded implements Loaded {
   const _$Loaded(
       {this.messages,

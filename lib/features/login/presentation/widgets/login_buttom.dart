@@ -41,8 +41,7 @@ class _LoginButtomState extends State<LoginButtom> with TickerProviderStateMixin
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder(
-      bloc: BlocProvider.of<LoginBloc>(context),
+    return BlocBuilder<LoginBloc, LoginState>(
       builder: (BuildContext context, LoginState state) {
         if ((state is! Loading) && (state is! Success)) {
           _width = double.infinity;

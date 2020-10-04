@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'teacher_bloc.dart';
 
@@ -9,9 +9,11 @@ part of 'teacher_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$TeacherEventTearOff {
   const _$TeacherEventTearOff();
 
+// ignore: unused_element
   FetchTeacher fetchTeacher({String teacherId, String code, int year}) {
     return FetchTeacher(
       teacherId: teacherId,
@@ -21,17 +23,39 @@ class _$TeacherEventTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $TeacherEvent = _$TeacherEventTearOff();
 
+/// @nodoc
 mixin _$TeacherEvent {
   String get teacherId;
   String get code;
   int get year;
 
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result fetchTeacher(String teacherId, String code, int year),
+  });
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result fetchTeacher(String teacherId, String code, int year),
+    @required Result orElse(),
+  });
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result fetchTeacher(FetchTeacher value),
+  });
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result fetchTeacher(FetchTeacher value),
+    @required Result orElse(),
+  });
+
   $TeacherEventCopyWith<TeacherEvent> get copyWith;
 }
 
+/// @nodoc
 abstract class $TeacherEventCopyWith<$Res> {
   factory $TeacherEventCopyWith(
           TeacherEvent value, $Res Function(TeacherEvent) then) =
@@ -39,6 +63,7 @@ abstract class $TeacherEventCopyWith<$Res> {
   $Res call({String teacherId, String code, int year});
 }
 
+/// @nodoc
 class _$TeacherEventCopyWithImpl<$Res> implements $TeacherEventCopyWith<$Res> {
   _$TeacherEventCopyWithImpl(this._value, this._then);
 
@@ -60,6 +85,7 @@ class _$TeacherEventCopyWithImpl<$Res> implements $TeacherEventCopyWith<$Res> {
   }
 }
 
+/// @nodoc
 abstract class $FetchTeacherCopyWith<$Res>
     implements $TeacherEventCopyWith<$Res> {
   factory $FetchTeacherCopyWith(
@@ -69,6 +95,7 @@ abstract class $FetchTeacherCopyWith<$Res>
   $Res call({String teacherId, String code, int year});
 }
 
+/// @nodoc
 class _$FetchTeacherCopyWithImpl<$Res> extends _$TeacherEventCopyWithImpl<$Res>
     implements $FetchTeacherCopyWith<$Res> {
   _$FetchTeacherCopyWithImpl(
@@ -92,6 +119,7 @@ class _$FetchTeacherCopyWithImpl<$Res> extends _$TeacherEventCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$FetchTeacher implements FetchTeacher {
   const _$FetchTeacher({this.teacherId, this.code, this.year});
 
@@ -130,6 +158,50 @@ class _$FetchTeacher implements FetchTeacher {
   @override
   $FetchTeacherCopyWith<FetchTeacher> get copyWith =>
       _$FetchTeacherCopyWithImpl<FetchTeacher>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result fetchTeacher(String teacherId, String code, int year),
+  }) {
+    assert(fetchTeacher != null);
+    return fetchTeacher(teacherId, code, year);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result fetchTeacher(String teacherId, String code, int year),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (fetchTeacher != null) {
+      return fetchTeacher(teacherId, code, year);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result fetchTeacher(FetchTeacher value),
+  }) {
+    assert(fetchTeacher != null);
+    return fetchTeacher(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result fetchTeacher(FetchTeacher value),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (fetchTeacher != null) {
+      return fetchTeacher(this);
+    }
+    return orElse();
+  }
 }
 
 abstract class FetchTeacher implements TeacherEvent {
@@ -146,23 +218,28 @@ abstract class FetchTeacher implements TeacherEvent {
   $FetchTeacherCopyWith<FetchTeacher> get copyWith;
 }
 
+/// @nodoc
 class _$TeacherStateTearOff {
   const _$TeacherStateTearOff();
 
+// ignore: unused_element
   Initial initial() {
     return const Initial();
   }
 
+// ignore: unused_element
   Loading loading() {
     return const Loading();
   }
 
+// ignore: unused_element
   Loaded loaded({Teacher teacher}) {
     return Loaded(
       teacher: teacher,
     );
   }
 
+// ignore: unused_element
   Failed failed({Failure error}) {
     return Failed(
       error: error,
@@ -170,9 +247,11 @@ class _$TeacherStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $TeacherState = _$TeacherStateTearOff();
 
+/// @nodoc
 mixin _$TeacherState {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -206,12 +285,14 @@ mixin _$TeacherState {
   });
 }
 
+/// @nodoc
 abstract class $TeacherStateCopyWith<$Res> {
   factory $TeacherStateCopyWith(
           TeacherState value, $Res Function(TeacherState) then) =
       _$TeacherStateCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$TeacherStateCopyWithImpl<$Res> implements $TeacherStateCopyWith<$Res> {
   _$TeacherStateCopyWithImpl(this._value, this._then);
 
@@ -220,11 +301,13 @@ class _$TeacherStateCopyWithImpl<$Res> implements $TeacherStateCopyWith<$Res> {
   final $Res Function(TeacherState) _then;
 }
 
+/// @nodoc
 abstract class $InitialCopyWith<$Res> {
   factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
       _$InitialCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InitialCopyWithImpl<$Res> extends _$TeacherStateCopyWithImpl<$Res>
     implements $InitialCopyWith<$Res> {
   _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
@@ -234,6 +317,7 @@ class _$InitialCopyWithImpl<$Res> extends _$TeacherStateCopyWithImpl<$Res>
   Initial get _value => super._value as Initial;
 }
 
+/// @nodoc
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -317,11 +401,13 @@ abstract class Initial implements TeacherState {
   const factory Initial() = _$Initial;
 }
 
+/// @nodoc
 abstract class $LoadingCopyWith<$Res> {
   factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
       _$LoadingCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$LoadingCopyWithImpl<$Res> extends _$TeacherStateCopyWithImpl<$Res>
     implements $LoadingCopyWith<$Res> {
   _$LoadingCopyWithImpl(Loading _value, $Res Function(Loading) _then)
@@ -331,6 +417,7 @@ class _$LoadingCopyWithImpl<$Res> extends _$TeacherStateCopyWithImpl<$Res>
   Loading get _value => super._value as Loading;
 }
 
+/// @nodoc
 class _$Loading implements Loading {
   const _$Loading();
 
@@ -414,12 +501,14 @@ abstract class Loading implements TeacherState {
   const factory Loading() = _$Loading;
 }
 
+/// @nodoc
 abstract class $LoadedCopyWith<$Res> {
   factory $LoadedCopyWith(Loaded value, $Res Function(Loaded) then) =
       _$LoadedCopyWithImpl<$Res>;
   $Res call({Teacher teacher});
 }
 
+/// @nodoc
 class _$LoadedCopyWithImpl<$Res> extends _$TeacherStateCopyWithImpl<$Res>
     implements $LoadedCopyWith<$Res> {
   _$LoadedCopyWithImpl(Loaded _value, $Res Function(Loaded) _then)
@@ -438,6 +527,7 @@ class _$LoadedCopyWithImpl<$Res> extends _$TeacherStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Loaded implements Loaded {
   const _$Loaded({this.teacher});
 
@@ -535,12 +625,14 @@ abstract class Loaded implements TeacherState {
   $LoadedCopyWith<Loaded> get copyWith;
 }
 
+/// @nodoc
 abstract class $FailedCopyWith<$Res> {
   factory $FailedCopyWith(Failed value, $Res Function(Failed) then) =
       _$FailedCopyWithImpl<$Res>;
   $Res call({Failure error});
 }
 
+/// @nodoc
 class _$FailedCopyWithImpl<$Res> extends _$TeacherStateCopyWithImpl<$Res>
     implements $FailedCopyWith<$Res> {
   _$FailedCopyWithImpl(Failed _value, $Res Function(Failed) _then)
@@ -559,6 +651,7 @@ class _$FailedCopyWithImpl<$Res> extends _$TeacherStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Failed implements Failed {
   const _$Failed({this.error});
 

@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'message_model.dart';
 
@@ -12,9 +12,11 @@ MessageModel _$MessageModelFromJson(Map<String, dynamic> json) {
   return _MessageModel.fromJson(json);
 }
 
+/// @nodoc
 class _$MessageModelTearOff {
   const _$MessageModelTearOff();
 
+// ignore: unused_element
   _MessageModel call(
       {@required int index,
       @required String title,
@@ -37,11 +39,18 @@ class _$MessageModelTearOff {
       isNew: isNew,
     );
   }
+
+// ignore: unused_element
+  MessageModel fromJson(Map<String, Object> json) {
+    return MessageModel.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $MessageModel = _$MessageModelTearOff();
 
+/// @nodoc
 mixin _$MessageModel {
   int get index;
   String get title;
@@ -57,6 +66,7 @@ mixin _$MessageModel {
   $MessageModelCopyWith<MessageModel> get copyWith;
 }
 
+/// @nodoc
 abstract class $MessageModelCopyWith<$Res> {
   factory $MessageModelCopyWith(
           MessageModel value, $Res Function(MessageModel) then) =
@@ -73,6 +83,7 @@ abstract class $MessageModelCopyWith<$Res> {
       bool isNew});
 }
 
+/// @nodoc
 class _$MessageModelCopyWithImpl<$Res> implements $MessageModelCopyWith<$Res> {
   _$MessageModelCopyWithImpl(this._value, this._then);
 
@@ -107,6 +118,7 @@ class _$MessageModelCopyWithImpl<$Res> implements $MessageModelCopyWith<$Res> {
   }
 }
 
+/// @nodoc
 abstract class _$MessageModelCopyWith<$Res>
     implements $MessageModelCopyWith<$Res> {
   factory _$MessageModelCopyWith(
@@ -125,6 +137,7 @@ abstract class _$MessageModelCopyWith<$Res>
       bool isNew});
 }
 
+/// @nodoc
 class __$MessageModelCopyWithImpl<$Res> extends _$MessageModelCopyWithImpl<$Res>
     implements _$MessageModelCopyWith<$Res> {
   __$MessageModelCopyWithImpl(
@@ -162,6 +175,8 @@ class __$MessageModelCopyWithImpl<$Res> extends _$MessageModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_MessageModel extends _MessageModel {
   const _$_MessageModel(
       {@required this.index,

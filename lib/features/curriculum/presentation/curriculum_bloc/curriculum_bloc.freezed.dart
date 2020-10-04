@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'curriculum_bloc.dart';
 
@@ -9,9 +9,11 @@ part of 'curriculum_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$CurriculumEventTearOff {
   const _$CurriculumEventTearOff();
 
+// ignore: unused_element
   FetchCurriculum fetchCurriculum(
       {int year, String semesterValue, bool isRefresh}) {
     return FetchCurriculum(
@@ -22,17 +24,40 @@ class _$CurriculumEventTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $CurriculumEvent = _$CurriculumEventTearOff();
 
+/// @nodoc
 mixin _$CurriculumEvent {
   int get year;
   String get semesterValue;
   bool get isRefresh;
 
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required
+        Result fetchCurriculum(int year, String semesterValue, bool isRefresh),
+  });
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result fetchCurriculum(int year, String semesterValue, bool isRefresh),
+    @required Result orElse(),
+  });
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result fetchCurriculum(FetchCurriculum value),
+  });
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result fetchCurriculum(FetchCurriculum value),
+    @required Result orElse(),
+  });
+
   $CurriculumEventCopyWith<CurriculumEvent> get copyWith;
 }
 
+/// @nodoc
 abstract class $CurriculumEventCopyWith<$Res> {
   factory $CurriculumEventCopyWith(
           CurriculumEvent value, $Res Function(CurriculumEvent) then) =
@@ -40,6 +65,7 @@ abstract class $CurriculumEventCopyWith<$Res> {
   $Res call({int year, String semesterValue, bool isRefresh});
 }
 
+/// @nodoc
 class _$CurriculumEventCopyWithImpl<$Res>
     implements $CurriculumEventCopyWith<$Res> {
   _$CurriculumEventCopyWithImpl(this._value, this._then);
@@ -64,6 +90,7 @@ class _$CurriculumEventCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class $FetchCurriculumCopyWith<$Res>
     implements $CurriculumEventCopyWith<$Res> {
   factory $FetchCurriculumCopyWith(
@@ -73,6 +100,7 @@ abstract class $FetchCurriculumCopyWith<$Res>
   $Res call({int year, String semesterValue, bool isRefresh});
 }
 
+/// @nodoc
 class _$FetchCurriculumCopyWithImpl<$Res>
     extends _$CurriculumEventCopyWithImpl<$Res>
     implements $FetchCurriculumCopyWith<$Res> {
@@ -99,6 +127,7 @@ class _$FetchCurriculumCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$FetchCurriculum implements FetchCurriculum {
   const _$FetchCurriculum({this.year, this.semesterValue, this.isRefresh});
 
@@ -138,6 +167,51 @@ class _$FetchCurriculum implements FetchCurriculum {
   @override
   $FetchCurriculumCopyWith<FetchCurriculum> get copyWith =>
       _$FetchCurriculumCopyWithImpl<FetchCurriculum>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required
+        Result fetchCurriculum(int year, String semesterValue, bool isRefresh),
+  }) {
+    assert(fetchCurriculum != null);
+    return fetchCurriculum(year, semesterValue, isRefresh);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result fetchCurriculum(int year, String semesterValue, bool isRefresh),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (fetchCurriculum != null) {
+      return fetchCurriculum(year, semesterValue, isRefresh);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result fetchCurriculum(FetchCurriculum value),
+  }) {
+    assert(fetchCurriculum != null);
+    return fetchCurriculum(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result fetchCurriculum(FetchCurriculum value),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (fetchCurriculum != null) {
+      return fetchCurriculum(this);
+    }
+    return orElse();
+  }
 }
 
 abstract class FetchCurriculum implements CurriculumEvent {
@@ -154,23 +228,28 @@ abstract class FetchCurriculum implements CurriculumEvent {
   $FetchCurriculumCopyWith<FetchCurriculum> get copyWith;
 }
 
+/// @nodoc
 class _$CurriculumStateTearOff {
   const _$CurriculumStateTearOff();
 
+// ignore: unused_element
   Initial initial() {
     return const Initial();
   }
 
+// ignore: unused_element
   Loading loading() {
     return const Loading();
   }
 
+// ignore: unused_element
   Failed failed({Failure error}) {
     return Failed(
       error: error,
     );
   }
 
+// ignore: unused_element
   Loaded loaded({TimeTable timeTable}) {
     return Loaded(
       timeTable: timeTable,
@@ -178,9 +257,11 @@ class _$CurriculumStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $CurriculumState = _$CurriculumStateTearOff();
 
+/// @nodoc
 mixin _$CurriculumState {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -214,12 +295,14 @@ mixin _$CurriculumState {
   });
 }
 
+/// @nodoc
 abstract class $CurriculumStateCopyWith<$Res> {
   factory $CurriculumStateCopyWith(
           CurriculumState value, $Res Function(CurriculumState) then) =
       _$CurriculumStateCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$CurriculumStateCopyWithImpl<$Res>
     implements $CurriculumStateCopyWith<$Res> {
   _$CurriculumStateCopyWithImpl(this._value, this._then);
@@ -229,11 +312,13 @@ class _$CurriculumStateCopyWithImpl<$Res>
   final $Res Function(CurriculumState) _then;
 }
 
+/// @nodoc
 abstract class $InitialCopyWith<$Res> {
   factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
       _$InitialCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InitialCopyWithImpl<$Res> extends _$CurriculumStateCopyWithImpl<$Res>
     implements $InitialCopyWith<$Res> {
   _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
@@ -243,6 +328,7 @@ class _$InitialCopyWithImpl<$Res> extends _$CurriculumStateCopyWithImpl<$Res>
   Initial get _value => super._value as Initial;
 }
 
+/// @nodoc
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -326,11 +412,13 @@ abstract class Initial implements CurriculumState {
   const factory Initial() = _$Initial;
 }
 
+/// @nodoc
 abstract class $LoadingCopyWith<$Res> {
   factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
       _$LoadingCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$LoadingCopyWithImpl<$Res> extends _$CurriculumStateCopyWithImpl<$Res>
     implements $LoadingCopyWith<$Res> {
   _$LoadingCopyWithImpl(Loading _value, $Res Function(Loading) _then)
@@ -340,6 +428,7 @@ class _$LoadingCopyWithImpl<$Res> extends _$CurriculumStateCopyWithImpl<$Res>
   Loading get _value => super._value as Loading;
 }
 
+/// @nodoc
 class _$Loading implements Loading {
   const _$Loading();
 
@@ -423,12 +512,14 @@ abstract class Loading implements CurriculumState {
   const factory Loading() = _$Loading;
 }
 
+/// @nodoc
 abstract class $FailedCopyWith<$Res> {
   factory $FailedCopyWith(Failed value, $Res Function(Failed) then) =
       _$FailedCopyWithImpl<$Res>;
   $Res call({Failure error});
 }
 
+/// @nodoc
 class _$FailedCopyWithImpl<$Res> extends _$CurriculumStateCopyWithImpl<$Res>
     implements $FailedCopyWith<$Res> {
   _$FailedCopyWithImpl(Failed _value, $Res Function(Failed) _then)
@@ -447,6 +538,7 @@ class _$FailedCopyWithImpl<$Res> extends _$CurriculumStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Failed implements Failed {
   const _$Failed({this.error});
 
@@ -544,12 +636,14 @@ abstract class Failed implements CurriculumState {
   $FailedCopyWith<Failed> get copyWith;
 }
 
+/// @nodoc
 abstract class $LoadedCopyWith<$Res> {
   factory $LoadedCopyWith(Loaded value, $Res Function(Loaded) then) =
       _$LoadedCopyWithImpl<$Res>;
   $Res call({TimeTable timeTable});
 }
 
+/// @nodoc
 class _$LoadedCopyWithImpl<$Res> extends _$CurriculumStateCopyWithImpl<$Res>
     implements $LoadedCopyWith<$Res> {
   _$LoadedCopyWithImpl(Loaded _value, $Res Function(Loaded) _then)
@@ -569,6 +663,7 @@ class _$LoadedCopyWithImpl<$Res> extends _$CurriculumStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Loaded implements Loaded {
   const _$Loaded({this.timeTable});
 

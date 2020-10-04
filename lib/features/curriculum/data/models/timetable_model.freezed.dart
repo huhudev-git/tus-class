@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'timetable_model.dart';
 
@@ -12,9 +12,11 @@ TimeTableModel _$TimeTableModelFromJson(Map<String, dynamic> json) {
   return _TimeTableModel.fromJson(json);
 }
 
+/// @nodoc
 class _$TimeTableModelTearOff {
   const _$TimeTableModelTearOff();
 
+// ignore: unused_element
   _TimeTableModel call(
       {@required List<CurriculumModel> curriculums,
       @required List<SemesterModel> semesters,
@@ -31,11 +33,18 @@ class _$TimeTableModelTearOff {
       isCurrent: isCurrent,
     );
   }
+
+// ignore: unused_element
+  TimeTableModel fromJson(Map<String, Object> json) {
+    return TimeTableModel.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $TimeTableModel = _$TimeTableModelTearOff();
 
+/// @nodoc
 mixin _$TimeTableModel {
   List<CurriculumModel> get curriculums;
   List<SemesterModel> get semesters;
@@ -48,6 +57,7 @@ mixin _$TimeTableModel {
   $TimeTableModelCopyWith<TimeTableModel> get copyWith;
 }
 
+/// @nodoc
 abstract class $TimeTableModelCopyWith<$Res> {
   factory $TimeTableModelCopyWith(
           TimeTableModel value, $Res Function(TimeTableModel) then) =
@@ -61,6 +71,7 @@ abstract class $TimeTableModelCopyWith<$Res> {
       bool isCurrent});
 }
 
+/// @nodoc
 class _$TimeTableModelCopyWithImpl<$Res>
     implements $TimeTableModelCopyWith<$Res> {
   _$TimeTableModelCopyWithImpl(this._value, this._then);
@@ -95,6 +106,7 @@ class _$TimeTableModelCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$TimeTableModelCopyWith<$Res>
     implements $TimeTableModelCopyWith<$Res> {
   factory _$TimeTableModelCopyWith(
@@ -110,6 +122,7 @@ abstract class _$TimeTableModelCopyWith<$Res>
       bool isCurrent});
 }
 
+/// @nodoc
 class __$TimeTableModelCopyWithImpl<$Res>
     extends _$TimeTableModelCopyWithImpl<$Res>
     implements _$TimeTableModelCopyWith<$Res> {
@@ -147,6 +160,8 @@ class __$TimeTableModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_TimeTableModel extends _TimeTableModel {
   const _$_TimeTableModel(
       {@required this.curriculums,

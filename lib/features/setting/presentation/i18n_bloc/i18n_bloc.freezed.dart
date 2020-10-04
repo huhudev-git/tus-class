@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'i18n_bloc.dart';
 
@@ -9,13 +9,16 @@ part of 'i18n_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$I18nEventTearOff {
   const _$I18nEventTearOff();
 
+// ignore: unused_element
   Init init() {
     return const Init();
   }
 
+// ignore: unused_element
   SwitchLanguage switchLanguage(
       {String languageCode, String scriptCode, String countryCode}) {
     return SwitchLanguage(
@@ -26,9 +29,11 @@ class _$I18nEventTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $I18nEvent = _$I18nEventTearOff();
 
+/// @nodoc
 mixin _$I18nEvent {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -57,11 +62,13 @@ mixin _$I18nEvent {
   });
 }
 
+/// @nodoc
 abstract class $I18nEventCopyWith<$Res> {
   factory $I18nEventCopyWith(I18nEvent value, $Res Function(I18nEvent) then) =
       _$I18nEventCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$I18nEventCopyWithImpl<$Res> implements $I18nEventCopyWith<$Res> {
   _$I18nEventCopyWithImpl(this._value, this._then);
 
@@ -70,11 +77,13 @@ class _$I18nEventCopyWithImpl<$Res> implements $I18nEventCopyWith<$Res> {
   final $Res Function(I18nEvent) _then;
 }
 
+/// @nodoc
 abstract class $InitCopyWith<$Res> {
   factory $InitCopyWith(Init value, $Res Function(Init) then) =
       _$InitCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InitCopyWithImpl<$Res> extends _$I18nEventCopyWithImpl<$Res>
     implements $InitCopyWith<$Res> {
   _$InitCopyWithImpl(Init _value, $Res Function(Init) _then)
@@ -84,6 +93,7 @@ class _$InitCopyWithImpl<$Res> extends _$I18nEventCopyWithImpl<$Res>
   Init get _value => super._value as Init;
 }
 
+/// @nodoc
 class _$Init with DiagnosticableTreeMixin implements Init {
   const _$Init();
 
@@ -164,6 +174,7 @@ abstract class Init implements I18nEvent {
   const factory Init() = _$Init;
 }
 
+/// @nodoc
 abstract class $SwitchLanguageCopyWith<$Res> {
   factory $SwitchLanguageCopyWith(
           SwitchLanguage value, $Res Function(SwitchLanguage) then) =
@@ -171,6 +182,7 @@ abstract class $SwitchLanguageCopyWith<$Res> {
   $Res call({String languageCode, String scriptCode, String countryCode});
 }
 
+/// @nodoc
 class _$SwitchLanguageCopyWithImpl<$Res> extends _$I18nEventCopyWithImpl<$Res>
     implements $SwitchLanguageCopyWith<$Res> {
   _$SwitchLanguageCopyWithImpl(
@@ -198,6 +210,7 @@ class _$SwitchLanguageCopyWithImpl<$Res> extends _$I18nEventCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$SwitchLanguage with DiagnosticableTreeMixin implements SwitchLanguage {
   const _$SwitchLanguage(
       {this.languageCode, this.scriptCode, this.countryCode});
@@ -316,15 +329,18 @@ abstract class SwitchLanguage implements I18nEvent {
   $SwitchLanguageCopyWith<SwitchLanguage> get copyWith;
 }
 
+/// @nodoc
 class _$I18nStateTearOff {
   const _$I18nStateTearOff();
 
+// ignore: unused_element
   Initial initial({Locale locale}) {
     return Initial(
       locale: locale,
     );
   }
 
+// ignore: unused_element
   Loaded loaded({Locale locale}) {
     return Loaded(
       locale: locale,
@@ -332,9 +348,11 @@ class _$I18nStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $I18nState = _$I18nStateTearOff();
 
+/// @nodoc
 mixin _$I18nState {
   Locale get locale;
 
@@ -364,12 +382,14 @@ mixin _$I18nState {
   $I18nStateCopyWith<I18nState> get copyWith;
 }
 
+/// @nodoc
 abstract class $I18nStateCopyWith<$Res> {
   factory $I18nStateCopyWith(I18nState value, $Res Function(I18nState) then) =
       _$I18nStateCopyWithImpl<$Res>;
   $Res call({Locale locale});
 }
 
+/// @nodoc
 class _$I18nStateCopyWithImpl<$Res> implements $I18nStateCopyWith<$Res> {
   _$I18nStateCopyWithImpl(this._value, this._then);
 
@@ -387,6 +407,7 @@ class _$I18nStateCopyWithImpl<$Res> implements $I18nStateCopyWith<$Res> {
   }
 }
 
+/// @nodoc
 abstract class $InitialCopyWith<$Res> implements $I18nStateCopyWith<$Res> {
   factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
       _$InitialCopyWithImpl<$Res>;
@@ -394,6 +415,7 @@ abstract class $InitialCopyWith<$Res> implements $I18nStateCopyWith<$Res> {
   $Res call({Locale locale});
 }
 
+/// @nodoc
 class _$InitialCopyWithImpl<$Res> extends _$I18nStateCopyWithImpl<$Res>
     implements $InitialCopyWith<$Res> {
   _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
@@ -412,6 +434,7 @@ class _$InitialCopyWithImpl<$Res> extends _$I18nStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Initial with DiagnosticableTreeMixin implements Initial {
   const _$Initial({this.locale});
 
@@ -507,6 +530,7 @@ abstract class Initial implements I18nState {
   $InitialCopyWith<Initial> get copyWith;
 }
 
+/// @nodoc
 abstract class $LoadedCopyWith<$Res> implements $I18nStateCopyWith<$Res> {
   factory $LoadedCopyWith(Loaded value, $Res Function(Loaded) then) =
       _$LoadedCopyWithImpl<$Res>;
@@ -514,6 +538,7 @@ abstract class $LoadedCopyWith<$Res> implements $I18nStateCopyWith<$Res> {
   $Res call({Locale locale});
 }
 
+/// @nodoc
 class _$LoadedCopyWithImpl<$Res> extends _$I18nStateCopyWithImpl<$Res>
     implements $LoadedCopyWith<$Res> {
   _$LoadedCopyWithImpl(Loaded _value, $Res Function(Loaded) _then)
@@ -532,6 +557,7 @@ class _$LoadedCopyWithImpl<$Res> extends _$I18nStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Loaded with DiagnosticableTreeMixin implements Loaded {
   const _$Loaded({this.locale});
 

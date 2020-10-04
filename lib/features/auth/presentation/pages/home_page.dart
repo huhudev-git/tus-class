@@ -53,19 +53,19 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            title: Text(AppLocalizations.of(context).translate('HOME_TAB_HOME')),
+            label: AppLocalizations.of(context).translate('HOME_TAB_HOME'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.calendar_today),
-            title: Text(AppLocalizations.of(context).translate('HOME_TAB_SCHEDULE')),
+            label: AppLocalizations.of(context).translate('HOME_TAB_SCHEDULE'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.list),
-            title: Text(AppLocalizations.of(context).translate('HOME_TAB_GRADE')),
+            label: AppLocalizations.of(context).translate('HOME_TAB_GRADE'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
-            title: Text(AppLocalizations.of(context).translate('HOME_TAB_SETTINGS')),
+            label: AppLocalizations.of(context).translate('HOME_TAB_SETTINGS'),
           ),
         ],
       ),

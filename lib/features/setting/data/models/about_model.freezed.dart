@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'about_model.dart';
 
@@ -12,9 +12,11 @@ AboutModel _$AboutModelFromJson(Map<String, dynamic> json) {
   return _AboutModel.fromJson(json);
 }
 
+/// @nodoc
 class _$AboutModelTearOff {
   const _$AboutModelTearOff();
 
+// ignore: unused_element
   _AboutModel call(
       {@required String version,
       @required String author,
@@ -35,11 +37,18 @@ class _$AboutModelTearOff {
       issuesUrl: issuesUrl,
     );
   }
+
+// ignore: unused_element
+  AboutModel fromJson(Map<String, Object> json) {
+    return AboutModel.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $AboutModel = _$AboutModelTearOff();
 
+/// @nodoc
 mixin _$AboutModel {
   String get version;
   String get author;
@@ -54,6 +63,7 @@ mixin _$AboutModel {
   $AboutModelCopyWith<AboutModel> get copyWith;
 }
 
+/// @nodoc
 abstract class $AboutModelCopyWith<$Res> {
   factory $AboutModelCopyWith(
           AboutModel value, $Res Function(AboutModel) then) =
@@ -69,6 +79,7 @@ abstract class $AboutModelCopyWith<$Res> {
       String issuesUrl});
 }
 
+/// @nodoc
 class _$AboutModelCopyWithImpl<$Res> implements $AboutModelCopyWith<$Res> {
   _$AboutModelCopyWithImpl(this._value, this._then);
 
@@ -103,6 +114,7 @@ class _$AboutModelCopyWithImpl<$Res> implements $AboutModelCopyWith<$Res> {
   }
 }
 
+/// @nodoc
 abstract class _$AboutModelCopyWith<$Res> implements $AboutModelCopyWith<$Res> {
   factory _$AboutModelCopyWith(
           _AboutModel value, $Res Function(_AboutModel) then) =
@@ -119,6 +131,7 @@ abstract class _$AboutModelCopyWith<$Res> implements $AboutModelCopyWith<$Res> {
       String issuesUrl});
 }
 
+/// @nodoc
 class __$AboutModelCopyWithImpl<$Res> extends _$AboutModelCopyWithImpl<$Res>
     implements _$AboutModelCopyWith<$Res> {
   __$AboutModelCopyWithImpl(
@@ -156,6 +169,8 @@ class __$AboutModelCopyWithImpl<$Res> extends _$AboutModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_AboutModel extends _AboutModel {
   const _$_AboutModel(
       {@required this.version,

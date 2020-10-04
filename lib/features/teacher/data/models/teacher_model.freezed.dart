@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'teacher_model.dart';
 
@@ -12,9 +12,11 @@ TeacherModel _$TeacherModelFromJson(Map<String, dynamic> json) {
   return _TeacherModel.fromJson(json);
 }
 
+/// @nodoc
 class _$TeacherModelTearOff {
   const _$TeacherModelTearOff();
 
+// ignore: unused_element
   _TeacherModel call(
       {@required String position,
       @required String location,
@@ -31,11 +33,18 @@ class _$TeacherModelTearOff {
       name: name,
     );
   }
+
+// ignore: unused_element
+  TeacherModel fromJson(Map<String, Object> json) {
+    return TeacherModel.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $TeacherModel = _$TeacherModelTearOff();
 
+/// @nodoc
 mixin _$TeacherModel {
   String get position;
   String get location;
@@ -48,6 +57,7 @@ mixin _$TeacherModel {
   $TeacherModelCopyWith<TeacherModel> get copyWith;
 }
 
+/// @nodoc
 abstract class $TeacherModelCopyWith<$Res> {
   factory $TeacherModelCopyWith(
           TeacherModel value, $Res Function(TeacherModel) then) =
@@ -61,6 +71,7 @@ abstract class $TeacherModelCopyWith<$Res> {
       String name});
 }
 
+/// @nodoc
 class _$TeacherModelCopyWithImpl<$Res> implements $TeacherModelCopyWith<$Res> {
   _$TeacherModelCopyWithImpl(this._value, this._then);
 
@@ -88,6 +99,7 @@ class _$TeacherModelCopyWithImpl<$Res> implements $TeacherModelCopyWith<$Res> {
   }
 }
 
+/// @nodoc
 abstract class _$TeacherModelCopyWith<$Res>
     implements $TeacherModelCopyWith<$Res> {
   factory _$TeacherModelCopyWith(
@@ -103,6 +115,7 @@ abstract class _$TeacherModelCopyWith<$Res>
       String name});
 }
 
+/// @nodoc
 class __$TeacherModelCopyWithImpl<$Res> extends _$TeacherModelCopyWithImpl<$Res>
     implements _$TeacherModelCopyWith<$Res> {
   __$TeacherModelCopyWithImpl(
@@ -133,6 +146,8 @@ class __$TeacherModelCopyWithImpl<$Res> extends _$TeacherModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_TeacherModel extends _TeacherModel {
   const _$_TeacherModel(
       {@required this.position,

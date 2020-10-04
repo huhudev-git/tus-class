@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'curriculum_show_mode_bloc.dart';
 
@@ -9,21 +9,26 @@ part of 'curriculum_show_mode_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$CurriculumShowModeEventTearOff {
   const _$CurriculumShowModeEventTearOff();
 
+// ignore: unused_element
   Init init() {
     return const Init();
   }
 
+// ignore: unused_element
   SwitchShowMode switchShowMode() {
     return const SwitchShowMode();
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $CurriculumShowModeEvent = _$CurriculumShowModeEventTearOff();
 
+/// @nodoc
 mixin _$CurriculumShowModeEvent {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -49,12 +54,14 @@ mixin _$CurriculumShowModeEvent {
   });
 }
 
+/// @nodoc
 abstract class $CurriculumShowModeEventCopyWith<$Res> {
   factory $CurriculumShowModeEventCopyWith(CurriculumShowModeEvent value,
           $Res Function(CurriculumShowModeEvent) then) =
       _$CurriculumShowModeEventCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$CurriculumShowModeEventCopyWithImpl<$Res>
     implements $CurriculumShowModeEventCopyWith<$Res> {
   _$CurriculumShowModeEventCopyWithImpl(this._value, this._then);
@@ -64,11 +71,13 @@ class _$CurriculumShowModeEventCopyWithImpl<$Res>
   final $Res Function(CurriculumShowModeEvent) _then;
 }
 
+/// @nodoc
 abstract class $InitCopyWith<$Res> {
   factory $InitCopyWith(Init value, $Res Function(Init) then) =
       _$InitCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InitCopyWithImpl<$Res>
     extends _$CurriculumShowModeEventCopyWithImpl<$Res>
     implements $InitCopyWith<$Res> {
@@ -79,6 +88,7 @@ class _$InitCopyWithImpl<$Res>
   Init get _value => super._value as Init;
 }
 
+/// @nodoc
 class _$Init implements Init {
   const _$Init();
 
@@ -150,12 +160,14 @@ abstract class Init implements CurriculumShowModeEvent {
   const factory Init() = _$Init;
 }
 
+/// @nodoc
 abstract class $SwitchShowModeCopyWith<$Res> {
   factory $SwitchShowModeCopyWith(
           SwitchShowMode value, $Res Function(SwitchShowMode) then) =
       _$SwitchShowModeCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$SwitchShowModeCopyWithImpl<$Res>
     extends _$CurriculumShowModeEventCopyWithImpl<$Res>
     implements $SwitchShowModeCopyWith<$Res> {
@@ -167,6 +179,7 @@ class _$SwitchShowModeCopyWithImpl<$Res>
   SwitchShowMode get _value => super._value as SwitchShowMode;
 }
 
+/// @nodoc
 class _$SwitchShowMode implements SwitchShowMode {
   const _$SwitchShowMode();
 
@@ -238,23 +251,28 @@ abstract class SwitchShowMode implements CurriculumShowModeEvent {
   const factory SwitchShowMode() = _$SwitchShowMode;
 }
 
+/// @nodoc
 class _$CurriculumShowModeStateTearOff {
   const _$CurriculumShowModeStateTearOff();
 
+// ignore: unused_element
   Initial initial() {
     return const Initial();
   }
 
+// ignore: unused_element
   Loading loading() {
     return const Loading();
   }
 
+// ignore: unused_element
   Failed failed({Failure error}) {
     return Failed(
       error: error,
     );
   }
 
+// ignore: unused_element
   Loaded loaded({ShowMode mode}) {
     return Loaded(
       mode: mode,
@@ -262,9 +280,11 @@ class _$CurriculumShowModeStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $CurriculumShowModeState = _$CurriculumShowModeStateTearOff();
 
+/// @nodoc
 mixin _$CurriculumShowModeState {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -298,12 +318,14 @@ mixin _$CurriculumShowModeState {
   });
 }
 
+/// @nodoc
 abstract class $CurriculumShowModeStateCopyWith<$Res> {
   factory $CurriculumShowModeStateCopyWith(CurriculumShowModeState value,
           $Res Function(CurriculumShowModeState) then) =
       _$CurriculumShowModeStateCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$CurriculumShowModeStateCopyWithImpl<$Res>
     implements $CurriculumShowModeStateCopyWith<$Res> {
   _$CurriculumShowModeStateCopyWithImpl(this._value, this._then);
@@ -313,11 +335,13 @@ class _$CurriculumShowModeStateCopyWithImpl<$Res>
   final $Res Function(CurriculumShowModeState) _then;
 }
 
+/// @nodoc
 abstract class $InitialCopyWith<$Res> {
   factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
       _$InitialCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InitialCopyWithImpl<$Res>
     extends _$CurriculumShowModeStateCopyWithImpl<$Res>
     implements $InitialCopyWith<$Res> {
@@ -328,6 +352,7 @@ class _$InitialCopyWithImpl<$Res>
   Initial get _value => super._value as Initial;
 }
 
+/// @nodoc
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -411,11 +436,13 @@ abstract class Initial implements CurriculumShowModeState {
   const factory Initial() = _$Initial;
 }
 
+/// @nodoc
 abstract class $LoadingCopyWith<$Res> {
   factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
       _$LoadingCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$LoadingCopyWithImpl<$Res>
     extends _$CurriculumShowModeStateCopyWithImpl<$Res>
     implements $LoadingCopyWith<$Res> {
@@ -426,6 +453,7 @@ class _$LoadingCopyWithImpl<$Res>
   Loading get _value => super._value as Loading;
 }
 
+/// @nodoc
 class _$Loading implements Loading {
   const _$Loading();
 
@@ -509,12 +537,14 @@ abstract class Loading implements CurriculumShowModeState {
   const factory Loading() = _$Loading;
 }
 
+/// @nodoc
 abstract class $FailedCopyWith<$Res> {
   factory $FailedCopyWith(Failed value, $Res Function(Failed) then) =
       _$FailedCopyWithImpl<$Res>;
   $Res call({Failure error});
 }
 
+/// @nodoc
 class _$FailedCopyWithImpl<$Res>
     extends _$CurriculumShowModeStateCopyWithImpl<$Res>
     implements $FailedCopyWith<$Res> {
@@ -534,6 +564,7 @@ class _$FailedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Failed implements Failed {
   const _$Failed({this.error});
 
@@ -631,6 +662,7 @@ abstract class Failed implements CurriculumShowModeState {
   $FailedCopyWith<Failed> get copyWith;
 }
 
+/// @nodoc
 abstract class $LoadedCopyWith<$Res> {
   factory $LoadedCopyWith(Loaded value, $Res Function(Loaded) then) =
       _$LoadedCopyWithImpl<$Res>;
@@ -639,6 +671,7 @@ abstract class $LoadedCopyWith<$Res> {
   $ShowModeCopyWith<$Res> get mode;
 }
 
+/// @nodoc
 class _$LoadedCopyWithImpl<$Res>
     extends _$CurriculumShowModeStateCopyWithImpl<$Res>
     implements $LoadedCopyWith<$Res> {
@@ -668,6 +701,7 @@ class _$LoadedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Loaded implements Loaded {
   const _$Loaded({this.mode});
 

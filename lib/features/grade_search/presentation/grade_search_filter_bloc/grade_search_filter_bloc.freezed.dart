@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'grade_search_filter_bloc.dart';
 
@@ -9,25 +9,50 @@ part of 'grade_search_filter_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$GradeSearchFilterEventTearOff {
   const _$GradeSearchFilterEventTearOff();
 
+// ignore: unused_element
   FetchGradeSearchFilter fetchGradeSearchFilter() {
     return const FetchGradeSearchFilter();
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $GradeSearchFilterEvent = _$GradeSearchFilterEventTearOff();
 
-mixin _$GradeSearchFilterEvent {}
+/// @nodoc
+mixin _$GradeSearchFilterEvent {
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result fetchGradeSearchFilter(),
+  });
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result fetchGradeSearchFilter(),
+    @required Result orElse(),
+  });
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result fetchGradeSearchFilter(FetchGradeSearchFilter value),
+  });
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result fetchGradeSearchFilter(FetchGradeSearchFilter value),
+    @required Result orElse(),
+  });
+}
 
+/// @nodoc
 abstract class $GradeSearchFilterEventCopyWith<$Res> {
   factory $GradeSearchFilterEventCopyWith(GradeSearchFilterEvent value,
           $Res Function(GradeSearchFilterEvent) then) =
       _$GradeSearchFilterEventCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$GradeSearchFilterEventCopyWithImpl<$Res>
     implements $GradeSearchFilterEventCopyWith<$Res> {
   _$GradeSearchFilterEventCopyWithImpl(this._value, this._then);
@@ -37,12 +62,14 @@ class _$GradeSearchFilterEventCopyWithImpl<$Res>
   final $Res Function(GradeSearchFilterEvent) _then;
 }
 
+/// @nodoc
 abstract class $FetchGradeSearchFilterCopyWith<$Res> {
   factory $FetchGradeSearchFilterCopyWith(FetchGradeSearchFilter value,
           $Res Function(FetchGradeSearchFilter) then) =
       _$FetchGradeSearchFilterCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$FetchGradeSearchFilterCopyWithImpl<$Res>
     extends _$GradeSearchFilterEventCopyWithImpl<$Res>
     implements $FetchGradeSearchFilterCopyWith<$Res> {
@@ -54,6 +81,7 @@ class _$FetchGradeSearchFilterCopyWithImpl<$Res>
   FetchGradeSearchFilter get _value => super._value as FetchGradeSearchFilter;
 }
 
+/// @nodoc
 class _$FetchGradeSearchFilter implements FetchGradeSearchFilter {
   const _$FetchGradeSearchFilter();
 
@@ -69,29 +97,78 @@ class _$FetchGradeSearchFilter implements FetchGradeSearchFilter {
 
   @override
   int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result fetchGradeSearchFilter(),
+  }) {
+    assert(fetchGradeSearchFilter != null);
+    return fetchGradeSearchFilter();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result fetchGradeSearchFilter(),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (fetchGradeSearchFilter != null) {
+      return fetchGradeSearchFilter();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result fetchGradeSearchFilter(FetchGradeSearchFilter value),
+  }) {
+    assert(fetchGradeSearchFilter != null);
+    return fetchGradeSearchFilter(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result fetchGradeSearchFilter(FetchGradeSearchFilter value),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (fetchGradeSearchFilter != null) {
+      return fetchGradeSearchFilter(this);
+    }
+    return orElse();
+  }
 }
 
 abstract class FetchGradeSearchFilter implements GradeSearchFilterEvent {
   const factory FetchGradeSearchFilter() = _$FetchGradeSearchFilter;
 }
 
+/// @nodoc
 class _$GradeSearchFilterStateTearOff {
   const _$GradeSearchFilterStateTearOff();
 
+// ignore: unused_element
   Initial initial() {
     return const Initial();
   }
 
+// ignore: unused_element
   Loading loading() {
     return const Loading();
   }
 
+// ignore: unused_element
   Loaded loaded({GradeFilter filter}) {
     return Loaded(
       filter: filter,
     );
   }
 
+// ignore: unused_element
   Failed failed({Failure error}) {
     return Failed(
       error: error,
@@ -99,9 +176,11 @@ class _$GradeSearchFilterStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $GradeSearchFilterState = _$GradeSearchFilterStateTearOff();
 
+/// @nodoc
 mixin _$GradeSearchFilterState {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -135,12 +214,14 @@ mixin _$GradeSearchFilterState {
   });
 }
 
+/// @nodoc
 abstract class $GradeSearchFilterStateCopyWith<$Res> {
   factory $GradeSearchFilterStateCopyWith(GradeSearchFilterState value,
           $Res Function(GradeSearchFilterState) then) =
       _$GradeSearchFilterStateCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$GradeSearchFilterStateCopyWithImpl<$Res>
     implements $GradeSearchFilterStateCopyWith<$Res> {
   _$GradeSearchFilterStateCopyWithImpl(this._value, this._then);
@@ -150,11 +231,13 @@ class _$GradeSearchFilterStateCopyWithImpl<$Res>
   final $Res Function(GradeSearchFilterState) _then;
 }
 
+/// @nodoc
 abstract class $InitialCopyWith<$Res> {
   factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
       _$InitialCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InitialCopyWithImpl<$Res>
     extends _$GradeSearchFilterStateCopyWithImpl<$Res>
     implements $InitialCopyWith<$Res> {
@@ -165,6 +248,7 @@ class _$InitialCopyWithImpl<$Res>
   Initial get _value => super._value as Initial;
 }
 
+/// @nodoc
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -248,11 +332,13 @@ abstract class Initial implements GradeSearchFilterState {
   const factory Initial() = _$Initial;
 }
 
+/// @nodoc
 abstract class $LoadingCopyWith<$Res> {
   factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
       _$LoadingCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$LoadingCopyWithImpl<$Res>
     extends _$GradeSearchFilterStateCopyWithImpl<$Res>
     implements $LoadingCopyWith<$Res> {
@@ -263,6 +349,7 @@ class _$LoadingCopyWithImpl<$Res>
   Loading get _value => super._value as Loading;
 }
 
+/// @nodoc
 class _$Loading implements Loading {
   const _$Loading();
 
@@ -346,12 +433,14 @@ abstract class Loading implements GradeSearchFilterState {
   const factory Loading() = _$Loading;
 }
 
+/// @nodoc
 abstract class $LoadedCopyWith<$Res> {
   factory $LoadedCopyWith(Loaded value, $Res Function(Loaded) then) =
       _$LoadedCopyWithImpl<$Res>;
   $Res call({GradeFilter filter});
 }
 
+/// @nodoc
 class _$LoadedCopyWithImpl<$Res>
     extends _$GradeSearchFilterStateCopyWithImpl<$Res>
     implements $LoadedCopyWith<$Res> {
@@ -371,6 +460,7 @@ class _$LoadedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Loaded implements Loaded {
   const _$Loaded({this.filter});
 
@@ -468,12 +558,14 @@ abstract class Loaded implements GradeSearchFilterState {
   $LoadedCopyWith<Loaded> get copyWith;
 }
 
+/// @nodoc
 abstract class $FailedCopyWith<$Res> {
   factory $FailedCopyWith(Failed value, $Res Function(Failed) then) =
       _$FailedCopyWithImpl<$Res>;
   $Res call({Failure error});
 }
 
+/// @nodoc
 class _$FailedCopyWithImpl<$Res>
     extends _$GradeSearchFilterStateCopyWithImpl<$Res>
     implements $FailedCopyWith<$Res> {
@@ -493,6 +585,7 @@ class _$FailedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Failed implements Failed {
   const _$Failed({this.error});
 

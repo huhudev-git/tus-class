@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'syllabus_search_bloc.dart';
 
@@ -9,13 +9,16 @@ part of 'syllabus_search_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$SyllabusSearchEventTearOff {
   const _$SyllabusSearchEventTearOff();
 
+// ignore: unused_element
   Init init() {
     return const Init();
   }
 
+// ignore: unused_element
   Search search(
       {String key,
       String year,
@@ -41,6 +44,7 @@ class _$SyllabusSearchEventTearOff {
     );
   }
 
+// ignore: unused_element
   FetchPage fetchPage({int page}) {
     return FetchPage(
       page: page,
@@ -48,9 +52,11 @@ class _$SyllabusSearchEventTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $SyllabusSearchEvent = _$SyllabusSearchEventTearOff();
 
+/// @nodoc
 mixin _$SyllabusSearchEvent {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -101,12 +107,14 @@ mixin _$SyllabusSearchEvent {
   });
 }
 
+/// @nodoc
 abstract class $SyllabusSearchEventCopyWith<$Res> {
   factory $SyllabusSearchEventCopyWith(
           SyllabusSearchEvent value, $Res Function(SyllabusSearchEvent) then) =
       _$SyllabusSearchEventCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$SyllabusSearchEventCopyWithImpl<$Res>
     implements $SyllabusSearchEventCopyWith<$Res> {
   _$SyllabusSearchEventCopyWithImpl(this._value, this._then);
@@ -116,11 +124,13 @@ class _$SyllabusSearchEventCopyWithImpl<$Res>
   final $Res Function(SyllabusSearchEvent) _then;
 }
 
+/// @nodoc
 abstract class $InitCopyWith<$Res> {
   factory $InitCopyWith(Init value, $Res Function(Init) then) =
       _$InitCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InitCopyWithImpl<$Res> extends _$SyllabusSearchEventCopyWithImpl<$Res>
     implements $InitCopyWith<$Res> {
   _$InitCopyWithImpl(Init _value, $Res Function(Init) _then)
@@ -130,6 +140,7 @@ class _$InitCopyWithImpl<$Res> extends _$SyllabusSearchEventCopyWithImpl<$Res>
   Init get _value => super._value as Init;
 }
 
+/// @nodoc
 class _$Init implements Init {
   const _$Init();
 
@@ -228,6 +239,7 @@ abstract class Init implements SyllabusSearchEvent {
   const factory Init() = _$Init;
 }
 
+/// @nodoc
 abstract class $SearchCopyWith<$Res> {
   factory $SearchCopyWith(Search value, $Res Function(Search) then) =
       _$SearchCopyWithImpl<$Res>;
@@ -244,6 +256,7 @@ abstract class $SearchCopyWith<$Res> {
       bool teacher});
 }
 
+/// @nodoc
 class _$SearchCopyWithImpl<$Res> extends _$SyllabusSearchEventCopyWithImpl<$Res>
     implements $SearchCopyWith<$Res> {
   _$SearchCopyWithImpl(Search _value, $Res Function(Search) _then)
@@ -281,6 +294,7 @@ class _$SearchCopyWithImpl<$Res> extends _$SyllabusSearchEventCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Search implements Search {
   const _$Search(
       {this.key,
@@ -474,12 +488,14 @@ abstract class Search implements SyllabusSearchEvent {
   $SearchCopyWith<Search> get copyWith;
 }
 
+/// @nodoc
 abstract class $FetchPageCopyWith<$Res> {
   factory $FetchPageCopyWith(FetchPage value, $Res Function(FetchPage) then) =
       _$FetchPageCopyWithImpl<$Res>;
   $Res call({int page});
 }
 
+/// @nodoc
 class _$FetchPageCopyWithImpl<$Res>
     extends _$SyllabusSearchEventCopyWithImpl<$Res>
     implements $FetchPageCopyWith<$Res> {
@@ -499,6 +515,7 @@ class _$FetchPageCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$FetchPage implements FetchPage {
   const _$FetchPage({this.page});
 
@@ -611,17 +628,21 @@ abstract class FetchPage implements SyllabusSearchEvent {
   $FetchPageCopyWith<FetchPage> get copyWith;
 }
 
+/// @nodoc
 class _$SyllabusSearchStateTearOff {
   const _$SyllabusSearchStateTearOff();
 
+// ignore: unused_element
   Initial initial() {
     return const Initial();
   }
 
+// ignore: unused_element
   Loading loading() {
     return const Loading();
   }
 
+// ignore: unused_element
   Loaded loaded(
       {List<Syllabus> syllabusList,
       bool isLastPage,
@@ -635,6 +656,7 @@ class _$SyllabusSearchStateTearOff {
     );
   }
 
+// ignore: unused_element
   Failed failed({Failure error}) {
     return Failed(
       error: error,
@@ -642,9 +664,11 @@ class _$SyllabusSearchStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $SyllabusSearchState = _$SyllabusSearchStateTearOff();
 
+/// @nodoc
 mixin _$SyllabusSearchState {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -681,12 +705,14 @@ mixin _$SyllabusSearchState {
   });
 }
 
+/// @nodoc
 abstract class $SyllabusSearchStateCopyWith<$Res> {
   factory $SyllabusSearchStateCopyWith(
           SyllabusSearchState value, $Res Function(SyllabusSearchState) then) =
       _$SyllabusSearchStateCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$SyllabusSearchStateCopyWithImpl<$Res>
     implements $SyllabusSearchStateCopyWith<$Res> {
   _$SyllabusSearchStateCopyWithImpl(this._value, this._then);
@@ -696,11 +722,13 @@ class _$SyllabusSearchStateCopyWithImpl<$Res>
   final $Res Function(SyllabusSearchState) _then;
 }
 
+/// @nodoc
 abstract class $InitialCopyWith<$Res> {
   factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
       _$InitialCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InitialCopyWithImpl<$Res>
     extends _$SyllabusSearchStateCopyWithImpl<$Res>
     implements $InitialCopyWith<$Res> {
@@ -711,6 +739,7 @@ class _$InitialCopyWithImpl<$Res>
   Initial get _value => super._value as Initial;
 }
 
+/// @nodoc
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -797,11 +826,13 @@ abstract class Initial implements SyllabusSearchState {
   const factory Initial() = _$Initial;
 }
 
+/// @nodoc
 abstract class $LoadingCopyWith<$Res> {
   factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
       _$LoadingCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$LoadingCopyWithImpl<$Res>
     extends _$SyllabusSearchStateCopyWithImpl<$Res>
     implements $LoadingCopyWith<$Res> {
@@ -812,6 +843,7 @@ class _$LoadingCopyWithImpl<$Res>
   Loading get _value => super._value as Loading;
 }
 
+/// @nodoc
 class _$Loading implements Loading {
   const _$Loading();
 
@@ -898,6 +930,7 @@ abstract class Loading implements SyllabusSearchState {
   const factory Loading() = _$Loading;
 }
 
+/// @nodoc
 abstract class $LoadedCopyWith<$Res> {
   factory $LoadedCopyWith(Loaded value, $Res Function(Loaded) then) =
       _$LoadedCopyWithImpl<$Res>;
@@ -905,6 +938,7 @@ abstract class $LoadedCopyWith<$Res> {
       {List<Syllabus> syllabusList, bool isLastPage, bool isLoading, int page});
 }
 
+/// @nodoc
 class _$LoadedCopyWithImpl<$Res> extends _$SyllabusSearchStateCopyWithImpl<$Res>
     implements $LoadedCopyWith<$Res> {
   _$LoadedCopyWithImpl(Loaded _value, $Res Function(Loaded) _then)
@@ -932,6 +966,7 @@ class _$LoadedCopyWithImpl<$Res> extends _$SyllabusSearchStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Loaded implements Loaded {
   const _$Loaded(
       {this.syllabusList, this.isLastPage, this.isLoading, this.page});
@@ -1059,12 +1094,14 @@ abstract class Loaded implements SyllabusSearchState {
   $LoadedCopyWith<Loaded> get copyWith;
 }
 
+/// @nodoc
 abstract class $FailedCopyWith<$Res> {
   factory $FailedCopyWith(Failed value, $Res Function(Failed) then) =
       _$FailedCopyWithImpl<$Res>;
   $Res call({Failure error});
 }
 
+/// @nodoc
 class _$FailedCopyWithImpl<$Res> extends _$SyllabusSearchStateCopyWithImpl<$Res>
     implements $FailedCopyWith<$Res> {
   _$FailedCopyWithImpl(Failed _value, $Res Function(Failed) _then)
@@ -1083,6 +1120,7 @@ class _$FailedCopyWithImpl<$Res> extends _$SyllabusSearchStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Failed implements Failed {
   const _$Failed({this.error});
 

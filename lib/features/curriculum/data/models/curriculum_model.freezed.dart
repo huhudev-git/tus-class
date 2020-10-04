@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'curriculum_model.dart';
 
@@ -12,9 +12,11 @@ CurriculumModel _$CurriculumModelFromJson(Map<String, dynamic> json) {
   return _CurriculumModel.fromJson(json);
 }
 
+/// @nodoc
 class _$CurriculumModelTearOff {
   const _$CurriculumModelTearOff();
 
+// ignore: unused_element
   _CurriculumModel call(
       {@required @nullable String code,
       @required String course,
@@ -35,11 +37,18 @@ class _$CurriculumModelTearOff {
       hasDetail: hasDetail,
     );
   }
+
+// ignore: unused_element
+  CurriculumModel fromJson(Map<String, Object> json) {
+    return CurriculumModel.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $CurriculumModel = _$CurriculumModelTearOff();
 
+/// @nodoc
 mixin _$CurriculumModel {
   @nullable
   String get code;
@@ -55,6 +64,7 @@ mixin _$CurriculumModel {
   $CurriculumModelCopyWith<CurriculumModel> get copyWith;
 }
 
+/// @nodoc
 abstract class $CurriculumModelCopyWith<$Res> {
   factory $CurriculumModelCopyWith(
           CurriculumModel value, $Res Function(CurriculumModel) then) =
@@ -70,6 +80,7 @@ abstract class $CurriculumModelCopyWith<$Res> {
       bool hasDetail});
 }
 
+/// @nodoc
 class _$CurriculumModelCopyWithImpl<$Res>
     implements $CurriculumModelCopyWith<$Res> {
   _$CurriculumModelCopyWithImpl(this._value, this._then);
@@ -102,6 +113,7 @@ class _$CurriculumModelCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$CurriculumModelCopyWith<$Res>
     implements $CurriculumModelCopyWith<$Res> {
   factory _$CurriculumModelCopyWith(
@@ -119,6 +131,7 @@ abstract class _$CurriculumModelCopyWith<$Res>
       bool hasDetail});
 }
 
+/// @nodoc
 class __$CurriculumModelCopyWithImpl<$Res>
     extends _$CurriculumModelCopyWithImpl<$Res>
     implements _$CurriculumModelCopyWith<$Res> {
@@ -154,6 +167,8 @@ class __$CurriculumModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_CurriculumModel extends _CurriculumModel {
   const _$_CurriculumModel(
       {@required @nullable this.code,

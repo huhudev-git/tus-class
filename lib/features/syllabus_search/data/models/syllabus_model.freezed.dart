@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'syllabus_model.dart';
 
@@ -12,9 +12,11 @@ SyllabusModel _$SyllabusModelFromJson(Map<String, dynamic> json) {
   return _SyllabusModel.fromJson(json);
 }
 
+/// @nodoc
 class _$SyllabusModelTearOff {
   const _$SyllabusModelTearOff();
 
+// ignore: unused_element
   _SyllabusModel call(
       {@required String code,
       @required String course,
@@ -39,11 +41,18 @@ class _$SyllabusModelTearOff {
       periods: periods,
     );
   }
+
+// ignore: unused_element
+  SyllabusModel fromJson(Map<String, Object> json) {
+    return SyllabusModel.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $SyllabusModel = _$SyllabusModelTearOff();
 
+/// @nodoc
 mixin _$SyllabusModel {
   String get code;
   String get course;
@@ -61,6 +70,7 @@ mixin _$SyllabusModel {
   $SyllabusModelCopyWith<SyllabusModel> get copyWith;
 }
 
+/// @nodoc
 abstract class $SyllabusModelCopyWith<$Res> {
   factory $SyllabusModelCopyWith(
           SyllabusModel value, $Res Function(SyllabusModel) then) =
@@ -78,6 +88,7 @@ abstract class $SyllabusModelCopyWith<$Res> {
       List<int> periods});
 }
 
+/// @nodoc
 class _$SyllabusModelCopyWithImpl<$Res>
     implements $SyllabusModelCopyWith<$Res> {
   _$SyllabusModelCopyWithImpl(this._value, this._then);
@@ -114,6 +125,7 @@ class _$SyllabusModelCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$SyllabusModelCopyWith<$Res>
     implements $SyllabusModelCopyWith<$Res> {
   factory _$SyllabusModelCopyWith(
@@ -133,6 +145,7 @@ abstract class _$SyllabusModelCopyWith<$Res>
       List<int> periods});
 }
 
+/// @nodoc
 class __$SyllabusModelCopyWithImpl<$Res>
     extends _$SyllabusModelCopyWithImpl<$Res>
     implements _$SyllabusModelCopyWith<$Res> {
@@ -172,6 +185,8 @@ class __$SyllabusModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_SyllabusModel extends _SyllabusModel {
   const _$_SyllabusModel(
       {@required this.code,

@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'message_entry_bloc.dart';
 
@@ -9,15 +9,18 @@ part of 'message_entry_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$MessageEntryEventTearOff {
   const _$MessageEntryEventTearOff();
 
+// ignore: unused_element
   Init init({bool isEntry}) {
     return Init(
       isEntry: isEntry,
     );
   }
 
+// ignore: unused_element
   MessageEntrySwitch entrySwitch({String pageId, bool isEntry}) {
     return MessageEntrySwitch(
       pageId: pageId,
@@ -26,9 +29,11 @@ class _$MessageEntryEventTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $MessageEntryEvent = _$MessageEntryEventTearOff();
 
+/// @nodoc
 mixin _$MessageEntryEvent {
   bool get isEntry;
 
@@ -58,6 +63,7 @@ mixin _$MessageEntryEvent {
   $MessageEntryEventCopyWith<MessageEntryEvent> get copyWith;
 }
 
+/// @nodoc
 abstract class $MessageEntryEventCopyWith<$Res> {
   factory $MessageEntryEventCopyWith(
           MessageEntryEvent value, $Res Function(MessageEntryEvent) then) =
@@ -65,6 +71,7 @@ abstract class $MessageEntryEventCopyWith<$Res> {
   $Res call({bool isEntry});
 }
 
+/// @nodoc
 class _$MessageEntryEventCopyWithImpl<$Res>
     implements $MessageEntryEventCopyWith<$Res> {
   _$MessageEntryEventCopyWithImpl(this._value, this._then);
@@ -83,6 +90,7 @@ class _$MessageEntryEventCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class $InitCopyWith<$Res> implements $MessageEntryEventCopyWith<$Res> {
   factory $InitCopyWith(Init value, $Res Function(Init) then) =
       _$InitCopyWithImpl<$Res>;
@@ -90,6 +98,7 @@ abstract class $InitCopyWith<$Res> implements $MessageEntryEventCopyWith<$Res> {
   $Res call({bool isEntry});
 }
 
+/// @nodoc
 class _$InitCopyWithImpl<$Res> extends _$MessageEntryEventCopyWithImpl<$Res>
     implements $InitCopyWith<$Res> {
   _$InitCopyWithImpl(Init _value, $Res Function(Init) _then)
@@ -108,6 +117,7 @@ class _$InitCopyWithImpl<$Res> extends _$MessageEntryEventCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Init implements Init {
   const _$Init({this.isEntry});
 
@@ -195,6 +205,7 @@ abstract class Init implements MessageEntryEvent {
   $InitCopyWith<Init> get copyWith;
 }
 
+/// @nodoc
 abstract class $MessageEntrySwitchCopyWith<$Res>
     implements $MessageEntryEventCopyWith<$Res> {
   factory $MessageEntrySwitchCopyWith(
@@ -204,6 +215,7 @@ abstract class $MessageEntrySwitchCopyWith<$Res>
   $Res call({String pageId, bool isEntry});
 }
 
+/// @nodoc
 class _$MessageEntrySwitchCopyWithImpl<$Res>
     extends _$MessageEntryEventCopyWithImpl<$Res>
     implements $MessageEntrySwitchCopyWith<$Res> {
@@ -226,6 +238,7 @@ class _$MessageEntrySwitchCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$MessageEntrySwitch implements MessageEntrySwitch {
   const _$MessageEntrySwitch({this.pageId, this.isEntry});
 
@@ -321,29 +334,35 @@ abstract class MessageEntrySwitch implements MessageEntryEvent {
   $MessageEntrySwitchCopyWith<MessageEntrySwitch> get copyWith;
 }
 
+/// @nodoc
 class _$MessageEntryStateTearOff {
   const _$MessageEntryStateTearOff();
 
+// ignore: unused_element
   Initial initial() {
     return const Initial();
   }
 
+// ignore: unused_element
   Loading loading() {
     return const Loading();
   }
 
+// ignore: unused_element
   Loaded loaded({bool isEntry}) {
     return Loaded(
       isEntry: isEntry,
     );
   }
 
+// ignore: unused_element
   Failed failed({Failure error}) {
     return Failed(
       error: error,
     );
   }
 
+// ignore: unused_element
   Success success({bool isEntry}) {
     return Success(
       isEntry: isEntry,
@@ -351,9 +370,11 @@ class _$MessageEntryStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $MessageEntryState = _$MessageEntryStateTearOff();
 
+/// @nodoc
 mixin _$MessageEntryState {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -391,12 +412,14 @@ mixin _$MessageEntryState {
   });
 }
 
+/// @nodoc
 abstract class $MessageEntryStateCopyWith<$Res> {
   factory $MessageEntryStateCopyWith(
           MessageEntryState value, $Res Function(MessageEntryState) then) =
       _$MessageEntryStateCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$MessageEntryStateCopyWithImpl<$Res>
     implements $MessageEntryStateCopyWith<$Res> {
   _$MessageEntryStateCopyWithImpl(this._value, this._then);
@@ -406,11 +429,13 @@ class _$MessageEntryStateCopyWithImpl<$Res>
   final $Res Function(MessageEntryState) _then;
 }
 
+/// @nodoc
 abstract class $InitialCopyWith<$Res> {
   factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
       _$InitialCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InitialCopyWithImpl<$Res> extends _$MessageEntryStateCopyWithImpl<$Res>
     implements $InitialCopyWith<$Res> {
   _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
@@ -420,6 +445,7 @@ class _$InitialCopyWithImpl<$Res> extends _$MessageEntryStateCopyWithImpl<$Res>
   Initial get _value => super._value as Initial;
 }
 
+/// @nodoc
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -509,11 +535,13 @@ abstract class Initial implements MessageEntryState {
   const factory Initial() = _$Initial;
 }
 
+/// @nodoc
 abstract class $LoadingCopyWith<$Res> {
   factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
       _$LoadingCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$LoadingCopyWithImpl<$Res> extends _$MessageEntryStateCopyWithImpl<$Res>
     implements $LoadingCopyWith<$Res> {
   _$LoadingCopyWithImpl(Loading _value, $Res Function(Loading) _then)
@@ -523,6 +551,7 @@ class _$LoadingCopyWithImpl<$Res> extends _$MessageEntryStateCopyWithImpl<$Res>
   Loading get _value => super._value as Loading;
 }
 
+/// @nodoc
 class _$Loading implements Loading {
   const _$Loading();
 
@@ -612,12 +641,14 @@ abstract class Loading implements MessageEntryState {
   const factory Loading() = _$Loading;
 }
 
+/// @nodoc
 abstract class $LoadedCopyWith<$Res> {
   factory $LoadedCopyWith(Loaded value, $Res Function(Loaded) then) =
       _$LoadedCopyWithImpl<$Res>;
   $Res call({bool isEntry});
 }
 
+/// @nodoc
 class _$LoadedCopyWithImpl<$Res> extends _$MessageEntryStateCopyWithImpl<$Res>
     implements $LoadedCopyWith<$Res> {
   _$LoadedCopyWithImpl(Loaded _value, $Res Function(Loaded) _then)
@@ -636,6 +667,7 @@ class _$LoadedCopyWithImpl<$Res> extends _$MessageEntryStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Loaded implements Loaded {
   const _$Loaded({this.isEntry});
 
@@ -739,12 +771,14 @@ abstract class Loaded implements MessageEntryState {
   $LoadedCopyWith<Loaded> get copyWith;
 }
 
+/// @nodoc
 abstract class $FailedCopyWith<$Res> {
   factory $FailedCopyWith(Failed value, $Res Function(Failed) then) =
       _$FailedCopyWithImpl<$Res>;
   $Res call({Failure error});
 }
 
+/// @nodoc
 class _$FailedCopyWithImpl<$Res> extends _$MessageEntryStateCopyWithImpl<$Res>
     implements $FailedCopyWith<$Res> {
   _$FailedCopyWithImpl(Failed _value, $Res Function(Failed) _then)
@@ -763,6 +797,7 @@ class _$FailedCopyWithImpl<$Res> extends _$MessageEntryStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Failed implements Failed {
   const _$Failed({this.error});
 
@@ -866,12 +901,14 @@ abstract class Failed implements MessageEntryState {
   $FailedCopyWith<Failed> get copyWith;
 }
 
+/// @nodoc
 abstract class $SuccessCopyWith<$Res> {
   factory $SuccessCopyWith(Success value, $Res Function(Success) then) =
       _$SuccessCopyWithImpl<$Res>;
   $Res call({bool isEntry});
 }
 
+/// @nodoc
 class _$SuccessCopyWithImpl<$Res> extends _$MessageEntryStateCopyWithImpl<$Res>
     implements $SuccessCopyWith<$Res> {
   _$SuccessCopyWithImpl(Success _value, $Res Function(Success) _then)
@@ -890,6 +927,7 @@ class _$SuccessCopyWithImpl<$Res> extends _$MessageEntryStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Success implements Success {
   const _$Success({this.isEntry});
 

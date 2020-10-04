@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'message_detail_bloc.dart';
 
@@ -9,9 +9,11 @@ part of 'message_detail_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$MessageDetailEventTearOff {
   const _$MessageDetailEventTearOff();
 
+// ignore: unused_element
   FetchMessageDetail fetchMessageDetail(
       {int categoryId, int index, String link}) {
     return FetchMessageDetail(
@@ -22,17 +24,39 @@ class _$MessageDetailEventTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $MessageDetailEvent = _$MessageDetailEventTearOff();
 
+/// @nodoc
 mixin _$MessageDetailEvent {
   int get categoryId;
   int get index;
   String get link;
 
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result fetchMessageDetail(int categoryId, int index, String link),
+  });
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result fetchMessageDetail(int categoryId, int index, String link),
+    @required Result orElse(),
+  });
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result fetchMessageDetail(FetchMessageDetail value),
+  });
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result fetchMessageDetail(FetchMessageDetail value),
+    @required Result orElse(),
+  });
+
   $MessageDetailEventCopyWith<MessageDetailEvent> get copyWith;
 }
 
+/// @nodoc
 abstract class $MessageDetailEventCopyWith<$Res> {
   factory $MessageDetailEventCopyWith(
           MessageDetailEvent value, $Res Function(MessageDetailEvent) then) =
@@ -40,6 +64,7 @@ abstract class $MessageDetailEventCopyWith<$Res> {
   $Res call({int categoryId, int index, String link});
 }
 
+/// @nodoc
 class _$MessageDetailEventCopyWithImpl<$Res>
     implements $MessageDetailEventCopyWith<$Res> {
   _$MessageDetailEventCopyWithImpl(this._value, this._then);
@@ -62,6 +87,7 @@ class _$MessageDetailEventCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class $FetchMessageDetailCopyWith<$Res>
     implements $MessageDetailEventCopyWith<$Res> {
   factory $FetchMessageDetailCopyWith(
@@ -71,6 +97,7 @@ abstract class $FetchMessageDetailCopyWith<$Res>
   $Res call({int categoryId, int index, String link});
 }
 
+/// @nodoc
 class _$FetchMessageDetailCopyWithImpl<$Res>
     extends _$MessageDetailEventCopyWithImpl<$Res>
     implements $FetchMessageDetailCopyWith<$Res> {
@@ -95,6 +122,7 @@ class _$FetchMessageDetailCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$FetchMessageDetail implements FetchMessageDetail {
   const _$FetchMessageDetail({this.categoryId, this.index, this.link});
 
@@ -133,6 +161,50 @@ class _$FetchMessageDetail implements FetchMessageDetail {
   @override
   $FetchMessageDetailCopyWith<FetchMessageDetail> get copyWith =>
       _$FetchMessageDetailCopyWithImpl<FetchMessageDetail>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result fetchMessageDetail(int categoryId, int index, String link),
+  }) {
+    assert(fetchMessageDetail != null);
+    return fetchMessageDetail(categoryId, index, link);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result fetchMessageDetail(int categoryId, int index, String link),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (fetchMessageDetail != null) {
+      return fetchMessageDetail(categoryId, index, link);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result fetchMessageDetail(FetchMessageDetail value),
+  }) {
+    assert(fetchMessageDetail != null);
+    return fetchMessageDetail(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result fetchMessageDetail(FetchMessageDetail value),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (fetchMessageDetail != null) {
+      return fetchMessageDetail(this);
+    }
+    return orElse();
+  }
 }
 
 abstract class FetchMessageDetail implements MessageDetailEvent {
@@ -149,25 +221,30 @@ abstract class FetchMessageDetail implements MessageDetailEvent {
   $FetchMessageDetailCopyWith<FetchMessageDetail> get copyWith;
 }
 
+/// @nodoc
 class _$MessageDetailStateTearOff {
   const _$MessageDetailStateTearOff();
 
+// ignore: unused_element
   Initial initial() {
     return const Initial();
   }
 
+// ignore: unused_element
   Loading loading({int index}) {
     return Loading(
       index: index,
     );
   }
 
+// ignore: unused_element
   Failed failed({Failure error}) {
     return Failed(
       error: error,
     );
   }
 
+// ignore: unused_element
   Loaded loaded({MessageDetail detail}) {
     return Loaded(
       detail: detail,
@@ -175,9 +252,11 @@ class _$MessageDetailStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $MessageDetailState = _$MessageDetailStateTearOff();
 
+/// @nodoc
 mixin _$MessageDetailState {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -211,12 +290,14 @@ mixin _$MessageDetailState {
   });
 }
 
+/// @nodoc
 abstract class $MessageDetailStateCopyWith<$Res> {
   factory $MessageDetailStateCopyWith(
           MessageDetailState value, $Res Function(MessageDetailState) then) =
       _$MessageDetailStateCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$MessageDetailStateCopyWithImpl<$Res>
     implements $MessageDetailStateCopyWith<$Res> {
   _$MessageDetailStateCopyWithImpl(this._value, this._then);
@@ -226,11 +307,13 @@ class _$MessageDetailStateCopyWithImpl<$Res>
   final $Res Function(MessageDetailState) _then;
 }
 
+/// @nodoc
 abstract class $InitialCopyWith<$Res> {
   factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
       _$InitialCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InitialCopyWithImpl<$Res> extends _$MessageDetailStateCopyWithImpl<$Res>
     implements $InitialCopyWith<$Res> {
   _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
@@ -240,6 +323,7 @@ class _$InitialCopyWithImpl<$Res> extends _$MessageDetailStateCopyWithImpl<$Res>
   Initial get _value => super._value as Initial;
 }
 
+/// @nodoc
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -323,12 +407,14 @@ abstract class Initial implements MessageDetailState {
   const factory Initial() = _$Initial;
 }
 
+/// @nodoc
 abstract class $LoadingCopyWith<$Res> {
   factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
       _$LoadingCopyWithImpl<$Res>;
   $Res call({int index});
 }
 
+/// @nodoc
 class _$LoadingCopyWithImpl<$Res> extends _$MessageDetailStateCopyWithImpl<$Res>
     implements $LoadingCopyWith<$Res> {
   _$LoadingCopyWithImpl(Loading _value, $Res Function(Loading) _then)
@@ -347,6 +433,7 @@ class _$LoadingCopyWithImpl<$Res> extends _$MessageDetailStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Loading implements Loading {
   const _$Loading({this.index});
 
@@ -444,12 +531,14 @@ abstract class Loading implements MessageDetailState {
   $LoadingCopyWith<Loading> get copyWith;
 }
 
+/// @nodoc
 abstract class $FailedCopyWith<$Res> {
   factory $FailedCopyWith(Failed value, $Res Function(Failed) then) =
       _$FailedCopyWithImpl<$Res>;
   $Res call({Failure error});
 }
 
+/// @nodoc
 class _$FailedCopyWithImpl<$Res> extends _$MessageDetailStateCopyWithImpl<$Res>
     implements $FailedCopyWith<$Res> {
   _$FailedCopyWithImpl(Failed _value, $Res Function(Failed) _then)
@@ -468,6 +557,7 @@ class _$FailedCopyWithImpl<$Res> extends _$MessageDetailStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Failed implements Failed {
   const _$Failed({this.error});
 
@@ -565,12 +655,14 @@ abstract class Failed implements MessageDetailState {
   $FailedCopyWith<Failed> get copyWith;
 }
 
+/// @nodoc
 abstract class $LoadedCopyWith<$Res> {
   factory $LoadedCopyWith(Loaded value, $Res Function(Loaded) then) =
       _$LoadedCopyWithImpl<$Res>;
   $Res call({MessageDetail detail});
 }
 
+/// @nodoc
 class _$LoadedCopyWithImpl<$Res> extends _$MessageDetailStateCopyWithImpl<$Res>
     implements $LoadedCopyWith<$Res> {
   _$LoadedCopyWithImpl(Loaded _value, $Res Function(Loaded) _then)
@@ -589,6 +681,7 @@ class _$LoadedCopyWithImpl<$Res> extends _$MessageDetailStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Loaded implements Loaded {
   const _$Loaded({this.detail});
 

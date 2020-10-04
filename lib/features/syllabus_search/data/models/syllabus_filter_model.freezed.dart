@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'syllabus_filter_model.dart';
 
@@ -12,9 +12,11 @@ SyllabusFilterModel _$SyllabusFilterModelFromJson(Map<String, dynamic> json) {
   return _SyllabusFilterModel.fromJson(json);
 }
 
+/// @nodoc
 class _$SyllabusFilterModelTearOff {
   const _$SyllabusFilterModelTearOff();
 
+// ignore: unused_element
   _SyllabusFilterModel call(
       {@required List<String> htmlNendo,
       @required Map<String, String> htmlJigen,
@@ -33,11 +35,18 @@ class _$SyllabusFilterModelTearOff {
       htmlGakka: htmlGakka,
     );
   }
+
+// ignore: unused_element
+  SyllabusFilterModel fromJson(Map<String, Object> json) {
+    return SyllabusFilterModel.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $SyllabusFilterModel = _$SyllabusFilterModelTearOff();
 
+/// @nodoc
 mixin _$SyllabusFilterModel {
   List<String> get htmlNendo;
   Map<String, String> get htmlJigen;
@@ -51,6 +60,7 @@ mixin _$SyllabusFilterModel {
   $SyllabusFilterModelCopyWith<SyllabusFilterModel> get copyWith;
 }
 
+/// @nodoc
 abstract class $SyllabusFilterModelCopyWith<$Res> {
   factory $SyllabusFilterModelCopyWith(
           SyllabusFilterModel value, $Res Function(SyllabusFilterModel) then) =
@@ -65,6 +75,7 @@ abstract class $SyllabusFilterModelCopyWith<$Res> {
       Map<String, String> htmlGakka});
 }
 
+/// @nodoc
 class _$SyllabusFilterModelCopyWithImpl<$Res>
     implements $SyllabusFilterModelCopyWith<$Res> {
   _$SyllabusFilterModelCopyWithImpl(this._value, this._then);
@@ -108,6 +119,7 @@ class _$SyllabusFilterModelCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$SyllabusFilterModelCopyWith<$Res>
     implements $SyllabusFilterModelCopyWith<$Res> {
   factory _$SyllabusFilterModelCopyWith(_SyllabusFilterModel value,
@@ -124,6 +136,7 @@ abstract class _$SyllabusFilterModelCopyWith<$Res>
       Map<String, String> htmlGakka});
 }
 
+/// @nodoc
 class __$SyllabusFilterModelCopyWithImpl<$Res>
     extends _$SyllabusFilterModelCopyWithImpl<$Res>
     implements _$SyllabusFilterModelCopyWith<$Res> {
@@ -170,6 +183,8 @@ class __$SyllabusFilterModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_SyllabusFilterModel extends _SyllabusFilterModel {
   const _$_SyllabusFilterModel(
       {@required this.htmlNendo,

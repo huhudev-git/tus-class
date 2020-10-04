@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'syllabus_detail_model.dart';
 
@@ -12,9 +12,11 @@ SyllabusDetailModel _$SyllabusDetailModelFromJson(Map<String, dynamic> json) {
   return _SyllabusDetailModel.fromJson(json);
 }
 
+/// @nodoc
 class _$SyllabusDetailModelTearOff {
   const _$SyllabusDetailModelTearOff();
 
+// ignore: unused_element
   _SyllabusDetailModel call(
       {@required String code,
       @required String courseJp,
@@ -91,11 +93,18 @@ class _$SyllabusDetailModelTearOff {
       dayPeriod: dayPeriod,
     );
   }
+
+// ignore: unused_element
+  SyllabusDetailModel fromJson(Map<String, Object> json) {
+    return SyllabusDetailModel.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $SyllabusDetailModel = _$SyllabusDetailModelTearOff();
 
+/// @nodoc
 mixin _$SyllabusDetailModel {
   String get code;
   String get courseJp;
@@ -138,6 +147,7 @@ mixin _$SyllabusDetailModel {
   $SyllabusDetailModelCopyWith<SyllabusDetailModel> get copyWith;
 }
 
+/// @nodoc
 abstract class $SyllabusDetailModelCopyWith<$Res> {
   factory $SyllabusDetailModelCopyWith(
           SyllabusDetailModel value, $Res Function(SyllabusDetailModel) then) =
@@ -181,6 +191,7 @@ abstract class $SyllabusDetailModelCopyWith<$Res> {
       String dayPeriod});
 }
 
+/// @nodoc
 class _$SyllabusDetailModelCopyWithImpl<$Res>
     implements $SyllabusDetailModelCopyWith<$Res> {
   _$SyllabusDetailModelCopyWithImpl(this._value, this._then);
@@ -291,6 +302,7 @@ class _$SyllabusDetailModelCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$SyllabusDetailModelCopyWith<$Res>
     implements $SyllabusDetailModelCopyWith<$Res> {
   factory _$SyllabusDetailModelCopyWith(_SyllabusDetailModel value,
@@ -336,6 +348,7 @@ abstract class _$SyllabusDetailModelCopyWith<$Res>
       String dayPeriod});
 }
 
+/// @nodoc
 class __$SyllabusDetailModelCopyWithImpl<$Res>
     extends _$SyllabusDetailModelCopyWithImpl<$Res>
     implements _$SyllabusDetailModelCopyWith<$Res> {
@@ -449,6 +462,8 @@ class __$SyllabusDetailModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_SyllabusDetailModel extends _SyllabusDetailModel {
   const _$_SyllabusDetailModel(
       {@required this.code,

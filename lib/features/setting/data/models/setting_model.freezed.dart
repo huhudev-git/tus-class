@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'setting_model.dart';
 
@@ -12,20 +12,29 @@ SettingModel _$SettingModelFromJson(Map<String, dynamic> json) {
   return _SettingModel.fromJson(json);
 }
 
+/// @nodoc
 class _$SettingModelTearOff {
   const _$SettingModelTearOff();
 
+// ignore: unused_element
   _SettingModel call({@required bool isAutoLogin, @required bool hasToken}) {
     return _SettingModel(
       isAutoLogin: isAutoLogin,
       hasToken: hasToken,
     );
   }
+
+// ignore: unused_element
+  SettingModel fromJson(Map<String, Object> json) {
+    return SettingModel.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $SettingModel = _$SettingModelTearOff();
 
+/// @nodoc
 mixin _$SettingModel {
   bool get isAutoLogin;
   bool get hasToken;
@@ -34,6 +43,7 @@ mixin _$SettingModel {
   $SettingModelCopyWith<SettingModel> get copyWith;
 }
 
+/// @nodoc
 abstract class $SettingModelCopyWith<$Res> {
   factory $SettingModelCopyWith(
           SettingModel value, $Res Function(SettingModel) then) =
@@ -41,6 +51,7 @@ abstract class $SettingModelCopyWith<$Res> {
   $Res call({bool isAutoLogin, bool hasToken});
 }
 
+/// @nodoc
 class _$SettingModelCopyWithImpl<$Res> implements $SettingModelCopyWith<$Res> {
   _$SettingModelCopyWithImpl(this._value, this._then);
 
@@ -61,6 +72,7 @@ class _$SettingModelCopyWithImpl<$Res> implements $SettingModelCopyWith<$Res> {
   }
 }
 
+/// @nodoc
 abstract class _$SettingModelCopyWith<$Res>
     implements $SettingModelCopyWith<$Res> {
   factory _$SettingModelCopyWith(
@@ -70,6 +82,7 @@ abstract class _$SettingModelCopyWith<$Res>
   $Res call({bool isAutoLogin, bool hasToken});
 }
 
+/// @nodoc
 class __$SettingModelCopyWithImpl<$Res> extends _$SettingModelCopyWithImpl<$Res>
     implements _$SettingModelCopyWith<$Res> {
   __$SettingModelCopyWithImpl(
@@ -93,6 +106,8 @@ class __$SettingModelCopyWithImpl<$Res> extends _$SettingModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_SettingModel extends _SettingModel {
   const _$_SettingModel({@required this.isAutoLogin, @required this.hasToken})
       : assert(isAutoLogin != null),

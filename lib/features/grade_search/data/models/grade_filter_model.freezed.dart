@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'grade_filter_model.dart';
 
@@ -12,9 +12,11 @@ GradeFilterModel _$GradeFilterModelFromJson(Map<String, dynamic> json) {
   return _GradeFilterModel.fromJson(json);
 }
 
+/// @nodoc
 class _$GradeFilterModelTearOff {
   const _$GradeFilterModelTearOff();
 
+// ignore: unused_element
   _GradeFilterModel call(
       {@required List<String> htmlNendo,
       @required Map<String, dynamic> htmlJigen,
@@ -31,11 +33,18 @@ class _$GradeFilterModelTearOff {
       htmlGakka: htmlGakka,
     );
   }
+
+// ignore: unused_element
+  GradeFilterModel fromJson(Map<String, Object> json) {
+    return GradeFilterModel.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $GradeFilterModel = _$GradeFilterModelTearOff();
 
+/// @nodoc
 mixin _$GradeFilterModel {
   List<String> get htmlNendo;
   Map<String, dynamic> get htmlJigen;
@@ -48,6 +57,7 @@ mixin _$GradeFilterModel {
   $GradeFilterModelCopyWith<GradeFilterModel> get copyWith;
 }
 
+/// @nodoc
 abstract class $GradeFilterModelCopyWith<$Res> {
   factory $GradeFilterModelCopyWith(
           GradeFilterModel value, $Res Function(GradeFilterModel) then) =
@@ -61,6 +71,7 @@ abstract class $GradeFilterModelCopyWith<$Res> {
       Map<String, dynamic> htmlGakka});
 }
 
+/// @nodoc
 class _$GradeFilterModelCopyWithImpl<$Res>
     implements $GradeFilterModelCopyWith<$Res> {
   _$GradeFilterModelCopyWithImpl(this._value, this._then);
@@ -100,6 +111,7 @@ class _$GradeFilterModelCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$GradeFilterModelCopyWith<$Res>
     implements $GradeFilterModelCopyWith<$Res> {
   factory _$GradeFilterModelCopyWith(
@@ -115,6 +127,7 @@ abstract class _$GradeFilterModelCopyWith<$Res>
       Map<String, dynamic> htmlGakka});
 }
 
+/// @nodoc
 class __$GradeFilterModelCopyWithImpl<$Res>
     extends _$GradeFilterModelCopyWithImpl<$Res>
     implements _$GradeFilterModelCopyWith<$Res> {
@@ -157,6 +170,8 @@ class __$GradeFilterModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_GradeFilterModel extends _GradeFilterModel {
   const _$_GradeFilterModel(
       {@required this.htmlNendo,

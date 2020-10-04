@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'show_mode.dart';
 
@@ -9,9 +9,11 @@ part of 'show_mode.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$ShowModeDetailTearOff {
   const _$ShowModeDetailTearOff();
 
+// ignore: unused_element
   _ShowModeDetail call(
       {@required IconData icon,
       @required double width,
@@ -26,9 +28,11 @@ class _$ShowModeDetailTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $ShowModeDetail = _$ShowModeDetailTearOff();
 
+/// @nodoc
 mixin _$ShowModeDetail {
   IconData get icon;
   double get width;
@@ -38,6 +42,7 @@ mixin _$ShowModeDetail {
   $ShowModeDetailCopyWith<ShowModeDetail> get copyWith;
 }
 
+/// @nodoc
 abstract class $ShowModeDetailCopyWith<$Res> {
   factory $ShowModeDetailCopyWith(
           ShowModeDetail value, $Res Function(ShowModeDetail) then) =
@@ -45,6 +50,7 @@ abstract class $ShowModeDetailCopyWith<$Res> {
   $Res call({IconData icon, double width, int day, int period});
 }
 
+/// @nodoc
 class _$ShowModeDetailCopyWithImpl<$Res>
     implements $ShowModeDetailCopyWith<$Res> {
   _$ShowModeDetailCopyWithImpl(this._value, this._then);
@@ -69,6 +75,7 @@ class _$ShowModeDetailCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$ShowModeDetailCopyWith<$Res>
     implements $ShowModeDetailCopyWith<$Res> {
   factory _$ShowModeDetailCopyWith(
@@ -78,6 +85,7 @@ abstract class _$ShowModeDetailCopyWith<$Res>
   $Res call({IconData icon, double width, int day, int period});
 }
 
+/// @nodoc
 class __$ShowModeDetailCopyWithImpl<$Res>
     extends _$ShowModeDetailCopyWithImpl<$Res>
     implements _$ShowModeDetailCopyWith<$Res> {
@@ -104,6 +112,7 @@ class __$ShowModeDetailCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_ShowModeDetail
     with DiagnosticableTreeMixin
     implements _ShowModeDetail {
@@ -188,29 +197,36 @@ abstract class _ShowModeDetail implements ShowModeDetail {
   _$ShowModeDetailCopyWith<_ShowModeDetail> get copyWith;
 }
 
+/// @nodoc
 class _$ShowModeTearOff {
   const _$ShowModeTearOff();
 
+// ignore: unused_element
   Regular regular() {
     return const Regular();
   }
 
+// ignore: unused_element
   Weekend weekend() {
     return const Weekend();
   }
 
+// ignore: unused_element
   Night night() {
     return const Night();
   }
 
+// ignore: unused_element
   NightWeekend nightWeekend() {
     return const NightWeekend();
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $ShowMode = _$ShowModeTearOff();
 
+/// @nodoc
 mixin _$ShowMode {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -244,11 +260,13 @@ mixin _$ShowMode {
   });
 }
 
+/// @nodoc
 abstract class $ShowModeCopyWith<$Res> {
   factory $ShowModeCopyWith(ShowMode value, $Res Function(ShowMode) then) =
       _$ShowModeCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$ShowModeCopyWithImpl<$Res> implements $ShowModeCopyWith<$Res> {
   _$ShowModeCopyWithImpl(this._value, this._then);
 
@@ -257,11 +275,13 @@ class _$ShowModeCopyWithImpl<$Res> implements $ShowModeCopyWith<$Res> {
   final $Res Function(ShowMode) _then;
 }
 
+/// @nodoc
 abstract class $RegularCopyWith<$Res> {
   factory $RegularCopyWith(Regular value, $Res Function(Regular) then) =
       _$RegularCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$RegularCopyWithImpl<$Res> extends _$ShowModeCopyWithImpl<$Res>
     implements $RegularCopyWith<$Res> {
   _$RegularCopyWithImpl(Regular _value, $Res Function(Regular) _then)
@@ -271,6 +291,7 @@ class _$RegularCopyWithImpl<$Res> extends _$ShowModeCopyWithImpl<$Res>
   Regular get _value => super._value as Regular;
 }
 
+/// @nodoc
 class _$Regular with DiagnosticableTreeMixin implements Regular {
   const _$Regular();
 
@@ -360,11 +381,13 @@ abstract class Regular implements ShowMode {
   const factory Regular() = _$Regular;
 }
 
+/// @nodoc
 abstract class $WeekendCopyWith<$Res> {
   factory $WeekendCopyWith(Weekend value, $Res Function(Weekend) then) =
       _$WeekendCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$WeekendCopyWithImpl<$Res> extends _$ShowModeCopyWithImpl<$Res>
     implements $WeekendCopyWith<$Res> {
   _$WeekendCopyWithImpl(Weekend _value, $Res Function(Weekend) _then)
@@ -374,6 +397,7 @@ class _$WeekendCopyWithImpl<$Res> extends _$ShowModeCopyWithImpl<$Res>
   Weekend get _value => super._value as Weekend;
 }
 
+/// @nodoc
 class _$Weekend with DiagnosticableTreeMixin implements Weekend {
   const _$Weekend();
 
@@ -463,11 +487,13 @@ abstract class Weekend implements ShowMode {
   const factory Weekend() = _$Weekend;
 }
 
+/// @nodoc
 abstract class $NightCopyWith<$Res> {
   factory $NightCopyWith(Night value, $Res Function(Night) then) =
       _$NightCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$NightCopyWithImpl<$Res> extends _$ShowModeCopyWithImpl<$Res>
     implements $NightCopyWith<$Res> {
   _$NightCopyWithImpl(Night _value, $Res Function(Night) _then)
@@ -477,6 +503,7 @@ class _$NightCopyWithImpl<$Res> extends _$ShowModeCopyWithImpl<$Res>
   Night get _value => super._value as Night;
 }
 
+/// @nodoc
 class _$Night with DiagnosticableTreeMixin implements Night {
   const _$Night();
 
@@ -566,12 +593,14 @@ abstract class Night implements ShowMode {
   const factory Night() = _$Night;
 }
 
+/// @nodoc
 abstract class $NightWeekendCopyWith<$Res> {
   factory $NightWeekendCopyWith(
           NightWeekend value, $Res Function(NightWeekend) then) =
       _$NightWeekendCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$NightWeekendCopyWithImpl<$Res> extends _$ShowModeCopyWithImpl<$Res>
     implements $NightWeekendCopyWith<$Res> {
   _$NightWeekendCopyWithImpl(
@@ -582,6 +611,7 @@ class _$NightWeekendCopyWithImpl<$Res> extends _$ShowModeCopyWithImpl<$Res>
   NightWeekend get _value => super._value as NightWeekend;
 }
 
+/// @nodoc
 class _$NightWeekend with DiagnosticableTreeMixin implements NightWeekend {
   const _$NightWeekend();
 

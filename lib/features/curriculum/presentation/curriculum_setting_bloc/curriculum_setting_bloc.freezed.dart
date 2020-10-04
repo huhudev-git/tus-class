@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'curriculum_setting_bloc.dart';
 
@@ -9,9 +9,11 @@ part of 'curriculum_setting_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$CurriculumSettingEventTearOff {
   const _$CurriculumSettingEventTearOff();
 
+// ignore: unused_element
   GetCurriculumSetting getCurriculumSetting({String code, String course}) {
     return GetCurriculumSetting(
       code: code,
@@ -19,16 +21,19 @@ class _$CurriculumSettingEventTearOff {
     );
   }
 
+// ignore: unused_element
   GetAllCurriculumSetting getAllCurriculumSetting() {
     return const GetAllCurriculumSetting();
   }
 
+// ignore: unused_element
   DeleteCurriculumSetting deleteCurriculumSetting({CurriculumSetting setting}) {
     return DeleteCurriculumSetting(
       setting: setting,
     );
   }
 
+// ignore: unused_element
   SaveCurriculumSetting saveCurriculumSetting({CurriculumSetting setting}) {
     return SaveCurriculumSetting(
       setting: setting,
@@ -36,9 +41,11 @@ class _$CurriculumSettingEventTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $CurriculumSettingEvent = _$CurriculumSettingEventTearOff();
 
+/// @nodoc
 mixin _$CurriculumSettingEvent {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -72,12 +79,14 @@ mixin _$CurriculumSettingEvent {
   });
 }
 
+/// @nodoc
 abstract class $CurriculumSettingEventCopyWith<$Res> {
   factory $CurriculumSettingEventCopyWith(CurriculumSettingEvent value,
           $Res Function(CurriculumSettingEvent) then) =
       _$CurriculumSettingEventCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$CurriculumSettingEventCopyWithImpl<$Res>
     implements $CurriculumSettingEventCopyWith<$Res> {
   _$CurriculumSettingEventCopyWithImpl(this._value, this._then);
@@ -87,6 +96,7 @@ class _$CurriculumSettingEventCopyWithImpl<$Res>
   final $Res Function(CurriculumSettingEvent) _then;
 }
 
+/// @nodoc
 abstract class $GetCurriculumSettingCopyWith<$Res> {
   factory $GetCurriculumSettingCopyWith(GetCurriculumSetting value,
           $Res Function(GetCurriculumSetting) then) =
@@ -94,6 +104,7 @@ abstract class $GetCurriculumSettingCopyWith<$Res> {
   $Res call({String code, String course});
 }
 
+/// @nodoc
 class _$GetCurriculumSettingCopyWithImpl<$Res>
     extends _$CurriculumSettingEventCopyWithImpl<$Res>
     implements $GetCurriculumSettingCopyWith<$Res> {
@@ -116,6 +127,7 @@ class _$GetCurriculumSettingCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$GetCurriculumSetting implements GetCurriculumSetting {
   const _$GetCurriculumSetting({this.code, this.course});
 
@@ -222,12 +234,14 @@ abstract class GetCurriculumSetting implements CurriculumSettingEvent {
   $GetCurriculumSettingCopyWith<GetCurriculumSetting> get copyWith;
 }
 
+/// @nodoc
 abstract class $GetAllCurriculumSettingCopyWith<$Res> {
   factory $GetAllCurriculumSettingCopyWith(GetAllCurriculumSetting value,
           $Res Function(GetAllCurriculumSetting) then) =
       _$GetAllCurriculumSettingCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$GetAllCurriculumSettingCopyWithImpl<$Res>
     extends _$CurriculumSettingEventCopyWithImpl<$Res>
     implements $GetAllCurriculumSettingCopyWith<$Res> {
@@ -239,6 +253,7 @@ class _$GetAllCurriculumSettingCopyWithImpl<$Res>
   GetAllCurriculumSetting get _value => super._value as GetAllCurriculumSetting;
 }
 
+/// @nodoc
 class _$GetAllCurriculumSetting implements GetAllCurriculumSetting {
   const _$GetAllCurriculumSetting();
 
@@ -322,6 +337,7 @@ abstract class GetAllCurriculumSetting implements CurriculumSettingEvent {
   const factory GetAllCurriculumSetting() = _$GetAllCurriculumSetting;
 }
 
+/// @nodoc
 abstract class $DeleteCurriculumSettingCopyWith<$Res> {
   factory $DeleteCurriculumSettingCopyWith(DeleteCurriculumSetting value,
           $Res Function(DeleteCurriculumSetting) then) =
@@ -329,6 +345,7 @@ abstract class $DeleteCurriculumSettingCopyWith<$Res> {
   $Res call({CurriculumSetting setting});
 }
 
+/// @nodoc
 class _$DeleteCurriculumSettingCopyWithImpl<$Res>
     extends _$CurriculumSettingEventCopyWithImpl<$Res>
     implements $DeleteCurriculumSettingCopyWith<$Res> {
@@ -350,6 +367,7 @@ class _$DeleteCurriculumSettingCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$DeleteCurriculumSetting implements DeleteCurriculumSetting {
   const _$DeleteCurriculumSetting({this.setting});
 
@@ -449,6 +467,7 @@ abstract class DeleteCurriculumSetting implements CurriculumSettingEvent {
   $DeleteCurriculumSettingCopyWith<DeleteCurriculumSetting> get copyWith;
 }
 
+/// @nodoc
 abstract class $SaveCurriculumSettingCopyWith<$Res> {
   factory $SaveCurriculumSettingCopyWith(SaveCurriculumSetting value,
           $Res Function(SaveCurriculumSetting) then) =
@@ -456,6 +475,7 @@ abstract class $SaveCurriculumSettingCopyWith<$Res> {
   $Res call({CurriculumSetting setting});
 }
 
+/// @nodoc
 class _$SaveCurriculumSettingCopyWithImpl<$Res>
     extends _$CurriculumSettingEventCopyWithImpl<$Res>
     implements $SaveCurriculumSettingCopyWith<$Res> {
@@ -477,6 +497,7 @@ class _$SaveCurriculumSettingCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$SaveCurriculumSetting implements SaveCurriculumSetting {
   const _$SaveCurriculumSetting({this.setting});
 
@@ -576,23 +597,28 @@ abstract class SaveCurriculumSetting implements CurriculumSettingEvent {
   $SaveCurriculumSettingCopyWith<SaveCurriculumSetting> get copyWith;
 }
 
+/// @nodoc
 class _$CurriculumSettingStateTearOff {
   const _$CurriculumSettingStateTearOff();
 
+// ignore: unused_element
   Initial initial() {
     return const Initial();
   }
 
+// ignore: unused_element
   Loading loading() {
     return const Loading();
   }
 
+// ignore: unused_element
   Failed failed({Failure error}) {
     return Failed(
       error: error,
     );
   }
 
+// ignore: unused_element
   Loaded loaded({List<CurriculumSetting> settings}) {
     return Loaded(
       settings: settings,
@@ -600,9 +626,11 @@ class _$CurriculumSettingStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $CurriculumSettingState = _$CurriculumSettingStateTearOff();
 
+/// @nodoc
 mixin _$CurriculumSettingState {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -636,12 +664,14 @@ mixin _$CurriculumSettingState {
   });
 }
 
+/// @nodoc
 abstract class $CurriculumSettingStateCopyWith<$Res> {
   factory $CurriculumSettingStateCopyWith(CurriculumSettingState value,
           $Res Function(CurriculumSettingState) then) =
       _$CurriculumSettingStateCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$CurriculumSettingStateCopyWithImpl<$Res>
     implements $CurriculumSettingStateCopyWith<$Res> {
   _$CurriculumSettingStateCopyWithImpl(this._value, this._then);
@@ -651,11 +681,13 @@ class _$CurriculumSettingStateCopyWithImpl<$Res>
   final $Res Function(CurriculumSettingState) _then;
 }
 
+/// @nodoc
 abstract class $InitialCopyWith<$Res> {
   factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
       _$InitialCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InitialCopyWithImpl<$Res>
     extends _$CurriculumSettingStateCopyWithImpl<$Res>
     implements $InitialCopyWith<$Res> {
@@ -666,6 +698,7 @@ class _$InitialCopyWithImpl<$Res>
   Initial get _value => super._value as Initial;
 }
 
+/// @nodoc
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -749,11 +782,13 @@ abstract class Initial implements CurriculumSettingState {
   const factory Initial() = _$Initial;
 }
 
+/// @nodoc
 abstract class $LoadingCopyWith<$Res> {
   factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
       _$LoadingCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$LoadingCopyWithImpl<$Res>
     extends _$CurriculumSettingStateCopyWithImpl<$Res>
     implements $LoadingCopyWith<$Res> {
@@ -764,6 +799,7 @@ class _$LoadingCopyWithImpl<$Res>
   Loading get _value => super._value as Loading;
 }
 
+/// @nodoc
 class _$Loading implements Loading {
   const _$Loading();
 
@@ -847,12 +883,14 @@ abstract class Loading implements CurriculumSettingState {
   const factory Loading() = _$Loading;
 }
 
+/// @nodoc
 abstract class $FailedCopyWith<$Res> {
   factory $FailedCopyWith(Failed value, $Res Function(Failed) then) =
       _$FailedCopyWithImpl<$Res>;
   $Res call({Failure error});
 }
 
+/// @nodoc
 class _$FailedCopyWithImpl<$Res>
     extends _$CurriculumSettingStateCopyWithImpl<$Res>
     implements $FailedCopyWith<$Res> {
@@ -872,6 +910,7 @@ class _$FailedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Failed implements Failed {
   const _$Failed({this.error});
 
@@ -969,12 +1008,14 @@ abstract class Failed implements CurriculumSettingState {
   $FailedCopyWith<Failed> get copyWith;
 }
 
+/// @nodoc
 abstract class $LoadedCopyWith<$Res> {
   factory $LoadedCopyWith(Loaded value, $Res Function(Loaded) then) =
       _$LoadedCopyWithImpl<$Res>;
   $Res call({List<CurriculumSetting> settings});
 }
 
+/// @nodoc
 class _$LoadedCopyWithImpl<$Res>
     extends _$CurriculumSettingStateCopyWithImpl<$Res>
     implements $LoadedCopyWith<$Res> {
@@ -996,6 +1037,7 @@ class _$LoadedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Loaded implements Loaded {
   const _$Loaded({this.settings});
 

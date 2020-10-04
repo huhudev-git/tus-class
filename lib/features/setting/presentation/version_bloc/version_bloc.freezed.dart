@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'version_bloc.dart';
 
@@ -9,25 +9,50 @@ part of 'version_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$VersionEventTearOff {
   const _$VersionEventTearOff();
 
+// ignore: unused_element
   Check check() {
     return const Check();
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $VersionEvent = _$VersionEventTearOff();
 
-mixin _$VersionEvent {}
+/// @nodoc
+mixin _$VersionEvent {
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result check(),
+  });
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result check(),
+    @required Result orElse(),
+  });
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result check(Check value),
+  });
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result check(Check value),
+    @required Result orElse(),
+  });
+}
 
+/// @nodoc
 abstract class $VersionEventCopyWith<$Res> {
   factory $VersionEventCopyWith(
           VersionEvent value, $Res Function(VersionEvent) then) =
       _$VersionEventCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$VersionEventCopyWithImpl<$Res> implements $VersionEventCopyWith<$Res> {
   _$VersionEventCopyWithImpl(this._value, this._then);
 
@@ -36,11 +61,13 @@ class _$VersionEventCopyWithImpl<$Res> implements $VersionEventCopyWith<$Res> {
   final $Res Function(VersionEvent) _then;
 }
 
+/// @nodoc
 abstract class $CheckCopyWith<$Res> {
   factory $CheckCopyWith(Check value, $Res Function(Check) then) =
       _$CheckCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$CheckCopyWithImpl<$Res> extends _$VersionEventCopyWithImpl<$Res>
     implements $CheckCopyWith<$Res> {
   _$CheckCopyWithImpl(Check _value, $Res Function(Check) _then)
@@ -50,6 +77,7 @@ class _$CheckCopyWithImpl<$Res> extends _$VersionEventCopyWithImpl<$Res>
   Check get _value => super._value as Check;
 }
 
+/// @nodoc
 class _$Check implements Check {
   const _$Check();
 
@@ -65,29 +93,78 @@ class _$Check implements Check {
 
   @override
   int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result check(),
+  }) {
+    assert(check != null);
+    return check();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result check(),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (check != null) {
+      return check();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result check(Check value),
+  }) {
+    assert(check != null);
+    return check(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result check(Check value),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (check != null) {
+      return check(this);
+    }
+    return orElse();
+  }
 }
 
 abstract class Check implements VersionEvent {
   const factory Check() = _$Check;
 }
 
+/// @nodoc
 class _$VersionStateTearOff {
   const _$VersionStateTearOff();
 
+// ignore: unused_element
   Initial initial() {
     return const Initial();
   }
 
+// ignore: unused_element
   Loading loading() {
     return const Loading();
   }
 
+// ignore: unused_element
   Loaded loaded({bool hasUpdate}) {
     return Loaded(
       hasUpdate: hasUpdate,
     );
   }
 
+// ignore: unused_element
   Failed failed({Failure error}) {
     return Failed(
       error: error,
@@ -95,9 +172,11 @@ class _$VersionStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $VersionState = _$VersionStateTearOff();
 
+/// @nodoc
 mixin _$VersionState {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -131,12 +210,14 @@ mixin _$VersionState {
   });
 }
 
+/// @nodoc
 abstract class $VersionStateCopyWith<$Res> {
   factory $VersionStateCopyWith(
           VersionState value, $Res Function(VersionState) then) =
       _$VersionStateCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$VersionStateCopyWithImpl<$Res> implements $VersionStateCopyWith<$Res> {
   _$VersionStateCopyWithImpl(this._value, this._then);
 
@@ -145,11 +226,13 @@ class _$VersionStateCopyWithImpl<$Res> implements $VersionStateCopyWith<$Res> {
   final $Res Function(VersionState) _then;
 }
 
+/// @nodoc
 abstract class $InitialCopyWith<$Res> {
   factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
       _$InitialCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InitialCopyWithImpl<$Res> extends _$VersionStateCopyWithImpl<$Res>
     implements $InitialCopyWith<$Res> {
   _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
@@ -159,6 +242,7 @@ class _$InitialCopyWithImpl<$Res> extends _$VersionStateCopyWithImpl<$Res>
   Initial get _value => super._value as Initial;
 }
 
+/// @nodoc
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -242,11 +326,13 @@ abstract class Initial implements VersionState {
   const factory Initial() = _$Initial;
 }
 
+/// @nodoc
 abstract class $LoadingCopyWith<$Res> {
   factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
       _$LoadingCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$LoadingCopyWithImpl<$Res> extends _$VersionStateCopyWithImpl<$Res>
     implements $LoadingCopyWith<$Res> {
   _$LoadingCopyWithImpl(Loading _value, $Res Function(Loading) _then)
@@ -256,6 +342,7 @@ class _$LoadingCopyWithImpl<$Res> extends _$VersionStateCopyWithImpl<$Res>
   Loading get _value => super._value as Loading;
 }
 
+/// @nodoc
 class _$Loading implements Loading {
   const _$Loading();
 
@@ -339,12 +426,14 @@ abstract class Loading implements VersionState {
   const factory Loading() = _$Loading;
 }
 
+/// @nodoc
 abstract class $LoadedCopyWith<$Res> {
   factory $LoadedCopyWith(Loaded value, $Res Function(Loaded) then) =
       _$LoadedCopyWithImpl<$Res>;
   $Res call({bool hasUpdate});
 }
 
+/// @nodoc
 class _$LoadedCopyWithImpl<$Res> extends _$VersionStateCopyWithImpl<$Res>
     implements $LoadedCopyWith<$Res> {
   _$LoadedCopyWithImpl(Loaded _value, $Res Function(Loaded) _then)
@@ -363,6 +452,7 @@ class _$LoadedCopyWithImpl<$Res> extends _$VersionStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Loaded implements Loaded {
   const _$Loaded({this.hasUpdate});
 
@@ -461,12 +551,14 @@ abstract class Loaded implements VersionState {
   $LoadedCopyWith<Loaded> get copyWith;
 }
 
+/// @nodoc
 abstract class $FailedCopyWith<$Res> {
   factory $FailedCopyWith(Failed value, $Res Function(Failed) then) =
       _$FailedCopyWithImpl<$Res>;
   $Res call({Failure error});
 }
 
+/// @nodoc
 class _$FailedCopyWithImpl<$Res> extends _$VersionStateCopyWithImpl<$Res>
     implements $FailedCopyWith<$Res> {
   _$FailedCopyWithImpl(Failed _value, $Res Function(Failed) _then)
@@ -485,6 +577,7 @@ class _$FailedCopyWithImpl<$Res> extends _$VersionStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Failed implements Failed {
   const _$Failed({this.error});
 

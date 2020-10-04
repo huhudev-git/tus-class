@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'grade_search_bloc.dart';
 
@@ -9,13 +9,16 @@ part of 'grade_search_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$GradeSearchEventTearOff {
   const _$GradeSearchEventTearOff();
 
+// ignore: unused_element
   Init init() {
     return const Init();
   }
 
+// ignore: unused_element
   Search search(
       {String key,
       String year,
@@ -41,6 +44,7 @@ class _$GradeSearchEventTearOff {
     );
   }
 
+// ignore: unused_element
   FetchPage fetchPage({int page}) {
     return FetchPage(
       page: page,
@@ -48,9 +52,11 @@ class _$GradeSearchEventTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $GradeSearchEvent = _$GradeSearchEventTearOff();
 
+/// @nodoc
 mixin _$GradeSearchEvent {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -101,12 +107,14 @@ mixin _$GradeSearchEvent {
   });
 }
 
+/// @nodoc
 abstract class $GradeSearchEventCopyWith<$Res> {
   factory $GradeSearchEventCopyWith(
           GradeSearchEvent value, $Res Function(GradeSearchEvent) then) =
       _$GradeSearchEventCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$GradeSearchEventCopyWithImpl<$Res>
     implements $GradeSearchEventCopyWith<$Res> {
   _$GradeSearchEventCopyWithImpl(this._value, this._then);
@@ -116,11 +124,13 @@ class _$GradeSearchEventCopyWithImpl<$Res>
   final $Res Function(GradeSearchEvent) _then;
 }
 
+/// @nodoc
 abstract class $InitCopyWith<$Res> {
   factory $InitCopyWith(Init value, $Res Function(Init) then) =
       _$InitCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InitCopyWithImpl<$Res> extends _$GradeSearchEventCopyWithImpl<$Res>
     implements $InitCopyWith<$Res> {
   _$InitCopyWithImpl(Init _value, $Res Function(Init) _then)
@@ -130,6 +140,7 @@ class _$InitCopyWithImpl<$Res> extends _$GradeSearchEventCopyWithImpl<$Res>
   Init get _value => super._value as Init;
 }
 
+/// @nodoc
 class _$Init implements Init {
   const _$Init();
 
@@ -228,6 +239,7 @@ abstract class Init implements GradeSearchEvent {
   const factory Init() = _$Init;
 }
 
+/// @nodoc
 abstract class $SearchCopyWith<$Res> {
   factory $SearchCopyWith(Search value, $Res Function(Search) then) =
       _$SearchCopyWithImpl<$Res>;
@@ -244,6 +256,7 @@ abstract class $SearchCopyWith<$Res> {
       bool teacher});
 }
 
+/// @nodoc
 class _$SearchCopyWithImpl<$Res> extends _$GradeSearchEventCopyWithImpl<$Res>
     implements $SearchCopyWith<$Res> {
   _$SearchCopyWithImpl(Search _value, $Res Function(Search) _then)
@@ -281,6 +294,7 @@ class _$SearchCopyWithImpl<$Res> extends _$GradeSearchEventCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Search implements Search {
   const _$Search(
       {this.key,
@@ -474,12 +488,14 @@ abstract class Search implements GradeSearchEvent {
   $SearchCopyWith<Search> get copyWith;
 }
 
+/// @nodoc
 abstract class $FetchPageCopyWith<$Res> {
   factory $FetchPageCopyWith(FetchPage value, $Res Function(FetchPage) then) =
       _$FetchPageCopyWithImpl<$Res>;
   $Res call({int page});
 }
 
+/// @nodoc
 class _$FetchPageCopyWithImpl<$Res> extends _$GradeSearchEventCopyWithImpl<$Res>
     implements $FetchPageCopyWith<$Res> {
   _$FetchPageCopyWithImpl(FetchPage _value, $Res Function(FetchPage) _then)
@@ -498,6 +514,7 @@ class _$FetchPageCopyWithImpl<$Res> extends _$GradeSearchEventCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$FetchPage implements FetchPage {
   const _$FetchPage({this.page});
 
@@ -610,17 +627,21 @@ abstract class FetchPage implements GradeSearchEvent {
   $FetchPageCopyWith<FetchPage> get copyWith;
 }
 
+/// @nodoc
 class _$GradeSearchStateTearOff {
   const _$GradeSearchStateTearOff();
 
+// ignore: unused_element
   Initial initial() {
     return const Initial();
   }
 
+// ignore: unused_element
   Loading loading() {
     return const Loading();
   }
 
+// ignore: unused_element
   Loaded loaded(
       {List<Grade> grades, bool isLastPage, bool isLoading, int page}) {
     return Loaded(
@@ -631,6 +652,7 @@ class _$GradeSearchStateTearOff {
     );
   }
 
+// ignore: unused_element
   Failed failed({Failure error}) {
     return Failed(
       error: error,
@@ -638,9 +660,11 @@ class _$GradeSearchStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $GradeSearchState = _$GradeSearchStateTearOff();
 
+/// @nodoc
 mixin _$GradeSearchState {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -677,12 +701,14 @@ mixin _$GradeSearchState {
   });
 }
 
+/// @nodoc
 abstract class $GradeSearchStateCopyWith<$Res> {
   factory $GradeSearchStateCopyWith(
           GradeSearchState value, $Res Function(GradeSearchState) then) =
       _$GradeSearchStateCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$GradeSearchStateCopyWithImpl<$Res>
     implements $GradeSearchStateCopyWith<$Res> {
   _$GradeSearchStateCopyWithImpl(this._value, this._then);
@@ -692,11 +718,13 @@ class _$GradeSearchStateCopyWithImpl<$Res>
   final $Res Function(GradeSearchState) _then;
 }
 
+/// @nodoc
 abstract class $InitialCopyWith<$Res> {
   factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
       _$InitialCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InitialCopyWithImpl<$Res> extends _$GradeSearchStateCopyWithImpl<$Res>
     implements $InitialCopyWith<$Res> {
   _$InitialCopyWithImpl(Initial _value, $Res Function(Initial) _then)
@@ -706,6 +734,7 @@ class _$InitialCopyWithImpl<$Res> extends _$GradeSearchStateCopyWithImpl<$Res>
   Initial get _value => super._value as Initial;
 }
 
+/// @nodoc
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -792,11 +821,13 @@ abstract class Initial implements GradeSearchState {
   const factory Initial() = _$Initial;
 }
 
+/// @nodoc
 abstract class $LoadingCopyWith<$Res> {
   factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
       _$LoadingCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$LoadingCopyWithImpl<$Res> extends _$GradeSearchStateCopyWithImpl<$Res>
     implements $LoadingCopyWith<$Res> {
   _$LoadingCopyWithImpl(Loading _value, $Res Function(Loading) _then)
@@ -806,6 +837,7 @@ class _$LoadingCopyWithImpl<$Res> extends _$GradeSearchStateCopyWithImpl<$Res>
   Loading get _value => super._value as Loading;
 }
 
+/// @nodoc
 class _$Loading implements Loading {
   const _$Loading();
 
@@ -892,12 +924,14 @@ abstract class Loading implements GradeSearchState {
   const factory Loading() = _$Loading;
 }
 
+/// @nodoc
 abstract class $LoadedCopyWith<$Res> {
   factory $LoadedCopyWith(Loaded value, $Res Function(Loaded) then) =
       _$LoadedCopyWithImpl<$Res>;
   $Res call({List<Grade> grades, bool isLastPage, bool isLoading, int page});
 }
 
+/// @nodoc
 class _$LoadedCopyWithImpl<$Res> extends _$GradeSearchStateCopyWithImpl<$Res>
     implements $LoadedCopyWith<$Res> {
   _$LoadedCopyWithImpl(Loaded _value, $Res Function(Loaded) _then)
@@ -923,6 +957,7 @@ class _$LoadedCopyWithImpl<$Res> extends _$GradeSearchStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Loaded implements Loaded {
   const _$Loaded({this.grades, this.isLastPage, this.isLoading, this.page});
 
@@ -1048,12 +1083,14 @@ abstract class Loaded implements GradeSearchState {
   $LoadedCopyWith<Loaded> get copyWith;
 }
 
+/// @nodoc
 abstract class $FailedCopyWith<$Res> {
   factory $FailedCopyWith(Failed value, $Res Function(Failed) then) =
       _$FailedCopyWithImpl<$Res>;
   $Res call({Failure error});
 }
 
+/// @nodoc
 class _$FailedCopyWithImpl<$Res> extends _$GradeSearchStateCopyWithImpl<$Res>
     implements $FailedCopyWith<$Res> {
   _$FailedCopyWithImpl(Failed _value, $Res Function(Failed) _then)
@@ -1072,6 +1109,7 @@ class _$FailedCopyWithImpl<$Res> extends _$GradeSearchStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Failed implements Failed {
   const _$Failed({this.error});
 

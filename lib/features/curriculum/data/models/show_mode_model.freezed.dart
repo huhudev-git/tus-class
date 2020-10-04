@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'show_mode_model.dart';
 
@@ -24,29 +24,41 @@ ShowModeModel _$ShowModeModelFromJson(Map<String, dynamic> json) {
   }
 }
 
+/// @nodoc
 class _$ShowModeModelTearOff {
   const _$ShowModeModelTearOff();
 
+// ignore: unused_element
   Regular regular() {
     return const Regular();
   }
 
+// ignore: unused_element
   Weekend weekend() {
     return const Weekend();
   }
 
+// ignore: unused_element
   Night night() {
     return const Night();
   }
 
+// ignore: unused_element
   NightWeekend nightWeekend() {
     return const NightWeekend();
   }
+
+// ignore: unused_element
+  ShowModeModel fromJson(Map<String, Object> json) {
+    return ShowModeModel.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $ShowModeModel = _$ShowModeModelTearOff();
 
+/// @nodoc
 mixin _$ShowModeModel {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -81,12 +93,14 @@ mixin _$ShowModeModel {
   Map<String, dynamic> toJson();
 }
 
+/// @nodoc
 abstract class $ShowModeModelCopyWith<$Res> {
   factory $ShowModeModelCopyWith(
           ShowModeModel value, $Res Function(ShowModeModel) then) =
       _$ShowModeModelCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$ShowModeModelCopyWithImpl<$Res>
     implements $ShowModeModelCopyWith<$Res> {
   _$ShowModeModelCopyWithImpl(this._value, this._then);
@@ -96,11 +110,13 @@ class _$ShowModeModelCopyWithImpl<$Res>
   final $Res Function(ShowModeModel) _then;
 }
 
+/// @nodoc
 abstract class $RegularCopyWith<$Res> {
   factory $RegularCopyWith(Regular value, $Res Function(Regular) then) =
       _$RegularCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$RegularCopyWithImpl<$Res> extends _$ShowModeModelCopyWithImpl<$Res>
     implements $RegularCopyWith<$Res> {
   _$RegularCopyWithImpl(Regular _value, $Res Function(Regular) _then)
@@ -111,6 +127,8 @@ class _$RegularCopyWithImpl<$Res> extends _$ShowModeModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$Regular extends Regular with DiagnosticableTreeMixin {
   const _$Regular() : super._();
 
@@ -211,11 +229,13 @@ abstract class Regular extends ShowModeModel {
   factory Regular.fromJson(Map<String, dynamic> json) = _$Regular.fromJson;
 }
 
+/// @nodoc
 abstract class $WeekendCopyWith<$Res> {
   factory $WeekendCopyWith(Weekend value, $Res Function(Weekend) then) =
       _$WeekendCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$WeekendCopyWithImpl<$Res> extends _$ShowModeModelCopyWithImpl<$Res>
     implements $WeekendCopyWith<$Res> {
   _$WeekendCopyWithImpl(Weekend _value, $Res Function(Weekend) _then)
@@ -226,6 +246,8 @@ class _$WeekendCopyWithImpl<$Res> extends _$ShowModeModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$Weekend extends Weekend with DiagnosticableTreeMixin {
   const _$Weekend() : super._();
 
@@ -326,11 +348,13 @@ abstract class Weekend extends ShowModeModel {
   factory Weekend.fromJson(Map<String, dynamic> json) = _$Weekend.fromJson;
 }
 
+/// @nodoc
 abstract class $NightCopyWith<$Res> {
   factory $NightCopyWith(Night value, $Res Function(Night) then) =
       _$NightCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$NightCopyWithImpl<$Res> extends _$ShowModeModelCopyWithImpl<$Res>
     implements $NightCopyWith<$Res> {
   _$NightCopyWithImpl(Night _value, $Res Function(Night) _then)
@@ -341,6 +365,8 @@ class _$NightCopyWithImpl<$Res> extends _$ShowModeModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$Night extends Night with DiagnosticableTreeMixin {
   const _$Night() : super._();
 
@@ -441,12 +467,14 @@ abstract class Night extends ShowModeModel {
   factory Night.fromJson(Map<String, dynamic> json) = _$Night.fromJson;
 }
 
+/// @nodoc
 abstract class $NightWeekendCopyWith<$Res> {
   factory $NightWeekendCopyWith(
           NightWeekend value, $Res Function(NightWeekend) then) =
       _$NightWeekendCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$NightWeekendCopyWithImpl<$Res> extends _$ShowModeModelCopyWithImpl<$Res>
     implements $NightWeekendCopyWith<$Res> {
   _$NightWeekendCopyWithImpl(
@@ -458,6 +486,8 @@ class _$NightWeekendCopyWithImpl<$Res> extends _$ShowModeModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$NightWeekend extends NightWeekend with DiagnosticableTreeMixin {
   const _$NightWeekend() : super._();
 

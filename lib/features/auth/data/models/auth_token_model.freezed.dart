@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'auth_token_model.dart';
 
@@ -12,20 +12,29 @@ AuthTokenModel _$AuthTokenModelFromJson(Map<String, dynamic> json) {
   return _AuthTokenModel.fromJson(json);
 }
 
+/// @nodoc
 class _$AuthTokenModelTearOff {
   const _$AuthTokenModelTearOff();
 
+// ignore: unused_element
   _AuthTokenModel call({@required String username, @required String password}) {
     return _AuthTokenModel(
       username: username,
       password: password,
     );
   }
+
+// ignore: unused_element
+  AuthTokenModel fromJson(Map<String, Object> json) {
+    return AuthTokenModel.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $AuthTokenModel = _$AuthTokenModelTearOff();
 
+/// @nodoc
 mixin _$AuthTokenModel {
   String get username;
   String get password;
@@ -34,6 +43,7 @@ mixin _$AuthTokenModel {
   $AuthTokenModelCopyWith<AuthTokenModel> get copyWith;
 }
 
+/// @nodoc
 abstract class $AuthTokenModelCopyWith<$Res> {
   factory $AuthTokenModelCopyWith(
           AuthTokenModel value, $Res Function(AuthTokenModel) then) =
@@ -41,6 +51,7 @@ abstract class $AuthTokenModelCopyWith<$Res> {
   $Res call({String username, String password});
 }
 
+/// @nodoc
 class _$AuthTokenModelCopyWithImpl<$Res>
     implements $AuthTokenModelCopyWith<$Res> {
   _$AuthTokenModelCopyWithImpl(this._value, this._then);
@@ -61,6 +72,7 @@ class _$AuthTokenModelCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$AuthTokenModelCopyWith<$Res>
     implements $AuthTokenModelCopyWith<$Res> {
   factory _$AuthTokenModelCopyWith(
@@ -70,6 +82,7 @@ abstract class _$AuthTokenModelCopyWith<$Res>
   $Res call({String username, String password});
 }
 
+/// @nodoc
 class __$AuthTokenModelCopyWithImpl<$Res>
     extends _$AuthTokenModelCopyWithImpl<$Res>
     implements _$AuthTokenModelCopyWith<$Res> {
@@ -93,6 +106,8 @@ class __$AuthTokenModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_AuthTokenModel extends _AuthTokenModel {
   const _$_AuthTokenModel({@required this.username, @required this.password})
       : assert(username != null),

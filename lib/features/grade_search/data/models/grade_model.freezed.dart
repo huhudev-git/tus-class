@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'grade_model.dart';
 
@@ -12,9 +12,11 @@ GradeModel _$GradeModelFromJson(Map<String, dynamic> json) {
   return _GradeModel.fromJson(json);
 }
 
+/// @nodoc
 class _$GradeModelTearOff {
   const _$GradeModelTearOff();
 
+// ignore: unused_element
   _GradeModel call(
       {@required String course,
       @required String subject,
@@ -51,11 +53,18 @@ class _$GradeModelTearOff {
       hasDetail: hasDetail,
     );
   }
+
+// ignore: unused_element
+  GradeModel fromJson(Map<String, Object> json) {
+    return GradeModel.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $GradeModel = _$GradeModelTearOff();
 
+/// @nodoc
 mixin _$GradeModel {
   String get course;
   String get subject;
@@ -79,6 +88,7 @@ mixin _$GradeModel {
   $GradeModelCopyWith<GradeModel> get copyWith;
 }
 
+/// @nodoc
 abstract class $GradeModelCopyWith<$Res> {
   factory $GradeModelCopyWith(
           GradeModel value, $Res Function(GradeModel) then) =
@@ -102,6 +112,7 @@ abstract class $GradeModelCopyWith<$Res> {
       bool hasDetail});
 }
 
+/// @nodoc
 class _$GradeModelCopyWithImpl<$Res> implements $GradeModelCopyWith<$Res> {
   _$GradeModelCopyWithImpl(this._value, this._then);
 
@@ -149,6 +160,7 @@ class _$GradeModelCopyWithImpl<$Res> implements $GradeModelCopyWith<$Res> {
   }
 }
 
+/// @nodoc
 abstract class _$GradeModelCopyWith<$Res> implements $GradeModelCopyWith<$Res> {
   factory _$GradeModelCopyWith(
           _GradeModel value, $Res Function(_GradeModel) then) =
@@ -173,6 +185,7 @@ abstract class _$GradeModelCopyWith<$Res> implements $GradeModelCopyWith<$Res> {
       bool hasDetail});
 }
 
+/// @nodoc
 class __$GradeModelCopyWithImpl<$Res> extends _$GradeModelCopyWithImpl<$Res>
     implements _$GradeModelCopyWith<$Res> {
   __$GradeModelCopyWithImpl(
@@ -223,6 +236,8 @@ class __$GradeModelCopyWithImpl<$Res> extends _$GradeModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_GradeModel extends _GradeModel {
   const _$_GradeModel(
       {@required this.course,

@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'syllabus_search_filter_bloc.dart';
 
@@ -9,25 +9,50 @@ part of 'syllabus_search_filter_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$SyllabusSearchFilterEventTearOff {
   const _$SyllabusSearchFilterEventTearOff();
 
+// ignore: unused_element
   FetchFilter fetchFilter() {
     return const FetchFilter();
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $SyllabusSearchFilterEvent = _$SyllabusSearchFilterEventTearOff();
 
-mixin _$SyllabusSearchFilterEvent {}
+/// @nodoc
+mixin _$SyllabusSearchFilterEvent {
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result fetchFilter(),
+  });
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result fetchFilter(),
+    @required Result orElse(),
+  });
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result fetchFilter(FetchFilter value),
+  });
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result fetchFilter(FetchFilter value),
+    @required Result orElse(),
+  });
+}
 
+/// @nodoc
 abstract class $SyllabusSearchFilterEventCopyWith<$Res> {
   factory $SyllabusSearchFilterEventCopyWith(SyllabusSearchFilterEvent value,
           $Res Function(SyllabusSearchFilterEvent) then) =
       _$SyllabusSearchFilterEventCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$SyllabusSearchFilterEventCopyWithImpl<$Res>
     implements $SyllabusSearchFilterEventCopyWith<$Res> {
   _$SyllabusSearchFilterEventCopyWithImpl(this._value, this._then);
@@ -37,12 +62,14 @@ class _$SyllabusSearchFilterEventCopyWithImpl<$Res>
   final $Res Function(SyllabusSearchFilterEvent) _then;
 }
 
+/// @nodoc
 abstract class $FetchFilterCopyWith<$Res> {
   factory $FetchFilterCopyWith(
           FetchFilter value, $Res Function(FetchFilter) then) =
       _$FetchFilterCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$FetchFilterCopyWithImpl<$Res>
     extends _$SyllabusSearchFilterEventCopyWithImpl<$Res>
     implements $FetchFilterCopyWith<$Res> {
@@ -54,6 +81,7 @@ class _$FetchFilterCopyWithImpl<$Res>
   FetchFilter get _value => super._value as FetchFilter;
 }
 
+/// @nodoc
 class _$FetchFilter implements FetchFilter {
   const _$FetchFilter();
 
@@ -69,29 +97,78 @@ class _$FetchFilter implements FetchFilter {
 
   @override
   int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result fetchFilter(),
+  }) {
+    assert(fetchFilter != null);
+    return fetchFilter();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result fetchFilter(),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (fetchFilter != null) {
+      return fetchFilter();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result fetchFilter(FetchFilter value),
+  }) {
+    assert(fetchFilter != null);
+    return fetchFilter(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result fetchFilter(FetchFilter value),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (fetchFilter != null) {
+      return fetchFilter(this);
+    }
+    return orElse();
+  }
 }
 
 abstract class FetchFilter implements SyllabusSearchFilterEvent {
   const factory FetchFilter() = _$FetchFilter;
 }
 
+/// @nodoc
 class _$SyllabusSearchFilterStateTearOff {
   const _$SyllabusSearchFilterStateTearOff();
 
+// ignore: unused_element
   Initial initial() {
     return const Initial();
   }
 
+// ignore: unused_element
   Loading loading() {
     return const Loading();
   }
 
+// ignore: unused_element
   Loaded loaded({SyllabusFilter filter}) {
     return Loaded(
       filter: filter,
     );
   }
 
+// ignore: unused_element
   Failed failed({Failure error}) {
     return Failed(
       error: error,
@@ -99,9 +176,11 @@ class _$SyllabusSearchFilterStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $SyllabusSearchFilterState = _$SyllabusSearchFilterStateTearOff();
 
+/// @nodoc
 mixin _$SyllabusSearchFilterState {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -135,12 +214,14 @@ mixin _$SyllabusSearchFilterState {
   });
 }
 
+/// @nodoc
 abstract class $SyllabusSearchFilterStateCopyWith<$Res> {
   factory $SyllabusSearchFilterStateCopyWith(SyllabusSearchFilterState value,
           $Res Function(SyllabusSearchFilterState) then) =
       _$SyllabusSearchFilterStateCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$SyllabusSearchFilterStateCopyWithImpl<$Res>
     implements $SyllabusSearchFilterStateCopyWith<$Res> {
   _$SyllabusSearchFilterStateCopyWithImpl(this._value, this._then);
@@ -150,11 +231,13 @@ class _$SyllabusSearchFilterStateCopyWithImpl<$Res>
   final $Res Function(SyllabusSearchFilterState) _then;
 }
 
+/// @nodoc
 abstract class $InitialCopyWith<$Res> {
   factory $InitialCopyWith(Initial value, $Res Function(Initial) then) =
       _$InitialCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InitialCopyWithImpl<$Res>
     extends _$SyllabusSearchFilterStateCopyWithImpl<$Res>
     implements $InitialCopyWith<$Res> {
@@ -165,6 +248,7 @@ class _$InitialCopyWithImpl<$Res>
   Initial get _value => super._value as Initial;
 }
 
+/// @nodoc
 class _$Initial implements Initial {
   const _$Initial();
 
@@ -248,11 +332,13 @@ abstract class Initial implements SyllabusSearchFilterState {
   const factory Initial() = _$Initial;
 }
 
+/// @nodoc
 abstract class $LoadingCopyWith<$Res> {
   factory $LoadingCopyWith(Loading value, $Res Function(Loading) then) =
       _$LoadingCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$LoadingCopyWithImpl<$Res>
     extends _$SyllabusSearchFilterStateCopyWithImpl<$Res>
     implements $LoadingCopyWith<$Res> {
@@ -263,6 +349,7 @@ class _$LoadingCopyWithImpl<$Res>
   Loading get _value => super._value as Loading;
 }
 
+/// @nodoc
 class _$Loading implements Loading {
   const _$Loading();
 
@@ -346,12 +433,14 @@ abstract class Loading implements SyllabusSearchFilterState {
   const factory Loading() = _$Loading;
 }
 
+/// @nodoc
 abstract class $LoadedCopyWith<$Res> {
   factory $LoadedCopyWith(Loaded value, $Res Function(Loaded) then) =
       _$LoadedCopyWithImpl<$Res>;
   $Res call({SyllabusFilter filter});
 }
 
+/// @nodoc
 class _$LoadedCopyWithImpl<$Res>
     extends _$SyllabusSearchFilterStateCopyWithImpl<$Res>
     implements $LoadedCopyWith<$Res> {
@@ -371,6 +460,7 @@ class _$LoadedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Loaded implements Loaded {
   const _$Loaded({this.filter});
 
@@ -468,12 +558,14 @@ abstract class Loaded implements SyllabusSearchFilterState {
   $LoadedCopyWith<Loaded> get copyWith;
 }
 
+/// @nodoc
 abstract class $FailedCopyWith<$Res> {
   factory $FailedCopyWith(Failed value, $Res Function(Failed) then) =
       _$FailedCopyWithImpl<$Res>;
   $Res call({Failure error});
 }
 
+/// @nodoc
 class _$FailedCopyWithImpl<$Res>
     extends _$SyllabusSearchFilterStateCopyWithImpl<$Res>
     implements $FailedCopyWith<$Res> {
@@ -493,6 +585,7 @@ class _$FailedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$Failed implements Failed {
   const _$Failed({this.error});
 

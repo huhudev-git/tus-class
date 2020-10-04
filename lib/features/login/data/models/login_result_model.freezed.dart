@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'login_result_model.dart';
 
@@ -12,9 +12,11 @@ LoginResultModel _$LoginResultModelFromJson(Map<String, dynamic> json) {
   return _LoginResultModel.fromJson(json);
 }
 
+/// @nodoc
 class _$LoginResultModelTearOff {
   const _$LoginResultModelTearOff();
 
+// ignore: unused_element
   _LoginResultModel call(
       {@required bool isAuth, @required String name, @required String error}) {
     return _LoginResultModel(
@@ -23,11 +25,18 @@ class _$LoginResultModelTearOff {
       error: error,
     );
   }
+
+// ignore: unused_element
+  LoginResultModel fromJson(Map<String, Object> json) {
+    return LoginResultModel.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $LoginResultModel = _$LoginResultModelTearOff();
 
+/// @nodoc
 mixin _$LoginResultModel {
   bool get isAuth;
   String get name;
@@ -37,6 +46,7 @@ mixin _$LoginResultModel {
   $LoginResultModelCopyWith<LoginResultModel> get copyWith;
 }
 
+/// @nodoc
 abstract class $LoginResultModelCopyWith<$Res> {
   factory $LoginResultModelCopyWith(
           LoginResultModel value, $Res Function(LoginResultModel) then) =
@@ -44,6 +54,7 @@ abstract class $LoginResultModelCopyWith<$Res> {
   $Res call({bool isAuth, String name, String error});
 }
 
+/// @nodoc
 class _$LoginResultModelCopyWithImpl<$Res>
     implements $LoginResultModelCopyWith<$Res> {
   _$LoginResultModelCopyWithImpl(this._value, this._then);
@@ -66,6 +77,7 @@ class _$LoginResultModelCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$LoginResultModelCopyWith<$Res>
     implements $LoginResultModelCopyWith<$Res> {
   factory _$LoginResultModelCopyWith(
@@ -75,6 +87,7 @@ abstract class _$LoginResultModelCopyWith<$Res>
   $Res call({bool isAuth, String name, String error});
 }
 
+/// @nodoc
 class __$LoginResultModelCopyWithImpl<$Res>
     extends _$LoginResultModelCopyWithImpl<$Res>
     implements _$LoginResultModelCopyWith<$Res> {
@@ -100,6 +113,8 @@ class __$LoginResultModelCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_LoginResultModel extends _LoginResultModel {
   const _$_LoginResultModel(
       {@required this.isAuth, @required this.name, @required this.error})
