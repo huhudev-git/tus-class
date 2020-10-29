@@ -22,7 +22,7 @@ class VersionDataSourceImpl implements VersionDataSource {
     final buildNumber = packageInfo.buildNumber;
     final versions = version.split('.');
 
-    final r = await Dio().get('https://raw.githubusercontent.com/huhugiter/tus-class/master/pubspec.yaml');
+    final r = await Dio().get('https://raw.githubusercontent.com/huhudev-git/tus-class/master/pubspec.yaml');
     final doc = loadYaml(r.data);
     final versionAndBuildNumber = doc['version'].split('+');
     final List<String> uVersion = versionAndBuildNumber[0].split('.');
