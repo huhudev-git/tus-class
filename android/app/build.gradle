@@ -50,6 +50,7 @@ android {
         applicationId "com.huhu.tusclass"
         minSdkVersion 18
         targetSdkVersion 29
+        compileSdkVersion 29
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
