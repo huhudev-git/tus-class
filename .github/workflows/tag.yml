@@ -22,8 +22,9 @@ jobs:
             -not -name "*.g.dart" \
             -not -name "*.freezed.dart" \
             -not -name "*.*config.dart" \
-            --line-length 800 \
-            -exec flutter format {} \;
+            -exec flutter format \
+            --set-exit-if-changed \
+            --line-length 800 {} \;
       - run: flutter analyze .
       - name: Secrets
         run: |
