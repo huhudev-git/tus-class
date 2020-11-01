@@ -19,5 +19,12 @@ class Teacher extends Equatable {
   });
 
   @override
-  List<Object> get props => [position, location, workTime, url, email, name];
+  List<Object> get props => [
+        position,
+        location,
+        workTime,
+        url,
+        email,
+        name,
+      ];
 }

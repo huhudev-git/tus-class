@@ -25,7 +25,17 @@ class Message extends Equatable {
   });
 
   @override
-  List<Object> get props => [index, title, category, date, from, link, isRead, isImportant, isNew];
+  List<Object> get props => [
+        index,
+        title,
+        category,
+        date,
+        from,
+        link,
+        isRead,
+        isImportant,
+        isNew,
+      ];
 
   Message copyWith({
     int index,

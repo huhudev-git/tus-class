@@ -19,5 +19,12 @@ class GradeFilter extends Equatable {
   });
 
   @override
-  List<Object> get props => [htmlNendo, htmlJigen, htmlYobi, htmlGakunen, htmlGakkiNo, htmlGakka];
+  List<Object> get props => [
+        htmlNendo,
+        htmlJigen,
+        htmlYobi,
+        htmlGakunen,
+        htmlGakkiNo,
+        htmlGakka,
+      ];
 }

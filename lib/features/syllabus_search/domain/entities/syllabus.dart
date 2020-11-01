@@ -27,5 +27,16 @@ class Syllabus extends Equatable {
   });
 
   @override
-  List<Object> get props => [code, course, teacher, semester, subject, type, page, year, day, periods];
+  List<Object> get props => [
+        code,
+        course,
+        teacher,
+        semester,
+        subject,
+        type,
+        page,
+        year,
+        day,
+        periods,
+      ];
 }

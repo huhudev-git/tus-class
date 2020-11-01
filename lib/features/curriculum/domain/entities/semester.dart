@@ -11,5 +11,8 @@ class Semester extends Equatable {
   });
 
   @override
-  List<Object> get props => [name, value];
+  List<Object> get props => [
+        name,
+        value,
+      ];
 }

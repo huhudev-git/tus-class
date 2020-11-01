@@ -11,7 +11,10 @@ class Setting extends Equatable {
   });
 
   @override
-  List<Object> get props => [isAutoLogin, hasToken];
+  List<Object> get props => [
+        isAutoLogin,
+        hasToken,
+      ];
 
   factory Setting.init() => Setting(
         isAutoLogin: false,

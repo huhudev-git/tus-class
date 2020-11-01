@@ -11,5 +11,8 @@ class AuthToken extends Equatable {
   });
 
   @override
-  List<Object> get props => [username, password];
+  List<Object> get props => [
+        username,
+        password,
+      ];
 }

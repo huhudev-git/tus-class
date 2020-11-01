@@ -13,5 +13,9 @@ class MessageFile extends Equatable {
   });
 
   @override
-  List<Object> get props => [index, filename, size];
+  List<Object> get props => [
+        index,
+        filename,
+        size,
+      ];
 }

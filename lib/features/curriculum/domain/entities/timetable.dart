@@ -21,5 +21,12 @@ class TimeTable extends Equatable {
   });
 
   @override
-  List<Object> get props => [curriculums, semester, semesterValue, year, semesters, isCurrent];
+  List<Object> get props => [
+        curriculums,
+        semester,
+        semesterValue,
+        year,
+        semesters,
+        isCurrent,
+      ];
 }

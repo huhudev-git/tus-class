@@ -19,5 +19,11 @@ class Category extends Equatable {
   });
 
   @override
-  List<Object> get props => [index, messages, category, page, isLastPage];
+  List<Object> get props => [
+        index,
+        messages,
+        category,
+        page,
+        isLastPage,
+      ];
 }

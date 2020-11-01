@@ -13,5 +13,9 @@ class LoginResult extends Equatable {
   });
 
   @override
-  List<Object> get props => [isAuth, name, error];
+  List<Object> get props => [
+        isAuth,
+        name,
+        error,
+      ];
 }

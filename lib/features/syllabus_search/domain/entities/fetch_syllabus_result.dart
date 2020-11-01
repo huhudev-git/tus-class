@@ -13,5 +13,8 @@ class FetchSyllabusResult extends Equatable {
   });
 
   @override
-  List<Object> get props => [syllabusList, isLastPage];
+  List<Object> get props => [
+        syllabusList,
+        isLastPage,
+      ];
 }

@@ -19,5 +19,9 @@ class AttendanceRate extends Equatable {
       );
 
   @override
-  List<Object> get props => [code, course, rate];
+  List<Object> get props => [
+        code,
+        course,
+        rate,
+      ];
 }

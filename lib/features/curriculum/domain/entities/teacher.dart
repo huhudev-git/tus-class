@@ -11,5 +11,8 @@ class Teacher extends Equatable {
   });
 
   @override
-  List<Object> get props => [name, code];
+  List<Object> get props => [
+        name,
+        code,
+      ];
 }

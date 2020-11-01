@@ -39,5 +39,22 @@ class Grade extends Equatable {
   });
 
   @override
-  List<Object> get props => [course, subject, semester, code, day, periods, teacher, year, people, s, a, b, c, d, page, hasDetail];
+  List<Object> get props => [
+        course,
+        subject,
+        semester,
+        code,
+        day,
+        periods,
+        teacher,
+        year,
+        people,
+        s,
+        a,
+        b,
+        c,
+        d,
+        page,
+        hasDetail,
+      ];
 }

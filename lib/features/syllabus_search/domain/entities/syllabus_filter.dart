@@ -21,5 +21,13 @@ class SyllabusFilter extends Equatable {
   });
 
   @override
-  List<Object> get props => [htmlNendo, htmlJigen, htmlYobi, htmlGakunen, htmlGakkiNo, htmlKamokJugyo, htmlGakka];
+  List<Object> get props => [
+        htmlNendo,
+        htmlJigen,
+        htmlYobi,
+        htmlGakunen,
+        htmlGakkiNo,
+        htmlKamokJugyo,
+        htmlGakka,
+      ];
 }

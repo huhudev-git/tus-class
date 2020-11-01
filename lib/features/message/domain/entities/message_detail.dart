@@ -23,5 +23,13 @@ class MessageDetail extends Equatable {
   });
 
   @override
-  List<Object> get props => [pageId, title, sender, content, files, isEntryable, isEntry];
+  List<Object> get props => [
+        pageId,
+        title,
+        sender,
+        content,
+        files,
+        isEntryable,
+        isEntry,
+      ];
 }

@@ -13,5 +13,8 @@ class FetchGradeResult extends Equatable {
   });
 
   @override
-  List<Object> get props => [grades, isLastPage];
+  List<Object> get props => [
+        grades,
+        isLastPage,
+      ];
 }

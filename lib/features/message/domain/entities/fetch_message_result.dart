@@ -13,5 +13,8 @@ class FetchMessageResult extends Equatable {
   });
 
   @override
-  List<Object> get props => [messages, isLastPage];
+  List<Object> get props => [
+        messages,
+        isLastPage,
+      ];
 }

@@ -23,5 +23,14 @@ class CurriculumSetting extends Equatable {
   });
 
   @override
-  List<Object> get props => [code, form, room, department, category, subject, grade, course];
+  List<Object> get props => [
+        code,
+        form,
+        room,
+        department,
+        category,
+        subject,
+        grade,
+        course,
+      ];
 }

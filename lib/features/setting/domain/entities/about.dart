@@ -23,7 +23,16 @@ class About extends Equatable {
   });
 
   @override
-  List<Object> get props => [version, author, authorEmail, appName, buildNumber, packageName, platform, issuesUrl];
+  List<Object> get props => [
+        version,
+        author,
+        authorEmail,
+        appName,
+        buildNumber,
+        packageName,
+        platform,
+        issuesUrl,
+      ];
 
   factory About.init() => About(
         version: '0.0.0',
