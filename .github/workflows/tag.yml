@@ -17,7 +17,13 @@ jobs:
           flutter-version: '1.22.2'
           channel: 'stable'
       - run: flutter pub get
-      - run: flutter format --set-exit-if-changed .
+      - run: |
+          find ./lib -name "*.dart" \
+            -not -name "*.g.dart" \
+            -not -name "*.freezed.dart" \
+            -not -name "*.*config.dart" \
+            --line-length 800 \
+            -exec flutter format {} \;
       - run: flutter analyze .
       - name: Secrets
         run: |
