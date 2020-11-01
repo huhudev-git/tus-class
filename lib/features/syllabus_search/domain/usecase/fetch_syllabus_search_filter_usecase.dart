@@ -11,7 +11,7 @@ class FetchSyllabusSearchFilterUsecase implements UseCase<SyllabusFilter, NoPara
   final SyllabusSearchRepository repository;
 
   FetchSyllabusSearchFilterUsecase(this.repository);
-  
+
   @override
   Future<Either<Failure, SyllabusFilter>> call(NoParams params) async {
     return repository.fetchFilter();

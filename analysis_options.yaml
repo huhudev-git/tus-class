@@ -6,6 +6,8 @@ analyzer:
     - "**/*.freezed.dart"
     - "**/*.inject.dart"
     - "**/*.inject.summary"
+    - "**/*.config.dart"
+    - "**/*.iconfig.dart"
   enable-experiment:
     - extension-methods
   errors:
