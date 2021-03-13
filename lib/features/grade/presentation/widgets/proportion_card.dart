@@ -35,7 +35,7 @@ class ProportionCard extends StatelessWidget {
               orElse: () => Center(child: CircularProgressIndicator()),
               failed: (state) => CardFailureWidget(
                 error: state.error,
-                retry: () => context.bloc<GradeBloc>().add(GradeEvent.fetchGrade()),
+                retry: () => context.read<GradeBloc>().add(GradeEvent.fetchGrade()),
               ),
               loaded: (state) {
                 return Row(

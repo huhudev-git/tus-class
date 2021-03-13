@@ -33,7 +33,7 @@ class GradeDetailPage extends StatelessWidget {
             loading: (_) => GradeDetailLoadingPage(),
             failed: (state) => FailureWidget(
               error: state.error,
-              retry: () => context.bloc<GradeSearchDetailBloc>().add(
+              retry: () => context.read<GradeSearchDetailBloc>().add(
                     GradeSearchDetailEvent.fetchGradeSearchDetail(
                       index: index,
                       year: grade.year,

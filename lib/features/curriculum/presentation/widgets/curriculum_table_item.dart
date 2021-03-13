@@ -38,7 +38,7 @@ class CurriculumTableItem extends StatelessWidget {
               curriculum: curriculum,
               detail: detail,
               setting: setting,
-              bloc: context.bloc<CurriculumSettingBloc>(),
+              bloc: context.read<CurriculumSettingBloc>(),
             ),
           );
         },
@@ -140,7 +140,7 @@ class CurriculumTableSmallItem extends StatelessWidget {
               curriculum: curriculum,
               detail: detail,
               setting: setting,
-              bloc: context.bloc<CurriculumSettingBloc>(),
+              bloc: context.read<CurriculumSettingBloc>(),
             ),
           );
         },

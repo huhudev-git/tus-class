@@ -26,10 +26,10 @@ class RefreshButtom extends StatelessWidget {
               onPressed: () => _showDialog(
                 context,
                 () {
-                  context.bloc<cb.CurriculumBloc>().state.maybeMap(
+                  context.read<cb.CurriculumBloc>().state.maybeMap(
                         orElse: () {},
                         loaded: (state) {
-                          context.bloc<cb.CurriculumBloc>().add(
+                          context.read<cb.CurriculumBloc>().add(
                                 cb.CurriculumEvent.fetchCurriculum(
                                   year: state.timeTable.year,
                                   semesterValue: state.timeTable.semesterValue,
@@ -41,11 +41,11 @@ class RefreshButtom extends StatelessWidget {
                   Navigator.of(context).pop();
                 },
                 () {
-                  context.bloc<cb.CurriculumBloc>().state.maybeMap(
+                  context.read<cb.CurriculumBloc>().state.maybeMap(
                         orElse: () {},
                         loaded: (state) {
-                          context.bloc<cdd.CurriculumDetailBloc>().add(cdd.CurriculumDetailEvent.deleteCurriculumDetail());
-                          context.bloc<cb.CurriculumBloc>().add(
+                          context.read<cdd.CurriculumDetailBloc>().add(cdd.CurriculumDetailEvent.deleteCurriculumDetail());
+                          context.read<cb.CurriculumBloc>().add(
                                 cb.CurriculumEvent.fetchCurriculum(
                                   year: state.timeTable.year,
                                   semesterValue: state.timeTable.semesterValue,
@@ -77,19 +77,19 @@ class RefreshButtom extends StatelessWidget {
               onPressed: () => _showDialog(
                 context,
                 () {
-                  context.bloc<acb.AllCurriculumBloc>().state.maybeMap(
+                  context.read<acb.AllCurriculumBloc>().state.maybeMap(
                       orElse: () {},
                       loaded: (state) {
-                        context.bloc<acb.AllCurriculumBloc>().add(acb.AllCurriculumEvent.fetchAllCurriculum(isRefresh: true));
+                        context.read<acb.AllCurriculumBloc>().add(acb.AllCurriculumEvent.fetchAllCurriculum(isRefresh: true));
                       });
                   Navigator.of(context).pop();
                 },
                 () {
-                  context.bloc<acb.AllCurriculumBloc>().state.maybeMap(
+                  context.read<acb.AllCurriculumBloc>().state.maybeMap(
                       orElse: () {},
                       loaded: (state) {
-                        context.bloc<cdd.CurriculumDetailBloc>().add(cdd.CurriculumDetailEvent.deleteCurriculumDetail());
-                        context.bloc<acb.AllCurriculumBloc>().add(acb.AllCurriculumEvent.fetchAllCurriculum(isRefresh: true));
+                        context.read<cdd.CurriculumDetailBloc>().add(cdd.CurriculumDetailEvent.deleteCurriculumDetail());
+                        context.read<acb.AllCurriculumBloc>().add(acb.AllCurriculumEvent.fetchAllCurriculum(isRefresh: true));
                       });
                   Navigator.of(context).pop();
                 },

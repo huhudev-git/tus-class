@@ -56,7 +56,6 @@ class ColorCard extends StatelessWidget {
             secondChild: secondChild,
             layoutBuilder: (Widget topChild, Key topChildKey, Widget bottomChild, Key bottomChildKey) {
               return Stack(
-                overflow: Overflow.visible,
                 children: <Widget>[
                   Positioned(
                     key: bottomChildKey,

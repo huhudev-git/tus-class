@@ -215,7 +215,7 @@ class _FileFilterState extends State<FileFilter> with TickerProviderStateMixin {
     }).catchError(
       (e) {
         // show error
-        Scaffold.of(context)
+        ScaffoldMessenger.of(context)
           ..hideCurrentSnackBar()
           ..showSnackBar(
             SnackBar(

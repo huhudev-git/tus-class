@@ -69,7 +69,6 @@ class _LoginPageState extends State<LoginPage> {
                         layoutBuilder: (Widget topChild, Key topChildKey, Widget bottomChild, Key bottomChildKey) {
                           return Stack(
                             alignment: Alignment.center,
-                            overflow: Overflow.visible,
                             children: <Widget>[
                               Positioned(
                                 key: bottomChildKey,

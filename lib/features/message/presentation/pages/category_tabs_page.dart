@@ -34,7 +34,7 @@ class _CategoryTabsPageState extends State<CategoryTabsPage> with SingleTickerPr
               loading: (_) => CategoriesLoadingPage(),
               failed: (state) => FailureWidget(
                 error: state.error,
-                retry: () => context.bloc<CategoryBloc>()..add(CategoryEvent.fetchCategory()),
+                retry: () => context.read<CategoryBloc>()..add(CategoryEvent.fetchCategory()),
               ),
               loaded: (state) => CategoriesLoadedPage(categories: state.categories),
             );

@@ -74,7 +74,7 @@ class _CurriculumPageState extends State<CurriculumPage> with AutomaticKeepAlive
                       ),
                     ),
                   ),
-                  onPressed: () => context.bloc<csmb.CurriculumShowModeBloc>().add(csmb.CurriculumShowModeEvent.switchShowMode()),
+                  onPressed: () => context.read<csmb.CurriculumShowModeBloc>().add(csmb.CurriculumShowModeEvent.switchShowMode()),
                 ),
               ],
             ),
@@ -94,10 +94,10 @@ class _CurriculumPageState extends State<CurriculumPage> with AutomaticKeepAlive
                       _isOwner = !_isOwner;
 
                       if (_isOwner) {
-                        context.bloc<cb.CurriculumBloc>().state.maybeMap(
+                        context.read<cb.CurriculumBloc>().state.maybeMap(
                               orElse: () {},
                               loaded: (state) {
-                                context.bloc<cb.CurriculumBloc>().add(
+                                context.read<cb.CurriculumBloc>().add(
                                       cb.CurriculumEvent.fetchCurriculum(
                                         year: state.timeTable.year,
                                         semesterValue: state.timeTable.semesterValue,
@@ -107,7 +107,7 @@ class _CurriculumPageState extends State<CurriculumPage> with AutomaticKeepAlive
                               },
                             );
                       } else {
-                        context.bloc<acb.AllCurriculumBloc>().add(acb.AllCurriculumEvent.fetchAllCurriculum(isRefresh: false));
+                        context.read<acb.AllCurriculumBloc>().add(acb.AllCurriculumEvent.fetchAllCurriculum(isRefresh: false));
                       }
                     });
                   },
@@ -147,7 +147,7 @@ class _CurriculumPageState extends State<CurriculumPage> with AutomaticKeepAlive
                 _select ??= state.timeTable.curriculums.first;
               });
             }
-            context.bloc<cdb.CurriculumDetailBloc>().add(cdb.CurriculumDetailEvent.fetchCurriculumDetail(curriculums: state.timeTable.curriculums));
+            context.read<cdb.CurriculumDetailBloc>().add(cdb.CurriculumDetailEvent.fetchCurriculumDetail(curriculums: state.timeTable.curriculums));
           },
         );
       },
@@ -166,7 +166,7 @@ class _CurriculumPageState extends State<CurriculumPage> with AutomaticKeepAlive
             ),
             failed: (state) => CardFailureWidget(
               error: state.error,
-              retry: () => context.bloc<acb.AllCurriculumBloc>().add(acb.AllCurriculumEvent.fetchAllCurriculum()),
+              retry: () => context.read<acb.AllCurriculumBloc>().add(acb.AllCurriculumEvent.fetchAllCurriculum()),
             ),
             loaded: (state) => CurriculumTableCard(
               smallItem: true,
@@ -196,7 +196,7 @@ class _CurriculumPageState extends State<CurriculumPage> with AutomaticKeepAlive
                 _select ??= state.timeTable.curriculums.first;
               });
             }
-            context.bloc<cdb.CurriculumDetailBloc>().add(cdb.CurriculumDetailEvent.fetchCurriculumDetail(curriculums: state.timeTable.curriculums));
+            context.read<cdb.CurriculumDetailBloc>().add(cdb.CurriculumDetailEvent.fetchCurriculumDetail(curriculums: state.timeTable.curriculums));
           },
         );
       },
@@ -216,7 +216,7 @@ class _CurriculumPageState extends State<CurriculumPage> with AutomaticKeepAlive
               ),
               failed: (state) => CardFailureWidget(
                 error: state.error,
-                retry: () => context.bloc<cb.CurriculumBloc>().add(
+                retry: () => context.read<cb.CurriculumBloc>().add(
                       cb.CurriculumEvent.fetchCurriculum(
                         isRefresh: false,
                       ),

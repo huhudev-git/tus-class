@@ -1,9 +1,10 @@
-name: Tag
+name: Build
 
 on:
   push:
     tags:
       - 'v*.*.*\+*'
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -30,9 +31,11 @@ jobs:
         run: |
           echo $KEY_PROPERTIES | base64 -d > ./android/key.properties
           echo $JKS_KEY | base64 -d > ./key.jks
+          echo $SERVICE_ACCOUNT_JSON | base64 -d > ./service_account.json
         env:
           JKS_KEY: ${{ secrets.JKS_KEY }}
           KEY_PROPERTIES: ${{ secrets.KEY_PROPERTIES }}
+          SERVICE_ACCOUNT_JSON: ${{ secrets.SERVICE_ACCOUNT_JSON }}
       - run: flutter build appbundle
       # - name: Create Release
       #   id: create_release
@@ -59,3 +62,11 @@ jobs:
         with:
           name: release-aab
           path: ./build/app/outputs/bundle/release/app-release.aab
+      - uses: r0adkll/upload-google-play@v1
+        with:
+          serviceAccountJson: ./service_account.json
+          packageName: com.huhu.tusclass
+          releaseFile: ./build/app/outputs/bundle/release/app-release.aab
+          track: beta
+          userFraction: 1.0
+          whatsNewDirectory: whatsnew

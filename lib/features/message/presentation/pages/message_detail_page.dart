@@ -82,7 +82,7 @@ class _MessageDetailPageState extends State<MessageDetailPage> {
                   loading: (_) => MessageDetailLoadingPage(),
                   failed: (state) => FailureWidget(
                     error: state.error,
-                    retry: () => context.bloc<MessageDetailBloc>().add(
+                    retry: () => context.read<MessageDetailBloc>().add(
                           MessageDetailEvent.fetchMessageDetail(
                             categoryId: widget.categoryId,
                             index: index,

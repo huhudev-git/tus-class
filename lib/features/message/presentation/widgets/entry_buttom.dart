@@ -25,7 +25,7 @@ class _EntryButtomState extends State<EntryButtom> {
       child: BlocListener<MessageEntryBloc, MessageEntryState>(
         listener: (context, state) {
           state.maybeMap(
-            success: (state) => Scaffold.of(context)
+            success: (state) => ScaffoldMessenger.of(context)
               ..hideCurrentSnackBar()
               ..showSnackBar(
                 SnackBar(
@@ -39,7 +39,7 @@ class _EntryButtomState extends State<EntryButtom> {
                   backgroundColor: Color(0xFF5cb85c),
                 ),
               ),
-            failed: (state) => Scaffold.of(context)
+            failed: (state) => ScaffoldMessenger.of(context)
               ..hideCurrentSnackBar()
               ..showSnackBar(
                 SnackBar(

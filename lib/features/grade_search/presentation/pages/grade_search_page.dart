@@ -101,7 +101,7 @@ class _GradeSearchPageState extends State<GradeSearchPage> {
                 builder: (context, gsbState) {
                   return gsbState.map(
                     // when initial: show filter
-                    initial: (_) => _filteWidget(context.bloc<gsfb.GradeSearchFilterBloc>(), gsfbState),
+                    initial: (_) => _filteWidget(context.read<gsfb.GradeSearchFilterBloc>(), gsfbState),
                     loading: (_) => Center(child: CircularProgressIndicator()),
                     loaded: (state) => GradeSearchLoadedPage(
                       grades: state.grades,
@@ -115,7 +115,7 @@ class _GradeSearchPageState extends State<GradeSearchPage> {
                           height: MediaQuery.of(context).size.height,
                           child: FailureWidget(
                             error: state.error,
-                            retry: () => pContext.bloc<gsb.GradeSearchBloc>().add(gsb.GradeSearchEvent.init()),
+                            retry: () => pContext.read<gsb.GradeSearchBloc>().add(gsb.GradeSearchEvent.init()),
                           ),
                         ),
                       ],

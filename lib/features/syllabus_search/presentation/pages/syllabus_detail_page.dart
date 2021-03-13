@@ -32,7 +32,7 @@ class SyllabusDetailPage extends StatelessWidget {
             loading: (_) => SyllabusDetailLoadingPage(),
             failed: (state) => FailureWidget(
               error: state.error,
-              retry: () => context.bloc<SyllabusSearchDetailBloc>().add(
+              retry: () => context.read<SyllabusSearchDetailBloc>().add(
                     SyllabusSearchDetailEvent.fetchSyllabusSearchDetail(
                       index: index,
                       page: syllabus.page,
@@ -40,7 +40,7 @@ class SyllabusDetailPage extends StatelessWidget {
                     ),
                   ),
             ),
-            loaded: (state) => SyllabusDetailsLoadedPage(bloc: context.bloc<SyllabusSearchDetailBloc>(), detail: state.detail),
+            loaded: (state) => SyllabusDetailsLoadedPage(bloc: context.read<SyllabusSearchDetailBloc>(), detail: state.detail),
           );
         },
       ),

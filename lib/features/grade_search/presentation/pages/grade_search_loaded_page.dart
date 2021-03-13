@@ -433,7 +433,7 @@ class _GradeListTileState extends State<GradeListTile> {
   }
 
   void _noDetail() {
-    Scaffold.of(context)
+    ScaffoldMessenger.of(context)
       ..hideCurrentSnackBar()
       ..showSnackBar(
         SnackBar(
@@ -532,7 +532,6 @@ class ColorCard extends StatelessWidget {
             secondChild: secondChild,
             layoutBuilder: (Widget topChild, Key topChildKey, Widget bottomChild, Key bottomChildKey) {
               return Stack(
-                overflow: Overflow.visible,
                 children: <Widget>[
                   Positioned(
                     key: bottomChildKey,

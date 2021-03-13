@@ -24,7 +24,7 @@ class _LoginFormState extends State<LoginForm> {
       listener: (context, state) {
         state.maybeMap(
           success: (state) => BlocProvider.of<AuthBloc>(context).add(AuthEvent.loggedIn()),
-          failed: (state) => Scaffold.of(context)
+          failed: (state) => ScaffoldMessenger.of(context)
             ..hideCurrentSnackBar()
             ..showSnackBar(
               SnackBar(

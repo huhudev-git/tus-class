@@ -35,6 +35,7 @@
 [![Platform](https://img.shields.io/badge/Platform-Flutter-green.svg)](https://flutter.io)
 ![Version](https://img.shields.io/badge/dynamic/yaml?url=https://raw.githubusercontent.com/huhugiter/tus-class/master/pubspec.yaml&label=Version&query=version&color=orange)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://choosealicense.com/licenses/mit/)
+![Build](https://github.com/huhudev-git/tus-class/workflows/Build/badge.svg)
 
 A Front-end APP for [TUS CLASS](https://class.admin.tus.ac.jp/up/faces/login/Com00501A.jsp). This project is only for Tokyo University of Science students. Powered by [Flutter](https://flutter.dev/)
 

@@ -161,7 +161,7 @@ class _MessageListTileState extends State<MessageListTile> {
   }
 
   void _onTap() {
-    context.bloc<MessageBloc>().add(MessageEvent.read(categoryId: widget.categoryId, index: widget.index));
+    context.read<MessageBloc>().add(MessageEvent.read(categoryId: widget.categoryId, index: widget.index));
 
     Navigator.of(context).push(
       MaterialPageRoute(
@@ -170,7 +170,7 @@ class _MessageListTileState extends State<MessageListTile> {
           categoryId: widget.categoryId,
           category: widget.category,
           messages: widget.messages,
-          bloc: context.bloc<MessageBloc>(),
+          bloc: context.read<MessageBloc>(),
         ),
       ),
     );

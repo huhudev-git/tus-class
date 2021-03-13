@@ -139,10 +139,10 @@ class _LeftButtom extends StatelessWidget {
     return NeumorphicButton(
       onPressed: isOwner
           ? () {
-              context.bloc<cb.CurriculumBloc>().state.maybeMap(
+              context.read<cb.CurriculumBloc>().state.maybeMap(
                     orElse: () {},
                     loaded: (state) {
-                      context.bloc<cb.CurriculumBloc>().add(
+                      context.read<cb.CurriculumBloc>().add(
                             cb.CurriculumEvent.fetchCurriculum(
                               isRefresh: false,
                               year: state.timeTable.year - 1,
@@ -186,10 +186,10 @@ class _RightButtom extends StatelessWidget {
     return NeumorphicButton(
       onPressed: isOwner
           ? () {
-              context.bloc<cb.CurriculumBloc>().state.maybeMap(
+              context.read<cb.CurriculumBloc>().state.maybeMap(
                     orElse: () {},
                     loaded: (state) {
-                      context.bloc<cb.CurriculumBloc>().add(
+                      context.read<cb.CurriculumBloc>().add(
                             cb.CurriculumEvent.fetchCurriculum(
                               isRefresh: false,
                               year: state.timeTable.year + 1,

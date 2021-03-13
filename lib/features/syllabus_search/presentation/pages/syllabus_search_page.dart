@@ -64,8 +64,8 @@ class _SyllabusSearchPageState extends State<SyllabusSearchPage> {
                 hintText: AppLocalizations.of(context).translate('HINTTEXT_SYLLABUS_SEARCH'),
                 tag: 'syllabus_search',
                 onTap: () {
-                  if (pContext.bloc<ssb.SyllabusSearchBloc>().state is! ssb.Initial) {
-                    pContext.bloc<ssb.SyllabusSearchBloc>().add(ssb.SyllabusSearchEvent.init());
+                  if (pContext.read<ssb.SyllabusSearchBloc>().state is! ssb.Initial) {
+                    pContext.read<ssb.SyllabusSearchBloc>().add(ssb.SyllabusSearchEvent.init());
                   }
                 },
                 onSubmitted: (key) => ssfbState.maybeMap(
@@ -102,7 +102,7 @@ class _SyllabusSearchPageState extends State<SyllabusSearchPage> {
                 builder: (context, ssbState) {
                   return ssbState.map(
                     // when initial: show filter
-                    initial: (_) => _filteWidget(context.bloc<ssfb.SyllabusSearchFilterBloc>(), ssfbState),
+                    initial: (_) => _filteWidget(context.read<ssfb.SyllabusSearchFilterBloc>(), ssfbState),
                     loading: (_) => Center(child: CircularProgressIndicator()),
                     loaded: (state) => SyllabusSearchLoadedPage(
                       syllabusList: state.syllabusList,
@@ -116,7 +116,7 @@ class _SyllabusSearchPageState extends State<SyllabusSearchPage> {
                           height: MediaQuery.of(context).size.height,
                           child: FailureWidget(
                             error: state.error,
-                            retry: () => pContext.bloc<ssb.SyllabusSearchBloc>().add(ssb.SyllabusSearchEvent.init()),
+                            retry: () => pContext.read<ssb.SyllabusSearchBloc>().add(ssb.SyllabusSearchEvent.init()),
                           ),
                         ),
                       ],

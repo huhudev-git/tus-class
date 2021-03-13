@@ -87,7 +87,7 @@ class _SwitchSemesterWidgetState extends State<SwitchSemesterWidget> with Single
                               opacity: _animetion.value > 0 ? _animetion.value : 0,
                               depth: _animetion.value > 0 ? _animetion.value * 3 : 0,
                               text: semester.name,
-                              onClick: () => context.bloc<cb.CurriculumBloc>().add(
+                              onClick: () => context.read<cb.CurriculumBloc>().add(
                                     cb.CurriculumEvent.fetchCurriculum(
                                       year: state.timeTable.year,
                                       semesterValue: semester.value,

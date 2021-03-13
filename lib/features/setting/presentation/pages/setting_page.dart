@@ -33,7 +33,7 @@ class _SettingPageState extends State<SettingPage> with AutomaticKeepAliveClient
       child: BlocBuilder<sb.SettingBloc, sb.SettingState>(
         buildWhen: (previous, current) {
           if (current.error != null) {
-            Scaffold.of(context)
+            ScaffoldMessenger.of(context)
               ..hideCurrentSnackBar()
               ..showSnackBar(
                 SnackBar(
@@ -104,7 +104,7 @@ class __SettingPageState extends State<_SettingPage> {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (_) {
-                    return LanguagePage(bloc: context.bloc<I18nBloc>());
+                    return LanguagePage(bloc: context.read<I18nBloc>());
                   },
                 ),
               );
@@ -189,7 +189,7 @@ class __SettingPageState extends State<_SettingPage> {
                         },
                       );
                     } else {
-                      Scaffold.of(context)
+                      ScaffoldMessenger.of(context)
                         ..hideCurrentSnackBar()
                         ..showSnackBar(
                           SnackBar(

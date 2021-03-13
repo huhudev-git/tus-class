@@ -42,7 +42,7 @@ class _AttendanceRateCardState extends State<AttendanceRateCard> with AutomaticK
   @override
   void initState() {
     super.initState();
-    context.bloc<AttendanceRateBloc>().add(AttendanceRateEvent.fetchAttendanceRate());
+    context.read<AttendanceRateBloc>().add(AttendanceRateEvent.fetchAttendanceRate());
   }
 
   @override
@@ -61,7 +61,7 @@ class _AttendanceRateCardState extends State<AttendanceRateCard> with AutomaticK
               loading: (_) => _emptyCard(),
               failed: (state) => CardFailureWidget(
                 error: state.error,
-                retry: () => context.bloc<AttendanceRateBloc>().add(AttendanceRateEvent.fetchAttendanceRate()),
+                retry: () => context.read<AttendanceRateBloc>().add(AttendanceRateEvent.fetchAttendanceRate()),
               ),
               loaded: (state) {
                 if (state.rates.isEmpty) {

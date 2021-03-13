@@ -21,7 +21,7 @@ class _AuthPageState extends State<AuthPage> {
         body: BlocConsumer<AuthBloc, AuthState>(
           listener: (context, state) {
             state.maybeMap(
-              failed: (state) => Scaffold.of(context)
+              failed: (state) => ScaffoldMessenger.of(context)
                 ..hideCurrentSnackBar()
                 ..showSnackBar(
                   SnackBar(

@@ -49,7 +49,7 @@ class _MessageTabPageState extends State<MessageTabPage> with AutomaticKeepAlive
             failed: (state) => FailureWidget(
               scale: 0.8,
               error: state.error,
-              retry: () => context.bloc<MessageBloc>().add(
+              retry: () => context.read<MessageBloc>().add(
                     MessageEvent.init(
                       categoryId: widget.categoryId,
                       category: widget.category,
